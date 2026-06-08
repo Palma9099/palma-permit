@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>South Florida permit requirements — 30 cities | Palma Permit</title>
+<meta name="description" content="Permit requirements for 30 municipalities across Broward, Palm Beach, and Miami-Dade. Pick your city, see what you need, and run an instant readiness check.">
+<meta name="theme-color" content="#0a0f1c">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="Cities">
+<div id="app-header"></div>
+
+<main>
+  <section class="section tight">
+    <div class="wrap">
+      <span class="eyebrow">Tri-county coverage</span>
+      <h1 style="font-size:clamp(2rem,4vw,3rem)">Every requirement. Every city.</h1>
+      <p class="lead">We track permit requirements for <strong id="city-count">30</strong> municipalities across South Florida. Pick a city to run an instant readiness check against its exact rules.</p>
+
+      <div class="city-filters">
+        <button class="chip active" data-county="All">All</button>
+        <button class="chip" data-county="Broward">Broward</button>
+        <button class="chip" data-county="Palm Beach">Palm Beach</button>
+        <button class="chip" data-county="Miami-Dade">Miami-Dade</button>
+      </div>
+      <div class="field" style="max-width:340px;margin-top:10px">
+        <input id="city-search" type="text" placeholder="Search city…">
+      </div>
+
+      <div class="city-grid" id="city-grid" style="margin-top:22px"></div>
+    </div>
+  </section>
+
+  <!-- Real rejection stories -->
+  <section class="section tight">
+    <div class="wrap">
+      <div class="center" style="margin-bottom:30px"><span class="eyebrow">Real rejection stories</span><h2>These actually happened.</h2><p class="lead center">Palma Permit catches every one of these before you submit.</p></div>
+      <div class="grid grid-3">
+        <div class="card"><span class="tag amber">Fort Lauderdale</span><p style="margin-top:12px">Insurance certificate read "City of Ft. Lauderdale" instead of "City of Fort Lauderdale." Rejected. Two weeks lost.</p><p class="muted" style="font-size:.88rem">Cert holder wording must be letter-perfect.</p></div>
+        <div class="card"><span class="tag amber">Weston</span><p style="margin-top:12px">HVAC contractor used the standard $2,500 NOC threshold. Weston's A/C threshold is $15,000. Unnecessary filing, wasted day.</p><p class="muted" style="font-size:.88rem">NOC thresholds vary by city and trade.</p></div>
+        <div class="card"><span class="tag amber">Davie</span><p style="margin-top:12px">Roofer used the Wednesday walk-through. Rejected first review — walk-throughs are one shot, so it went back through regular review. Three weeks added.</p><p class="muted" style="font-size:.88rem">Only walk through a bulletproof package.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tight">
+    <div class="wrap">
+      <div class="cta-band">
+        <h2>Upload your docs. Know in seconds.</h2>
+        <p class="lead center">AI analysis against every city-specific requirement.</p>
+        <a class="btn btn-primary btn-lg" style="margin-top:18px" href="analyze.html">Start free analysis →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="app-footer"></div>
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing — Palma Permit</title>
+<meta name="description" content="Simple, contractor-friendly pricing. Start free with 3 checks a month. Pay-as-you-go from $3.99, or go unlimited with Pro from $19/month.">
+<meta name="theme-color" content="#0a0f1c">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+  .ck{width:16px;height:16px}
+</style>
+</head>
+<body data-page="Pricing">
+<div id="app-header"></div>
+
+<main>
+  <section class="section tight">
+    <div class="wrap center">
+      <span class="eyebrow">Pricing</span>
+      <h1 style="font-size:clamp(2rem,4vw,3rem)">Less than one trip to the counter.</h1>
+      <p class="lead center">Start free. Pay only when you need the AI to read your files. No contracts, cancel anytime.</p>
+
+      <div class="price-grid" style="margin-top:42px;text-align:left">
+        <!-- Free -->
+        <div class="card price">
+          <span class="tag green" style="align-self:flex-start">Free</span>
+          <div class="amt">$0<span> / forever</span></div>
+          <p class="muted">For the occasional check or trying it out.</p>
+          <ul>
+            <li><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg>3 readiness checks / month</li>
+            <li><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg>All 30 cities &amp; permit types</li>
+            <li><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg>City-specific gotcha alerts</li>
+            <li><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg>Compliance score &amp; fix tips</li>
+          </ul>
+          <a class="btn btn-ghost btn-block" href="analyze.html">Start free</a>
+        </div>
+
+        <!-- Pro -->
+        <div class="card price popular">
+          <span class="tag amber badge">Most popular</span>
+          <span class="tag amber" style="align-self:flex-start">Pro</span>
+          <div class="amt">$19<span> / month</span></div>
+          <p class="muted">For active contractors filing regularly. <b style="color:var(--success)">Save $10/mo vs. competitors.</b></p>
+          <ul>
+            <li><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg><b style="color:var(--text)">40 AI deep-read checks / month</b></li>
+            <li><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg>Upload PDFs — AI reads &amp; verifies each file</li>
+            <li><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg>Signature, seal &amp; product-approval checks</li>
+            <li><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg>Saved projects &amp; PDF report export</li>
+            <li><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg>Email support</li>
+          </ul>
+          <a class="btn btn-primary btn-block" href="analyze.html">Start Pro</a>
+        </div>
+
+        <!-- Business -->
+        <div class="card price">
+          <span class="tag green" style="align-self:flex-start">Business</span>
+          <div class="amt">$49<span> / month</span></div>
+          <p class="muted">For offices and teams running every job through review.</p>
+          <ul>
+            <li><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg><b style="color:var(--text)">Unlimited AI checks</b></li>
+            <li><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg>Up to 5 team seats</li>
+            <li><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg>Shared project history</li>
+            <li><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg>Priority support &amp; new-city requests</li>
+          </ul>
+          <a class="btn btn-ghost btn-block" href="analyze.html">Start Business</a>
+        </div>
+      </div>
+
+      <!-- Pay as you go -->
+      <div class="card pad-lg" style="margin-top:22px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;text-align:left">
+        <div>
+          <h3 style="margin-bottom:4px">No subscription? Pay as you go.</h3>
+          <p class="muted" style="margin:0">One full AI deep-read check, including file upload and verification — <b style="color:var(--accent)">$3.99</b>. Compare to a $15.99 single check elsewhere, or $300–500 for an expediter.</p>
+        </div>
+        <a class="btn btn-primary" href="analyze.html">Buy a single check →</a>
+      </div>
+
+      <p class="disclaimer">Checklist-mode readiness checks (no file upload) are always free. AI deep-read checks consume one credit and use document analysis to read and verify your uploaded files. Prices in USD. You can change or cancel any plan at any time.</p>
+    </div>
+  </section>
+
+  <section class="section tight">
+    <div class="wrap">
+      <div class="cta-band">
+        <h2>Try it before you pay a cent.</h2>
+        <p class="lead center">Run a free readiness check on your next package right now.</p>
+        <a class="btn btn-primary btn-lg" style="margin-top:18px" href="analyze.html">Check my package →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="app-footer"></div>
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
