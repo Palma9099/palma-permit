@@ -259,6 +259,21 @@ select:focus, input:focus { outline: none; box-shadow: var(--ring); border-color
 
 .disclaimer { font-size: .82rem; color: var(--faint); max-width: 760px; margin: 28px auto 0; text-align: center; }
 
+/* ---------- Enterprise dashboard (hero) ---------- */
+.dashboard .dash-rows { display: grid; gap: 11px; margin: 2px 0 16px; }
+.dash-row { display: grid; grid-template-columns: 92px 1fr 44px; align-items: center; gap: 12px; font-size: .9rem; }
+.dash-region { color: var(--muted); font-weight: 600; }
+.dash-bar { height: 8px; border-radius: 99px; background: var(--bg-3); overflow: hidden; }
+.dash-bar i { display: block; height: 100%; border-radius: 99px; }
+.dash-pct { text-align: right; font-weight: 700; color: var(--text); }
+.dash-foot { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; border-top: 1px solid var(--border); padding-top: 15px; }
+.dash-foot > div { display: flex; flex-direction: column; gap: 3px; font-size: .8rem; }
+.dash-foot b { color: var(--text); font-size: 1.1rem; }
+
+/* ---------- Integration logos ---------- */
+.logos { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+.logo-chip { font-size: .82rem; font-weight: 700; color: var(--muted); background: var(--bg); border: 1px solid var(--border-2); border-radius: 8px; padding: 8px 13px; }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   .hero-grid, .analyzer, .compare, .footer-grid { grid-template-columns: 1fr; }
