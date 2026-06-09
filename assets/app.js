@@ -34,7 +34,7 @@
       <div class="footer-grid">
         <div>
           <a class="brand" href="index.html">${LOGO}<span>Palma <span class="accent">Permit</span></span></a>
-          <p style="margin-top:14px;max-width:34ch">AI-assisted permit readiness for South Florida contractors. Catch what's missing before the building department does.</p>
+          <p style="margin-top:14px;max-width:34ch">Automated pre-submission compliance for Florida commercial contractors. Standardize your quality controls before the building department reviews.</p>
         </div>
         <div><h4>Product</h4>
           <a href="analyze.html">Analyze a Package</a>
@@ -54,7 +54,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2026 Palma Permit · palma.llc · Serving South Florida</span>
+        <span>© 2026 Palma Permit · palma.llc · Serving Florida</span>
         <span>Not affiliated with any municipal building department.</span>
       </div>
     </div></footer>`;
@@ -268,7 +268,7 @@
           .map(id => D.docById(id))
           .filter(d => d && (!d.hvhzOnly || city.hvhz))
           .map(d => d.label);
-        status.textContent = 'Analyzing with AI…';
+        status.textContent = 'Running automated audit…';
         const res = await fetch('/api/analyze', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -276,14 +276,14 @@
         });
         const data = await res.json();
         if (res.status === 503 || data.error === 'not_configured') {
-          status.innerHTML = 'AI deep-read isn\'t enabled on this deployment yet. The free checklist above still works — set <code>ANTHROPIC_API_KEY</code> on your host to turn this on.';
+          status.innerHTML = 'Automated deep-read isn\'t enabled on this deployment yet. The free checklist above still works — set <code>ANTHROPIC_API_KEY</code> on your host to turn this on.';
           runBtn.disabled = false; return;
         }
-        if (!res.ok) { status.textContent = 'AI error: ' + (data.message || res.status); runBtn.disabled = false; return; }
+        if (!res.ok) { status.textContent = 'Engine error: ' + (data.message || res.status); runBtn.disabled = false; return; }
         renderAi(data, city, type, report);
         status.textContent = '';
       } catch (e) {
-        status.textContent = 'Could not run AI deep-read: ' + e.message;
+        status.textContent = 'Could not run automated deep-read: ' + e.message;
       } finally {
         runBtn.disabled = false;
       }
@@ -297,7 +297,7 @@
       report.innerHTML = `
         <div class="card pad-lg">
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
-            <strong>AI deep-read report</strong><span class="tag amber">${city.name} · AI</span>
+            <strong>Automated deep-read report</strong><span class="tag amber">${city.name} · Engine</span>
           </div>
           <div class="score-ring">
             <div class="ring" style="--p:${pct}"><div class="inner">${pct}%</div></div>
