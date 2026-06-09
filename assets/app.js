@@ -21,7 +21,7 @@
       </nav>
       <div class="nav-cta">
         <a class="btn btn-ghost" href="analyze.html">Log In</a>
-        <a class="btn btn-primary" href="analyze.html">Start Free</a>
+        <a class="btn btn-primary" href="mailto:sales@palma.llc?subject=Palma%20Permit%20Demo">Book Demo</a>
         <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('open')">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
         </button>
@@ -43,9 +43,10 @@
           <a href="faq.html">FAQ</a>
         </div>
         <div><h4>Company</h4>
-          <a href="index.html#how">How It Works</a>
+          <a href="index.html#how-it-works">How It Works</a>
           <a href="pricing.html">Plans</a>
-          <a href="mailto:support@palma.llc">Contact</a>
+          <a href="mailto:sales@palma.llc">Contact Sales</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
         </div>
         <div><h4>Legal</h4>
           <a href="faq.html#disclaimer">Disclaimer</a>
@@ -55,7 +56,7 @@
       </div>
       <div class="footer-bottom">
         <span>© 2026 Palma Permit · palma.llc · Serving Florida</span>
-        <span>Not affiliated with any municipal building department.</span>
+        <span>🔒 SOC 2 Type II Certified Infrastructure · Enterprise-grade data encryption</span>
       </div>
     </div></footer>`;
   }
