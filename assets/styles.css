@@ -287,6 +287,9 @@ select:focus, input:focus { outline: none; box-shadow: var(--ring); border-color
 .ledger-rows li:last-child { border-bottom: 0; }
 .ledger-rows b { color: var(--text); }
 
+/* ---------- Members-only (revealed by auth.js for subscribers) ---------- */
+.pp-members-only { display: none; }
+
 /* ---------- Section bands ---------- */
 .band { background: #F8F9FA; }
 

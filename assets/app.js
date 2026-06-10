@@ -20,7 +20,7 @@
         ${link('faq.html','FAQ')}
       </nav>
       <div class="nav-cta">
-        <a class="btn btn-ghost" href="analyze.html">Log In</a>
+        <a class="btn btn-ghost" href="analyze.html" data-pp-login>Log In</a>
         <a class="btn btn-primary" href="mailto:sales@palma.llc?subject=Palma%20Permit%20Demo">Book Demo</a>
         <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('open')">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
@@ -47,6 +47,7 @@
           <a href="pricing.html">Plans</a>
           <a href="mailto:sales@palma.llc">Contact Sales</a>
           <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="#" class="pp-members-only" data-pp-portal>Manage Subscription</a>
         </div>
         <div><h4>Legal</h4>
           <a href="faq.html#disclaimer">Disclaimer</a>
@@ -254,10 +255,25 @@
       return await file.text();
     }
 
+    function upgradeLink(msg) {
+      status.innerHTML = msg + ' ';
+      const A = window.PP && window.PP.auth;
+      const a = document.createElement('a');
+      a.href = 'pricing.html'; a.className = 'accent'; a.textContent = 'Upgrade →';
+      if (A && A.isReady) a.onclick = (e) => { e.preventDefault(); A.startCheckout('pro'); };
+      status.appendChild(a);
+    }
+
     runBtn.addEventListener('click', async () => {
       const city = D.cityBySlug(citySel.value);
       const type = D.permitById(typeSel.value);
       if (!city || !type) { status.textContent = 'Pick a city and permit type first.'; return; }
+      // Phase 2 gate (only active when Clerk auth is configured)
+      const A = window.PP && window.PP.auth;
+      if (A && A.isReady) {
+        if (!A.isSignedIn()) { status.textContent = 'Sign in to run an automated deep-read…'; A.signIn(); return; }
+        if (!A.hasPlan()) { upgradeLink('Automated deep-read is a Pro/Team feature.'); return; }
+      }
       runBtn.disabled = true; status.textContent = 'Reading your documents…';
       try {
         const documents = [];
@@ -270,12 +286,15 @@
           .filter(d => d && (!d.hvhzOnly || city.hvhz))
           .map(d => d.label);
         status.textContent = 'Running automated audit…';
+        const headers = { 'Content-Type': 'application/json' };
+        if (A && A.isReady) { const t = await A.getToken(); if (t) headers['Authorization'] = 'Bearer ' + t; }
         const res = await fetch('/api/analyze', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+          method: 'POST', headers,
           body: JSON.stringify({ city: city.name, permitType: type.label, requiredDocs, documents }),
         });
         const data = await res.json();
+        if (res.status === 401) { status.textContent = data.message || 'Please sign in.'; if (A && A.isReady) A.signIn(); runBtn.disabled = false; return; }
+        if (res.status === 402) { upgradeLink(data.message || 'An active plan is required.'); runBtn.disabled = false; return; }
         if (res.status === 503 || data.error === 'not_configured') {
           status.innerHTML = 'Automated deep-read isn\'t enabled on this deployment yet. The free checklist above still works — set <code>ANTHROPIC_API_KEY</code> on your host to turn this on.';
           runBtn.disabled = false; return;

@@ -1,0 +1,11 @@
+{
+  "name": "palma-permit",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Palma Permit — serverless functions (Clerk auth + Stripe billing + automated deep-read).",
+  "dependencies": {
+    "@clerk/backend": "^1.21.0",
+    "stripe": "^17.5.0"
+  }
+}
