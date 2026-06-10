@@ -50,8 +50,8 @@
         </div>
         <div><h4>Legal</h4>
           <a href="faq.html#disclaimer">Disclaimer</a>
-          <a href="#">Terms</a>
-          <a href="#">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="privacy.html">Privacy</a>
         </div>
       </div>
       <div class="footer-bottom">
