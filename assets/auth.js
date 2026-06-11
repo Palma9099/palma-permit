@@ -47,6 +47,8 @@
       s.src = "https://cdn.jsdelivr.net/npm/@clerk/clerk-js@5/dist/clerk.browser.js";
       s.async = true;
       s.crossOrigin = "anonymous";
+      // With this attribute the CDN build self-instantiates window.Clerk.
+      s.setAttribute("data-clerk-publishable-key", CLERK_PUBLISHABLE_KEY);
       s.onload = resolve;
       s.onerror = reject;
       document.head.appendChild(s);
@@ -122,9 +124,13 @@
   async function init() {
     try {
       await loadClerk();
-      const clerk = new window.Clerk(CLERK_PUBLISHABLE_KEY);
-      await clerk.load({});
-      window.Clerk = clerk;
+      let clerk = window.Clerk;
+      if (typeof clerk === "function") {
+        clerk = new clerk(CLERK_PUBLISHABLE_KEY); // class build
+        window.Clerk = clerk;
+      }
+      if (!clerk) throw new Error("Clerk failed to load");
+      if (!clerk.loaded) await clerk.load({});
 
       auth.isReady = true;
       auth.isSignedIn = () => !!clerk.user;

@@ -10,7 +10,7 @@
     { "source": "/app", "destination": "/dashboard", "permanent": true }
   ],
   "rewrites": [
-    { "source": "/reports/:id(\\d+)", "destination": "/report.html" }
+    { "source": "/reports/:id", "destination": "/report.html" }
   ],
   "headers": [
     {
