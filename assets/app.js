@@ -14,14 +14,15 @@
     return `<header class="site-header"><div class="wrap nav">
       <a class="brand" href="index.html">${LOGO}<span>Palma <span class="accent">Permit</span></span></a>
       <nav class="nav-links" id="navlinks">
-        ${link('analyze.html','Analyze')}
-        ${link('cities.html','Cities')}
-        ${link('pricing.html','Pricing')}
-        ${link('faq.html','FAQ')}
+        ${link('/analyze','Analyze')}
+        ${link('/features','Features')}
+        ${link('/how-it-works','How It Works')}
+        ${link('/pricing','Pricing')}
+        ${link('/contact','Contact')}
       </nav>
       <div class="nav-cta">
-        <a class="btn btn-ghost" href="analyze.html" data-pp-login>Log In</a>
-        <a class="btn btn-primary" href="mailto:sales@palma.llc?subject=Palma%20Permit%20Demo">Book Demo</a>
+        <a class="btn btn-ghost" href="/sign-in" data-pp-login>Log In</a>
+        <a class="btn btn-primary" href="/sign-up">Get Started</a>
         <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('open')">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
         </button>
@@ -37,22 +38,25 @@
           <p style="margin-top:14px;max-width:34ch">Automated pre-submission compliance for Florida commercial contractors. Standardize your quality controls before the building department reviews.</p>
         </div>
         <div><h4>Product</h4>
-          <a href="analyze.html">Analyze a Package</a>
-          <a href="cities.html">Cities We Cover</a>
-          <a href="pricing.html">Pricing</a>
-          <a href="faq.html">FAQ</a>
+          <a href="/analyze">Analyze a Package</a>
+          <a href="/features">Features</a>
+          <a href="/examples">Example Reports</a>
+          <a href="/cities">Cities We Cover</a>
+          <a href="/pricing">Pricing</a>
+          <a href="/faq">FAQ</a>
         </div>
         <div><h4>Company</h4>
-          <a href="index.html#how-it-works">How It Works</a>
-          <a href="pricing.html">Plans</a>
-          <a href="mailto:sales@palma.llc">Contact Sales</a>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="/how-it-works">How It Works</a>
+          <a href="/about">About</a>
+          <a href="/contact">Contact</a>
+          <a href="/sign-up">Create Account</a>
           <a href="#" class="pp-members-only" data-pp-portal>Manage Subscription</a>
         </div>
         <div><h4>Legal</h4>
-          <a href="faq.html#disclaimer">Disclaimer</a>
-          <a href="terms.html">Terms</a>
-          <a href="privacy.html">Privacy</a>
+          <a href="/faq#disclaimer">Disclaimer</a>
+          <a href="/terms">Terms</a>
+          <a href="/privacy">Privacy</a>
+          <a href="/refund-policy">Refund Policy</a>
         </div>
       </div>
       <div class="footer-bottom">

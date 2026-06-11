@@ -2,6 +2,16 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    { "source": "/login", "destination": "/sign-in", "permanent": true },
+    { "source": "/register", "destination": "/sign-up", "permanent": true },
+    { "source": "/signin", "destination": "/sign-in", "permanent": true },
+    { "source": "/signup", "destination": "/sign-up", "permanent": true },
+    { "source": "/app", "destination": "/dashboard", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/reports/:id(\\d+)", "destination": "/report.html" }
+  ],
   "headers": [
     {
       "source": "/(.*)",

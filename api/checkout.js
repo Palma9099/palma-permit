@@ -55,8 +55,8 @@ export default async function handler(req, res) {
       ...(existingCustomer ? { customer: existingCustomer } : { customer_email: email }),
       subscription_data: { metadata: { clerkUserId: userId, plan } },
       metadata: { clerkUserId: userId, plan },
-      success_url: `${origin}/analyze.html?checkout=success`,
-      cancel_url: `${origin}/pricing.html?checkout=cancelled`,
+      success_url: `${origin}/success?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${origin}/cancel`,
       allow_promotion_codes: true,
     });
     return res.status(200).json({ url: session.url });

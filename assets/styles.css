@@ -320,3 +320,13 @@ select:focus, input:focus { outline: none; box-shadow: var(--ring); border-color
   .section { padding: 60px 0; }
   .cta-band { padding: 32px 20px; }
 }
+
+/* ---- member area additions ---- */
+.stack { display: flex; flex-direction: column; gap: 10px; }
+.row-item { display: flex; justify-content: space-between; align-items: center; gap: 14px; text-decoration: none; color: var(--text); }
+a.row-item:hover { border-color: var(--accent); }
+input, textarea, select { background: #0f1626; border: 1px solid #243049; border-radius: 8px; color: var(--text); padding: 10px 12px; font: inherit; }
+textarea:focus { outline: none; box-shadow: var(--ring); border-color: var(--accent); }
+.admin-table { width: 100%; border-collapse: collapse; font-size: .85rem; }
+.admin-table th, .admin-table td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #243049; white-space: nowrap; }
+.admin-table th { color: var(--muted); text-transform: uppercase; font-size: .72rem; letter-spacing: .04em; }

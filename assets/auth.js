@@ -12,7 +12,7 @@
    ============================================================ */
 (function () {
   // ---- CONFIG ----------------------------------------------------------
-  const CLERK_PUBLISHABLE_KEY = "pk_REPLACE_WITH_YOUR_CLERK_PUBLISHABLE_KEY";
+  const CLERK_PUBLISHABLE_KEY = "pk_test_c2V0LXNsdWctOTkuY2xlcmsuYWNjb3VudHMuZGV2JA"; // TODO: swap to pk_live_… when the Clerk production instance is created
   const PAID_PLANS = ["pro", "team"]; // publicMetadata.plan values that unlock the deep-read
 
   // ---- Feature flag ----------------------------------------------------
@@ -66,10 +66,9 @@
     document.querySelectorAll(".pp-members-only").forEach((el) => { el.style.display = auth.hasPlan() ? "" : "none"; });
     const ctaWrap = document.querySelector(".nav-cta");
     if (!ctaWrap) return;
-    const loginBtn = ctaWrap.querySelector('a[href="analyze.html"], a[data-pp-login]');
     const clerk = window.Clerk;
     if (clerk && clerk.user) {
-      // Signed in: show a user button + (if subscribed) a Members link
+      // Signed in: user button + Dashboard link; hide the Log In button.
       let slot = document.getElementById("pp-userbtn");
       if (!slot) {
         slot = document.createElement("div");
@@ -79,11 +78,27 @@
         ctaWrap.insertBefore(slot, ctaWrap.firstChild);
       }
       try { clerk.mountUserButton(slot, { afterSignOutUrl: "/" }); } catch (e) {}
-      const login = ctaWrap.querySelector('a[data-pp-login], a.btn-ghost');
-      if (login && /log in/i.test(login.textContent)) {
-        if (auth.hasPlan()) { login.textContent = "Members"; login.href = "analyze.html"; login.removeAttribute("data-pp-login"); }
-        else { login.textContent = "Upgrade"; login.setAttribute("data-pp-checkout", "pro"); login.href = "pricing.html"; }
+      const login = ctaWrap.querySelector("a[data-pp-login]");
+      if (login) { login.textContent = "Dashboard"; login.href = "/dashboard"; login.removeAttribute("data-pp-login"); login.__ppWired = true; }
+      const nav = document.getElementById("navlinks");
+      if (nav && !nav.querySelector('a[href="/dashboard"]')) {
+        const a = document.createElement("a");
+        a.href = "/dashboard"; a.textContent = "Dashboard";
+        nav.insertBefore(a, nav.firstChild);
       }
+    }
+  }
+
+  // ---- Page guards (set via <body data-pp-guard="member|guest">) -------
+  function applyGuards() {
+    const guard = document.body && document.body.getAttribute("data-pp-guard");
+    if (!guard) return;
+    const clerk = window.Clerk;
+    if (guard === "member" && !(clerk && clerk.user)) {
+      location.replace("/sign-in?redirect=" + encodeURIComponent(location.pathname + location.search));
+    }
+    if (guard === "guest" && clerk && clerk.user) {
+      location.replace("/dashboard");
     }
   }
 
@@ -116,9 +131,20 @@
       auth.plan = () => userPlan(clerk.user);
       auth.hasPlan = () => PAID_PLANS.includes(userPlan(clerk.user));
       auth.getToken = async () => { try { return clerk.session ? await clerk.session.getToken() : null; } catch (e) { return null; } };
-      auth.signIn = () => clerk.openSignIn({ afterSignInUrl: location.pathname, afterSignUpUrl: location.pathname });
-      auth.signUp = () => clerk.openSignUp({ afterSignInUrl: location.pathname, afterSignUpUrl: location.pathname });
+      auth.signIn = () => clerk.openSignIn({ afterSignInUrl: "/dashboard", afterSignUpUrl: "/dashboard" });
+      auth.signUp = () => clerk.openSignUp({ afterSignInUrl: "/dashboard", afterSignUpUrl: "/dashboard" });
       auth.signOut = () => clerk.signOut();
+      auth.user = () => clerk.user || null;
+      auth.apiFetch = async (url, opts) => {
+        const token = await auth.getToken();
+        const o = opts || {};
+        o.headers = Object.assign({}, o.headers, token ? { Authorization: "Bearer " + token } : {});
+        if (o.body && !o.headers["Content-Type"]) o.headers["Content-Type"] = "application/json";
+        const r = await fetch(url, o);
+        let data = null;
+        try { data = await r.json(); } catch (e) { data = {}; }
+        return { ok: r.ok, status: r.status, data };
+      };
 
       auth.startCheckout = async (planKey) => {
         if (!clerk.user) { auth.signIn(); return; }
@@ -148,6 +174,7 @@
       clerk.addListener(() => { renderHeader(); document.dispatchEvent(new CustomEvent("pp-auth-changed")); });
       renderHeader();
       wireHooks();
+      applyGuards();
       document.dispatchEvent(new CustomEvent("pp-auth-ready"));
     } catch (e) {
       console.warn("[PalmaPermit] Clerk init failed:", e);

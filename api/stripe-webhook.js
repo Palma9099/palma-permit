@@ -15,8 +15,55 @@
  */
 import { createClerkClient } from "@clerk/backend";
 import Stripe from "stripe";
+import { sql, ensureSchema, dbConfigured } from "./_lib/db.js";
 
 export const config = { api: { bodyParser: false } }; // need the raw body for signature verification
+
+/* ---- DB mirroring (best-effort; Clerk metadata stays the source of truth
+        for the paywall, the DB powers dashboard/admin/reporting) ---------- */
+async function dbUserIdFromClerkId(clerkUserId) {
+  if (!clerkUserId) return null;
+  const q = sql();
+  const rows = await q`SELECT id FROM users WHERE clerk_user_id = ${clerkUserId}`;
+  return rows.length ? rows[0].id : null;
+}
+
+async function recordPayment(session, clerkUserId, plan) {
+  if (!dbConfigured()) return;
+  try {
+    await ensureSchema();
+    const q = sql();
+    const userId = await dbUserIdFromClerkId(clerkUserId);
+    await q`INSERT INTO payments (user_id, stripe_customer_id, stripe_checkout_session_id, stripe_payment_intent_id, amount, currency, status, product_type)
+      VALUES (${userId}, ${session.customer || null}, ${session.id}, ${session.payment_intent || null},
+              ${session.amount_total ?? null}, ${session.currency || "usd"},
+              ${session.payment_status === "paid" ? "paid" : session.payment_status || "unknown"},
+              ${"subscription:" + (plan || "unknown")})`;
+  } catch (e) { console.warn("[webhook] payment record failed:", e.message); }
+}
+
+async function recordSubscription(sub, clerkUserId, plan) {
+  if (!dbConfigured()) return;
+  try {
+    await ensureSchema();
+    const q = sql();
+    const userId = await dbUserIdFromClerkId(clerkUserId);
+    const ps = sub.current_period_start ? new Date(sub.current_period_start * 1000).toISOString() : null;
+    const pe = sub.current_period_end ? new Date(sub.current_period_end * 1000).toISOString() : null;
+    await q`INSERT INTO subscriptions (user_id, stripe_subscription_id, stripe_customer_id, plan, status, current_period_start, current_period_end)
+      VALUES (${userId}, ${sub.id}, ${sub.customer}, ${plan}, ${sub.status}, ${ps}, ${pe})
+      ON CONFLICT (stripe_subscription_id) DO UPDATE SET
+        plan = EXCLUDED.plan, status = EXCLUDED.status,
+        current_period_start = EXCLUDED.current_period_start,
+        current_period_end = EXCLUDED.current_period_end,
+        user_id = COALESCE(EXCLUDED.user_id, subscriptions.user_id),
+        updated_at = now()`;
+    if (userId) {
+      const active = ["active", "trialing"].includes(sub.status);
+      await q`UPDATE users SET plan = ${active ? plan : null}, stripe_customer_id = ${sub.customer}, updated_at = now() WHERE id = ${userId}`;
+    }
+  } catch (e) { console.warn("[webhook] subscription record failed:", e.message); }
+}
 
 function readRaw(req) {
   return new Promise((resolve, reject) => {
@@ -77,6 +124,7 @@ export default async function handler(req, res) {
           stripeCustomerId: session.customer || undefined,
           stripeSubId: session.subscription || undefined,
         });
+        await recordPayment(session, clerkUserId, plan);
         break;
       }
       case "customer.subscription.created":
@@ -92,12 +140,14 @@ export default async function handler(req, res) {
           stripeCustomerId: sub.customer,
           stripeSubId: sub.id,
         });
+        await recordSubscription(sub, clerkUserId, plan);
         break;
       }
       case "customer.subscription.deleted": {
         const sub = event.data.object;
         const clerkUserId = (sub.metadata && sub.metadata.clerkUserId) || (await clerkIdFromCustomer(sub.customer));
         await setUserPlan(clerkUserId, { plan: null, subStatus: "canceled" });
+        await recordSubscription(sub, clerkUserId, null);
         break;
       }
       default:
