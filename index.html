@@ -251,7 +251,7 @@
     var water=new THREE.Mesh(new THREE.PlaneGeometry(90,40),new THREE.MeshStandardMaterial({color:0x276b7d,roughness:0.2,metalness:0.5,transparent:true,opacity:0.85}));
     water.rotation.x=-Math.PI/2; water.position.set(0,-0.05,-20); scene.add(water);
 
-    var home=new THREE.Group(); home.position.y=-1.1; scene.add(home);
+    var home=new THREE.Group(); home.position.y=0; scene.add(home);
     var parts=[];
     function reg(o,type,t0,t1,d){parts.push(Object.assign({o:o,type:type,t0:t0,t1:t1},d||{}));home.add(o);return o;}
     function vol(w,h,dp,x,z,col,gold,glass){
@@ -291,7 +291,9 @@
       }
     };
     var theta=0.62, t0=null;
-    function cam(p){var phi=1.22-0.16*p, radius=18-2.5*p; camera.position.set(radius*Math.sin(phi)*Math.cos(theta),radius*Math.cos(phi),radius*Math.sin(phi)*Math.sin(theta)); camera.lookAt(0,0.6+p*0.4,0.9);}
+    var CAM={r0:13,r1:2,hy:2.7,hy1:0.8,zoff:1.0,ly:1.9,ly1:0.3,lz:0.8};
+    try{window.__CAM=CAM;}catch(e){}
+    function cam(p){var r=CAM.r0-CAM.r1*p; camera.position.set(r*Math.cos(theta),CAM.hy+CAM.hy1*p,r*Math.sin(theta)+CAM.zoff); camera.lookAt(0,CAM.ly+CAM.ly1*p,CAM.lz);}
     renderScene=function(ts){
       if(!t0)t0=ts; var dt=Math.min(0.05,(ts-t0)/1000); t0=ts;
       built+=(targetP-built)*Math.min(1,dt*5);
