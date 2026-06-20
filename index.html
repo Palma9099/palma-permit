@@ -245,7 +245,7 @@
     sun.shadow.mapSize.set(2048,2048); sun.shadow.camera.near=1; sun.shadow.camera.far=70;
     sun.shadow.camera.left=-18;sun.shadow.camera.right=18;sun.shadow.camera.top=18;sun.shadow.camera.bottom=-18; sun.shadow.bias=-0.0004;
     scene.add(sun);
-    scene.add(Object.assign(new THREE.DirectionalLight(0xc98a5e,0.4),{position:new THREE.Vector3(-9,5,-7)}));
+    var fill=new THREE.DirectionalLight(0xc98a5e,0.4);fill.position.set(-9,5,-7);scene.add(fill);
     var ground=new THREE.Mesh(new THREE.CircleGeometry(30,56),new THREE.MeshStandardMaterial({color:0x39483a,roughness:1}));
     ground.rotation.x=-Math.PI/2; ground.receiveShadow=true; scene.add(ground);
     var water=new THREE.Mesh(new THREE.PlaneGeometry(90,40),new THREE.MeshStandardMaterial({color:0x276b7d,roughness:0.2,metalness:0.5,transparent:true,opacity:0.85}));
