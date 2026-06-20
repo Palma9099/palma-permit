@@ -28,6 +28,8 @@
   .stage{position:sticky;top:0;height:100vh;overflow:hidden;background:radial-gradient(120% 90% at 50% 0%,#16203a,#06090f)}
   .frame{position:absolute;inset:0;opacity:0;will-change:opacity,transform}
   .frame img{width:100%;height:100%;object-fit:cover;display:block}
+  #bcv{position:absolute;inset:0;width:100%;height:100%;display:block;z-index:1}
+  .poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:0;transition:opacity .4s}
   .vig{position:absolute;inset:0;z-index:3;pointer-events:none;background:linear-gradient(180deg,rgba(5,8,14,.6) 0%,rgba(5,8,14,0) 26%,rgba(5,8,14,0) 50%,rgba(5,8,14,.86) 100%)}
   .herotitle{position:absolute;left:0;right:0;top:46%;transform:translateY(-50%);text-align:center;z-index:6;padding:0 24px}
   .herotitle .kick{color:var(--gold);letter-spacing:4px;font-size:12px;border:1px solid var(--line);padding:7px 18px;border-radius:30px;display:inline-block}
@@ -109,6 +111,8 @@
 
 <section class="build" id="build">
   <div class="stage" id="stage">
+    <img class="poster" id="poster" src="images/hero/p05.jpg" alt="" />
+    <canvas id="bcv"></canvas>
     <div class="vig"></div>
     <div class="herotitle" id="herotitle">
       <span class="kick">● SOUTH FLORIDA BUILDING INTELLIGENCE</span>
@@ -208,34 +212,103 @@
   </div>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
 (function(){
   var STAGES=[
-    {img:"images/hero/p01.jpg",t:"Site",b:"Folio pulled, permit history checked, and scope locked before breaking ground."},
-    {img:"images/hero/p02.jpg",t:"Foundation",b:"Footings and grade beams formed and reinforced — set above Florida flood elevation."},
-    {img:"images/hero/p03.jpg",t:"Structure",b:"Structural frame raised to permit-approved engineering."},
-    {img:"images/hero/p04.jpg",t:"Dried-in",b:"Walls, roof, and glass closed in — weather-tight and inspected."},
-    {img:"images/hero/p05.jpg",t:"Delivered",b:"Final sign-off and a property in full legal standing."}
+    {t:"Site",b:"Folio pulled, permit history checked, and scope locked before breaking ground."},
+    {t:"Foundation",b:"Footings and grade beams formed and reinforced — set above Florida flood elevation."},
+    {t:"Structure",b:"Structural frame and floors raised to permit-approved engineering."},
+    {t:"Envelope",b:"Walls, glass, and roof closed in — weather-tight and inspected."},
+    {t:"Delivered",b:"Lit, landscaped, and signed off — a property in full legal standing."}
   ];
-  var stage=document.getElementById("stage");
-  var frames=STAGES.map(function(s,i){
-    var f=document.createElement("div");f.className="frame";
-    var im=document.createElement("img");im.src=s.img;im.alt=s.t;im.loading=i<2?"eager":"lazy";
-    im.onerror=function(){f.dataset.missing="1";f.style.display="none";};
-    f.appendChild(im);stage.insertBefore(f,stage.firstChild);return f;
-  });
   var dots=document.getElementById("dots");STAGES.forEach(function(){var d=document.createElement("i");dots.appendChild(d);});
   var dotEls=[].slice.call(dots.children);
   var section=document.getElementById("build"),overlay=document.getElementById("overlay"),herotitle=document.getElementById("herotitle");
   var scount=document.getElementById("scount"),stitle=document.getElementById("stitle"),sbody=document.getElementById("sbody"),railfill=document.getElementById("railfill");
-  var N=STAGES.length,last=-1;
+  var N=STAGES.length,last=-1,targetP=0;
+
+  /* ---- Three.js real-time build ---- */
+  var THREE=window.THREE, built=false, applyBuild=function(){}, renderScene=function(){};
+  (function initThree(){
+    if(!THREE){document.getElementById("poster").style.opacity=1;return;}
+    var cv=document.getElementById("bcv"), stageEl=document.getElementById("stage");
+    var W=stageEl.clientWidth||window.innerWidth, H=stageEl.clientHeight||window.innerHeight, renderer;
+    try{ renderer=new THREE.WebGLRenderer({canvas:cv,antialias:true,alpha:true}); }
+    catch(e){ document.getElementById("poster").style.opacity=1; return; }
+    renderer.setPixelRatio(Math.min(2,window.devicePixelRatio||1)); renderer.setSize(W,H,false);
+    renderer.shadowMap.enabled=true; renderer.shadowMap.type=THREE.PCFSoftShadowMap;
+    var scene=new THREE.Scene(); scene.fog=new THREE.Fog(0x0a1020,26,64);
+    var camera=new THREE.PerspectiveCamera(40,W/H,0.1,200);
+    scene.add(new THREE.HemisphereLight(0xaec6ec,0x20140e,0.78));
+    var sun=new THREE.DirectionalLight(0xffce99,1.55); sun.position.set(10,14,8); sun.castShadow=true;
+    sun.shadow.mapSize.set(2048,2048); sun.shadow.camera.near=1; sun.shadow.camera.far=70;
+    sun.shadow.camera.left=-18;sun.shadow.camera.right=18;sun.shadow.camera.top=18;sun.shadow.camera.bottom=-18; sun.shadow.bias=-0.0004;
+    scene.add(sun);
+    scene.add(Object.assign(new THREE.DirectionalLight(0xc98a5e,0.4),{position:new THREE.Vector3(-9,5,-7)}));
+    var ground=new THREE.Mesh(new THREE.CircleGeometry(30,56),new THREE.MeshStandardMaterial({color:0x39483a,roughness:1}));
+    ground.rotation.x=-Math.PI/2; ground.receiveShadow=true; scene.add(ground);
+    var water=new THREE.Mesh(new THREE.PlaneGeometry(90,40),new THREE.MeshStandardMaterial({color:0x276b7d,roughness:0.2,metalness:0.5,transparent:true,opacity:0.85}));
+    water.rotation.x=-Math.PI/2; water.position.set(0,-0.05,-20); scene.add(water);
+
+    var home=new THREE.Group(); home.position.y=-1.1; scene.add(home);
+    var parts=[];
+    function reg(o,type,t0,t1,d){parts.push(Object.assign({o:o,type:type,t0:t0,t1:t1},d||{}));home.add(o);return o;}
+    function vol(w,h,dp,x,z,col,gold,glass){
+      var g=new THREE.Group(); g.position.set(x,0,z);
+      var geo=new THREE.BoxGeometry(w,h,dp); geo.translate(0,h/2,0);
+      var m=new THREE.Mesh(geo,new THREE.MeshStandardMaterial({color:col,roughness:glass?0.12:0.72,metalness:glass?0.5:0.12,transparent:!!glass,opacity:glass?0.8:1}));
+      m.castShadow=true; m.receiveShadow=true; g.add(m);
+      g.add(new THREE.LineSegments(new THREE.EdgesGeometry(geo),new THREE.LineBasicMaterial({color:gold||0xc9a25a})));
+      return g;
+    }
+    function glow(w,h,dp,x,y,z){var m=new THREE.Mesh(new THREE.BoxGeometry(w,h,dp),new THREE.MeshStandardMaterial({color:0xffd79a,emissive:0xffb255,emissiveIntensity:0}));m.position.set(x,y,z);home.add(m);return m;}
+    function palm(x,z,s){
+      var g=new THREE.Group(); g.position.set(x,0,z);
+      var tr=new THREE.Mesh(new THREE.CylinderGeometry(0.05*s,0.09*s,1.9*s,6),new THREE.MeshStandardMaterial({color:0x6b5638,roughness:1})); tr.position.y=0.95*s; tr.castShadow=true; g.add(tr);
+      for(var k=0;k<5;k++){var fr=new THREE.Mesh(new THREE.ConeGeometry(0.16*s,1.1*s,4),new THREE.MeshStandardMaterial({color:0x2f6b30,roughness:1}));fr.position.y=1.9*s;fr.rotation.z=Math.PI/2.4;fr.rotation.y=k*1.25;fr.position.x=Math.cos(k*1.25)*0.4*s;fr.position.z=Math.sin(k*1.25)*0.4*s;fr.castShadow=true;g.add(fr);}
+      return g;
+    }
+    reg(vol(8.4,0.45,4.6,0,1.6,0x232a3a,0x8f7f5f),'grow',0.0,0.12);
+    reg(vol(5.6,1.7,4.0,-1.1,1.6,0x33506f,0xe9c882,true),'grow',0.12,0.34);
+    reg(vol(0.18,1.7,0.18,1.9,0.0,0x2a3142,0xc9a25a),'grow',0.20,0.32);
+    reg(vol(0.18,1.7,0.18,1.9,3.2,0x2a3142,0xc9a25a),'grow',0.22,0.34);
+    var up=reg(vol(4.6,1.5,3.4,0.5,1.5,0x33506f,0xe9c882,true),'grow',0.36,0.60); up.position.y=1.96;
+    reg(vol(6.2,0.18,4.4,-0.4,1.6,0x1d2533,0xd9b56a),'drop',0.50,0.66,{ty:1.78});
+    reg(vol(5.2,0.2,3.9,0.4,1.5,0x161d29,0xd9b56a),'drop',0.62,0.78,{ty:3.46});
+    var g1=glow(5.0,1.2,0.1,-1.1,0.65,3.62); reg(g1,'lite',0.40,0.6);
+    var g2=glow(4.0,1.0,0.1,0.5,2.55,3.22); reg(g2,'lite',0.64,0.8);
+    reg(palm(-4.7,4.0,1.15),'pop',0.80,0.93); reg(palm(4.6,3.6,1.0),'pop',0.84,0.97); reg(palm(-5.3,0.4,1.05),'pop',0.88,1.0);
+
+    function ease(x){return x<0.5?2*x*x:1-Math.pow(-2*x+2,2)/2;}
+    applyBuild=function(p){
+      for(var i=0;i<parts.length;i++){var pt=parts[i],lc=Math.max(0,Math.min(1,(p-pt.t0)/Math.max(0.001,pt.t1-pt.t0))),e=ease(lc);
+        pt.o.visible=lc>0.001;
+        if(pt.type==='grow')pt.o.scale.y=Math.max(0.0001,e);
+        else if(pt.type==='drop')pt.o.position.y=pt.ty+(1-e)*2.4;
+        else if(pt.type==='lite')pt.o.material.emissiveIntensity=1.15*e;
+        else if(pt.type==='pop'){var s=0.25+0.75*e;pt.o.scale.set(s,e,s);}
+      }
+    };
+    var theta=0.62, t0=null;
+    function cam(p){var phi=1.22-0.16*p, radius=18-2.5*p; camera.position.set(radius*Math.sin(phi)*Math.cos(theta),radius*Math.cos(phi),radius*Math.sin(phi)*Math.sin(theta)); camera.lookAt(0,0.6+p*0.4,0.9);}
+    renderScene=function(ts){
+      if(!t0)t0=ts; var dt=Math.min(0.05,(ts-t0)/1000); t0=ts;
+      built+=(targetP-built)*Math.min(1,dt*5);
+      applyBuild(built); theta+=dt*0.05; cam(built);
+      renderer.render(scene,camera);
+    };
+    built=0;
+    window.addEventListener("resize",function(){W=stageEl.clientWidth;H=stageEl.clientHeight;renderer.setSize(W,H,false);camera.aspect=W/H;camera.updateProjectionMatrix();});
+    requestAnimationFrame(function loop(ts){renderScene(ts);requestAnimationFrame(loop);});
+  })();
+
   function buildRender(){
     var r=section.getBoundingClientRect(),total=section.offsetHeight-window.innerHeight,p=Math.max(0,Math.min(1,(-r.top)/total));
-    var seg=p*(N-1);
-    frames.forEach(function(f,i){var o=Math.max(0,Math.min(1,1-Math.abs(seg-i)));f.style.opacity=o;f.style.transform="scale("+(1.04+0.06*o+p*0.02).toFixed(3)+")";});
+    targetP=p;
     herotitle.style.opacity=Math.max(0,1-p*9);overlay.style.opacity=p>0.06?1:0;
     railfill.style.height=(p*100)+"%";
-    var idx=Math.round(seg);
+    var idx=Math.min(N-1,Math.round(p*(N-1)));
     if(idx!==last){last=idx;scount.textContent=("0"+(idx+1)).slice(-2)+" / "+("0"+N).slice(-2);stitle.textContent=STAGES[idx].t;sbody.textContent=STAGES[idx].b;dotEls.forEach(function(d,i){d.classList.toggle("on",i<=idx);});}
   }
   var nav=document.getElementById("nav"),tk=false;
