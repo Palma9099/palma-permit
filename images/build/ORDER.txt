@@ -1,0 +1,22 @@
+PALMA HOMEPAGE — BUILD-SCROLL PHOTOS (11-stage progression)
+===========================================================
+
+The homepage (index.html) loads 01.jpg … 11.jpg and crossfades through
+them as the visitor scrolls.
+
+  01.jpg  Site            — aerial of the cleared waterfront lot
+  02.jpg  Foundation      — elevated plywood deck over the water
+  03.jpg  Block walls     — CMU block shell rising
+  04.jpg  Reinforcement   — rebar columns / tie-downs
+  05.jpg  Structure       — concrete structure + 2nd-floor framing
+  06.jpg  Framing         — wood framing going up
+  07.jpg  Framing         — walls & openings framed
+  08.jpg  Rough-in        — MEP rough-in (interior)
+  09.jpg  Dried-in        — roof underlayment / envelope
+  10.jpg  Exterior        — white siding, windows in
+  11.jpg  Delivered       — finished home
+
+(12.jpg / 13.jpg are unused placeholders — ignore or delete.)
+
+To swap any stage, replace that numbered .jpg (same name) — no code change.
+All photos auto-rotated and compressed for web. Use photos Palma owns or has rights to.

@@ -24,7 +24,7 @@
   .navcta{border:1px solid var(--gold);color:var(--gold);padding:8px 16px;border-radius:22px}
 
   /* hero photo build-scroll */
-  .build{height:600vh;position:relative}
+  .build{height:1120vh;position:relative}
   .stage{position:sticky;top:0;height:100vh;overflow:hidden;background:radial-gradient(120% 90% at 50% 0%,#16203a,#06090f)}
   .frame{position:absolute;inset:0;opacity:0;will-change:opacity,transform}
   .frame img{width:100%;height:100%;object-fit:cover;display:block}
@@ -211,11 +211,17 @@
 <script>
 (function(){
   var STAGES=[
-    {img:"images/hero/p01.jpg",t:"Site",b:"Folio pulled, permit history checked, and scope locked before breaking ground."},
-    {img:"images/hero/p02.jpg",t:"Foundation",b:"Footings and grade beams formed and reinforced — set above Florida flood elevation."},
-    {img:"images/hero/p03.jpg",t:"Structure",b:"Structural frame raised to permit-approved engineering."},
-    {img:"images/hero/p04.jpg",t:"Dried-in",b:"Walls, roof, and glass closed in — weather-tight and inspected."},
-    {img:"images/hero/p05.jpg",t:"Delivered",b:"Final sign-off and a property in full legal standing."}
+    {img:"images/build/01.jpg",t:"Site",b:"Folio pulled, permit history checked, and scope locked before breaking ground."},
+    {img:"images/build/02.jpg",t:"Foundation",b:"Footings and grade beams formed and reinforced — set above Florida flood elevation."},
+    {img:"images/build/03.jpg",t:"Stem wall & filled cells",b:"CMU stem wall and filled cells with column rebar — set to permit-approved engineering."},
+    {img:"images/build/04.jpg",t:"Reinforcement",b:"Rebar columns and tie-downs to permit-approved engineering."},
+    {img:"images/build/05.jpg",t:"Structure",b:"Concrete structure and second-floor framing take shape."},
+    {img:"images/build/06.jpg",t:"Framing",b:"Wood framing raised to the engineered design."},
+    {img:"images/build/07.jpg",t:"Framing",b:"Walls and openings framed, ready for the envelope."},
+    {img:"images/build/08.jpg",t:"Rough-in",b:"Mechanical, electrical, and plumbing roughed in and inspected."},
+    {img:"images/build/09.jpg",t:"Dried-in",b:"Roof underlayment and envelope sealed weather-tight."},
+    {img:"images/build/10.jpg",t:"Fit & finish",b:"Interior finishes and fixtures dialed in before final delivery."},
+    {img:"images/build/11.jpg",t:"Delivered",b:"Final sign-off and a property in full legal standing."}
   ];
   var stage=document.getElementById("stage");
   var frames=STAGES.map(function(s,i){
