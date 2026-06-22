@@ -1,8 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://palma.llc/</loc><priority>1.0</priority></url>
-  <url><loc>https://palma.llc/analyze.html</loc><priority>0.9</priority></url>
-  <url><loc>https://palma.llc/cities.html</loc><priority>0.8</priority></url>
-  <url><loc>https://palma.llc/pricing.html</loc><priority>0.8</priority></url>
-  <url><loc>https://palma.llc/faq.html</loc><priority>0.6</priority></url>
+  <url><loc>https://palma.llc/analyze.html</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/cities.html</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/pricing.html</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/faq.html</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/expired-permits-miami</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/expired-permits-fort-lauderdale</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/expired-permits-west-palm-beach</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/expired-permits-islamorada</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/expired-permits-key-west</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/expired-permits-naples</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/code-violations-miami</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/code-violations-fort-lauderdale</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/code-violations-west-palm-beach</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/code-violations-islamorada</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/code-violations-key-west</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/code-violations-naples</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/permit-drawings-miami</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/permit-drawings-fort-lauderdale</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/permit-drawings-west-palm-beach</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/permit-drawings-islamorada</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/permit-drawings-key-west</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/permit-drawings-naples</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/final-signoff-miami</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/final-signoff-fort-lauderdale</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/final-signoff-west-palm-beach</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/final-signoff-islamorada</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/final-signoff-key-west</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/final-signoff-naples</loc><priority>0.7</priority></url>
 </urlset>
