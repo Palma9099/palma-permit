@@ -42,6 +42,7 @@
   .frame{position:absolute;inset:0;opacity:0;will-change:opacity,transform}
   .frame img{width:100%;height:100%;object-fit:cover;display:block}
   #hvid{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;z-index:1}
+  @media (max-width:820px){.build{height:100vh}.stage{position:relative}.cue{display:none}}
   .poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:0;transition:opacity .4s}
   .vig{position:absolute;inset:0;z-index:3;pointer-events:none;background:linear-gradient(180deg,rgba(5,8,14,.6) 0%,rgba(5,8,14,0) 26%,rgba(5,8,14,0) 50%,rgba(5,8,14,.86) 100%)}
   .herotitle{position:absolute;left:0;right:0;top:46%;transform:translateY(-50%);text-align:center;z-index:6;padding:0 24px}
@@ -125,7 +126,7 @@
 <section class="build" id="build">
   <div class="stage" id="stage">
     <img class="poster" id="poster" src="images/hero/p05.jpg" alt="" />
-    <video id="hvid" muted playsinline preload="auto" poster="images/hero/p01.jpg" src="images/hero/build.mp4"></video>
+    <video id="hvid" muted playsinline poster="images/hero/p01.jpg"></video>
     <div class="vig"></div>
     <div class="herotitle" id="herotitle">
       <span class="kick">● SOUTH FLORIDA BUILDING INTELLIGENCE</span>
@@ -291,22 +292,38 @@
   var scount=document.getElementById("scount"),stitle=document.getElementById("stitle"),sbody=document.getElementById("sbody"),railfill=document.getElementById("railfill");
   var N=STAGES.length,last=-1,targetP=0;
 
-  /* ---- scroll-scrubbed photoreal build video ---- */
+  /* ---- photoreal build video: scroll-scrub on desktop, autoplay-through on mobile (iOS) ---- */
   var vid=document.getElementById("hvid"),poster=document.getElementById("poster");
   var DUR=8,ready=false;
-  vid.addEventListener("loadedmetadata",function(){DUR=vid.duration||8;ready=true;});
+  var isMobile=(window.matchMedia&&window.matchMedia("(pointer:coarse)").matches)||window.innerWidth<=820;
+  vid.addEventListener("loadedmetadata",function(){DUR=vid.duration||DUR;ready=true;});
   vid.addEventListener("error",function(){poster.style.opacity=1;});
-  try{var pr=vid.play();if(pr&&pr.then)pr.then(function(){vid.pause();}).catch(function(){});}catch(e){}
-  var curT=0,vt0=null;
-  (function vloop(ts){if(!vt0)vt0=ts;var dt=Math.min(0.05,(ts-vt0)/1000);vt0=ts;curT+=(targetP*DUR-curT)*Math.min(1,dt*6);if(ready){try{vid.currentTime=curT;}catch(e){}}requestAnimationFrame(vloop);})(0);
+
+  function setStage(idx){if(idx!==last){last=idx;scount.textContent=("0"+(idx+1)).slice(-2)+" / "+("0"+N).slice(-2);stitle.textContent=STAGES[idx].t;sbody.textContent=STAGES[idx].b;dotEls.forEach(function(d,i){d.classList.toggle("on",i<=idx);});}}
+
+  if(isMobile){
+    vid.muted=true;vid.setAttribute("muted","");vid.setAttribute("playsinline","");vid.loop=false;vid.autoplay=true;
+    vid.src="images/hero/build-mobile.mp4";
+    overlay.style.opacity=1;herotitle.style.opacity=1;
+    var kick=function(){var p=vid.play();if(p&&p.catch)p.catch(function(){});};
+    vid.addEventListener("canplay",kick,{once:true});vid.load();kick();
+    vid.addEventListener("timeupdate",function(){var p=DUR?Math.min(1,vid.currentTime/DUR):0;railfill.style.height=(p*100)+"%";herotitle.style.opacity=Math.max(0,1-p*5);setStage(Math.min(N-1,Math.round(p*(N-1))));});
+    vid.addEventListener("ended",function(){setStage(N-1);});
+    vid.addEventListener("click",function(){if(vid.ended){vid.currentTime=0;kick();}});
+  }else{
+    vid.preload="auto";vid.src="images/hero/build.mp4";
+    try{var pr=vid.play();if(pr&&pr.then)pr.then(function(){vid.pause();}).catch(function(){});}catch(e){}
+    var curT=0,vt0=null;
+    (function vloop(ts){if(!vt0)vt0=ts;var dt=Math.min(0.05,(ts-vt0)/1000);vt0=ts;curT+=(targetP*DUR-curT)*Math.min(1,dt*6);if(ready){try{vid.currentTime=curT;}catch(e){}}requestAnimationFrame(vloop);})(0);
+  }
 
   function buildRender(){
-    var r=section.getBoundingClientRect(),total=section.offsetHeight-window.innerHeight,p=Math.max(0,Math.min(1,(-r.top)/total));
+    if(isMobile)return;
+    var r=section.getBoundingClientRect(),total=section.offsetHeight-window.innerHeight,p=total>0?Math.max(0,Math.min(1,(-r.top)/total)):0;
     targetP=p;
     herotitle.style.opacity=Math.max(0,1-p*9);overlay.style.opacity=p>0.06?1:0;
     railfill.style.height=(p*100)+"%";
-    var idx=Math.min(N-1,Math.round(p*(N-1)));
-    if(idx!==last){last=idx;scount.textContent=("0"+(idx+1)).slice(-2)+" / "+("0"+N).slice(-2);stitle.textContent=STAGES[idx].t;sbody.textContent=STAGES[idx].b;dotEls.forEach(function(d,i){d.classList.toggle("on",i<=idx);});}
+    setStage(Math.min(N-1,Math.round(p*(N-1))));
   }
   var nav=document.getElementById("nav"),tk=false;
   window.addEventListener("scroll",function(){if(!tk){requestAnimationFrame(function(){buildRender();nav.classList.toggle("solid",window.scrollY>window.innerHeight*0.9);tk=false;});tk=true;}});
