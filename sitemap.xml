@@ -43,4 +43,21 @@
   <url><loc>https://palma.llc/final-signoff-islamorada</loc><priority>0.7</priority></url>
   <url><loc>https://palma.llc/final-signoff-key-west</loc><priority>0.7</priority></url>
   <url><loc>https://palma.llc/final-signoff-naples</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/results</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/code-violations-hialeah</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/code-violations-coral-gables</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/code-violations-miami-beach</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/code-violations-boca-raton</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/expired-permits-hialeah</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/expired-permits-coral-gables</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/expired-permits-miami-beach</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/expired-permits-boca-raton</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/permit-drawings-hialeah</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/permit-drawings-coral-gables</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/permit-drawings-miami-beach</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/permit-drawings-boca-raton</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/final-signoff-hialeah</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/final-signoff-coral-gables</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/final-signoff-miami-beach</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/final-signoff-boca-raton</loc><priority>0.7</priority></url>
 </urlset>
