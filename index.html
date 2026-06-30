@@ -217,16 +217,65 @@
 </section>
 
 <section class="block" id="tool">
+  <style>
+    .toolgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+    @media(max-width:860px){.toolgrid{grid-template-columns:1fr}}
+    .tcard{display:flex;flex-direction:column;background:var(--panel);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:24px 22px;transition:transform .25s,border-color .25s,box-shadow .25s}
+    .tcard:hover{transform:translateY(-4px);border-color:var(--line);box-shadow:0 18px 40px rgba(0,0,0,.35)}
+    .tcard .tt{display:flex;align-items:center;gap:9px;margin-bottom:14px}
+    .tcard .tt .ic{width:38px;height:38px;border-radius:9px;display:grid;place-items:center;background:rgba(201,162,90,.12);color:var(--gold);font-size:19px}
+    .tcard .tag{font-size:11px;letter-spacing:1px;color:var(--gold);border:1px solid var(--line);border-radius:20px;padding:3px 10px;white-space:nowrap}
+    .tcard h4{font-size:19px;font-weight:600;margin:0 0 7px}
+    .tcard>p{color:var(--muted);font-size:14px;line-height:1.55;margin:0 0 14px}
+    .tcard ul{list-style:none;margin:0 0 20px;padding:0;display:grid;gap:7px}
+    .tcard ul li{color:#cdd5e2;font-size:13px;padding-left:20px;position:relative}
+    .tcard ul li:before{content:"✓";position:absolute;left:0;color:var(--gold)}
+    .tcard .go{margin-top:auto;display:inline-flex;align-items:center;justify-content:center;gap:7px;background:rgba(201,162,90,.12);border:1px solid var(--line);color:var(--gold-lite);font-weight:600;font-size:14px;border-radius:30px;padding:11px 18px;transition:background .2s}
+    .tcard .go:hover{background:var(--gold);color:#0a0f1a}
+    .portalcta{text-align:center;margin-top:34px}
+    .portalcta a{display:inline-flex;align-items:center;gap:9px;background:var(--gold);color:#0a0f1a;font-weight:600;font-size:15px;border-radius:30px;padding:15px 30px;transition:filter .2s}
+    .portalcta a:hover{filter:brightness(1.07)}
+    .portalcta .sub{display:block;color:var(--muted);font-size:13px;margin-top:12px}
+  </style>
   <div class="wrap">
-    <div class="reveal" style="margin-bottom:6px"><span class="eyebrow">● FREE · NO LOGIN</span><h2 class="sec serif">Check any property's <i>permit history.</i></h2><p class="lead">Realtor-grade diagnostics pulled from county records. Enter an address to see permit history and flag unpermitted work.</p></div>
+    <div class="reveal" style="margin-bottom:6px"><span class="eyebrow">● FREE &amp; INSTANT TOOLS</span><h2 class="sec serif">Your South Florida <i>permit toolkit.</i></h2><p class="lead">Four engineer-built tools that move you from question to answer in seconds — feasibility, estimates, permit history, and submittal readiness. Start with the free property check below, then explore the full portal.</p></div>
     <div class="tool reveal">
-      <div class="toolhead"><span style="font-size:20px">⌕</span><span style="letter-spacing:2px;font-size:13px">PERMIT HISTORY &amp; VIOLATION CHECK</span></div>
+      <div class="toolhead"><span style="font-size:20px">⌕</span><span style="letter-spacing:2px;font-size:13px">PERMIT HISTORY &amp; VIOLATION CHECK · FREE</span></div>
       <h3 class="serif">Uncover unpermitted work, free.</h3>
       <div class="row">
         <input id="taddr" placeholder="Enter a Florida property address or folio" />
         <button id="trun">Check this property</button>
       </div>
       <div id="tnote" style="color:var(--muted);font-size:13px;margin-top:14px">Runs a live search on county records in our free tool. No login required.</div>
+    </div>
+
+    <div class="toolgrid">
+      <a class="tcard reveal" href="https://permitready.vercel.app/" target="_blank" rel="noopener" data-tool="permit_ready">
+        <div class="tt"><span class="ic">◆</span><span class="tag">AI · $29</span></div>
+        <h4>Permit Ready</h4>
+        <p>AI feasibility reports for South Florida residential projects — know the cost, timeline, and code requirements before you spend a dollar.</p>
+        <ul><li>Instant cost &amp; timeline estimates</li><li>Zoning, setback &amp; HVHZ flags</li><li>Built for homeowners &amp; developers</li></ul>
+        <span class="go">Generate a report →</span>
+      </a>
+      <a class="tcard reveal" href="https://app.palma.llc/" target="_blank" rel="noopener" data-tool="start_project">
+        <div class="tt"><span class="ic">▶</span><span class="tag">GUIDED · INSTANT</span></div>
+        <h4>Start a Project</h4>
+        <p>Answer a few guided questions and get an instant estimate for permits, plans, inspections, or engineering — and onboard to Palma in minutes.</p>
+        <ul><li>Guided project questionnaire</li><li>Permits, plans, inspections &amp; more</li><li>Scoped on the spot</li></ul>
+        <span class="go">Get started →</span>
+      </a>
+      <a class="tcard reveal" href="https://permit.palma.llc/" target="_blank" rel="noopener" data-tool="palma_permit">
+        <div class="tt"><span class="ic">▤</span><span class="tag">FREE · 30s</span></div>
+        <h4>Palma Permit</h4>
+        <p>Check your permit package against each city's exact requirements before you submit. Catch every missing document and known rejection trap.</p>
+        <ul><li>30 cities &amp; 20+ permit types</li><li>City-specific gotcha &amp; HVHZ alerts</li><li>Built for contractors &amp; expediters</li></ul>
+        <span class="go">Check my package →</span>
+      </a>
+    </div>
+
+    <div class="portalcta reveal">
+      <a href="https://tools.palma.llc/" target="_blank" rel="noopener" data-tool="portal">Explore the full tools portal →</a>
+      <span class="sub">All four tools in one place at tools.palma.llc — plus a free HVHZ permit checklist.</span>
     </div>
   </div>
 </section>
@@ -397,7 +446,11 @@
   btn.onclick=go;addr.addEventListener("keydown",function(e){if(e.key==="Enter")go();});
 
   // conversion tracking: phone clicks anywhere on the page (delegated so it covers the sticky bar too)
-  document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest('a[href^="tel:"]');if(a&&window.track)track("phone_click");});
+  document.addEventListener("click",function(e){
+    if(!e.target.closest)return;
+    var tel=e.target.closest('a[href^="tel:"]');if(tel&&window.track)track("phone_click");
+    var tl=e.target.closest('[data-tool]');if(tl&&window.track)track("tool_click",{tool:tl.getAttribute("data-tool")});
+  });
 
   var lform=document.getElementById("leadform");
   if(lform){lform.addEventListener("submit",function(e){
