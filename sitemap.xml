@@ -7,6 +7,14 @@
   <url><loc>https://palma.llc/code-violations</loc><priority>0.8</priority></url>
   <url><loc>https://palma.llc/drawings-engineering</loc><priority>0.8</priority></url>
   <url><loc>https://palma.llc/inspections-signoff</loc><priority>0.8</priority></url>
+  <url><loc>https://palma.llc/how-it-works</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/guide-expired-permits</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/guide-code-violations</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/es/services</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/es/permitting</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/es/code-violations</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/es/drawings-engineering</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/es/inspections-signoff</loc><priority>0.7</priority></url>
   <url><loc>https://palma.llc/analyze.html</loc><priority>0.7</priority></url>
   <url><loc>https://palma.llc/cities.html</loc><priority>0.7</priority></url>
   <url><loc>https://palma.llc/pricing.html</loc><priority>0.7</priority></url>
