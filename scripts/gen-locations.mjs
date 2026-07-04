@@ -103,9 +103,14 @@ function faqHtml(loc) {
     .join('');
 }
 
-function otherLinks(all, current) {
-  return all
-    .filter((l) => l.slug !== current.slug)
+function otherLinks(all, current, max = 9) {
+  // Region-first internal linking: surface same-region metros before the rest,
+  // capped so the block stays a clean, relevant mesh rather than a link dump.
+  const others = all.filter((l) => l.slug !== current.slug);
+  const sameRegion = others.filter((l) => l.region === current.region);
+  const rest = others.filter((l) => l.region !== current.region);
+  const ordered = [...sameRegion, ...rest].slice(0, max);
+  return ordered
     .map(
       (l) =>
         `<a href="/locations/${l.slug}">Permits &amp; compliance in ${esc(l.cityName)} (${esc(
