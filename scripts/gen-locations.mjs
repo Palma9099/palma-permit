@@ -52,6 +52,53 @@ const REGION_ES = {
 };
 
 // ---------------------------------------------------------------------------
+// Municipal citation / violation types. These are verifiable, universally-real
+// Florida code-violation CATEGORIES — not fabricated ordinance section numbers.
+// Each becomes a citation page per city (/violations/<location>/<slug>), and
+// the per-city uniqueness comes from the location's county, building dept, and
+// local flood/wind notes. If real jurisdiction-specific citations are supplied,
+// swap label/what/fix here and everything downstream updates.
+// ---------------------------------------------------------------------------
+const VIOLATIONS = [
+  {
+    slug: 'unpermitted-work',
+    en: { label: 'Unpermitted Work & Alterations', tag: 'UNPERMITTED WORK',
+      what: 'additions, renovations, or structural changes made without a required building permit',
+      fix: 'after-the-fact permitting, as-built or sealed drawings where the code requires them, and the re-inspections needed to legalize the work' },
+    es: { label: 'Trabajo Sin Permiso y Alteraciones', tag: 'TRABAJO SIN PERMISO',
+      what: 'ampliaciones, renovaciones o cambios estructurales hechos sin el permiso de construcción requerido',
+      fix: 'permisos posteriores al hecho, planos as-built o sellados cuando el código lo exige, y las reinspecciones necesarias para legalizar el trabajo' },
+  },
+  {
+    slug: 'expired-permits',
+    en: { label: 'Expired Permits', tag: 'EXPIRED PERMITS',
+      what: 'permits that were pulled but never finalized and have since lapsed',
+      fix: 'reactivating or re-permitting the work, completing the missing inspections, and reaching final sign-off' },
+    es: { label: 'Permisos Vencidos', tag: 'PERMISOS VENCIDOS',
+      what: 'permisos que se sacaron pero nunca se finalizaron y ya han caducado',
+      fix: 'reactivar o volver a permisar el trabajo, completar las inspecciones faltantes y llegar a la aprobación final' },
+  },
+  {
+    slug: 'open-permits',
+    en: { label: 'Open Permits', tag: 'OPEN PERMITS',
+      what: 'permits still open on the record because a final inspection was never passed — a frequent surprise at closing',
+      fix: 'pulling the record, identifying the missing inspections, and coordinating the closeout so a sale can move forward' },
+    es: { label: 'Permisos Abiertos', tag: 'PERMISOS ABIERTOS',
+      what: 'permisos que siguen abiertos en el registro porque nunca se aprobó la inspección final — una sorpresa frecuente en el cierre',
+      fix: 'extraer el registro, identificar las inspecciones faltantes y coordinar el cierre para que una venta pueda avanzar' },
+  },
+  {
+    slug: 'code-violations-liens',
+    en: { label: 'Code Violations & Liens', tag: 'CODE VIOLATIONS',
+      what: 'code-enforcement cases and liens for unpermitted work or property-maintenance issues, often with daily fines accruing',
+      fix: 'mapping the corrections, handling after-the-fact permitting through licensed pros, and pursuing case closure and fine mitigation with the jurisdiction' },
+    es: { label: 'Violaciones de Código y Gravámenes', tag: 'VIOLACIONES DE CÓDIGO',
+      what: 'casos de cumplimiento de código y gravámenes por trabajo sin permiso o problemas de mantenimiento, a menudo con multas diarias',
+      fix: 'trazar las correcciones, gestionar los permisos posteriores al hecho con profesionales con licencia, y buscar el cierre del caso y la mitigación de multas con la jurisdicción' },
+  },
+];
+
+// ---------------------------------------------------------------------------
 // Language packs. Each returns the human-readable strings for one language;
 // the template pulls everything from here so EN/ES stay structurally identical.
 // ---------------------------------------------------------------------------
@@ -285,7 +332,7 @@ ${hreflang(loc.slug)}
     <div class="svcgrid">${svcHtml}</div>
   </div>
 </section>
-
+${localViolationList(loc, L)}
 <section class="block alt">
   <div class="wrap">
     <h2 class="sec serif">${L.saysTitle}</h2>
@@ -421,9 +468,255 @@ function hubPage(all, L) {
 `;
 }
 
+// ---------------------------------------------------------------------------
+// LocalViolationList — minimalist text-link grid on each city page, linking to
+// that city's citation pages. Placed below the service stack.
+// ---------------------------------------------------------------------------
+function localViolationList(loc, L) {
+  const es = L.code === 'es';
+  const base = es ? '/es/violations' : '/violations';
+  const title = es
+    ? `Violaciones de código y citaciones comunes en <i>${esc(loc.cityName)}</i>`
+    : `Common Code Violations &amp; Citations in <i>${esc(loc.cityName)}</i>`;
+  const sub = es
+    ? `Los problemas que resolvemos con más frecuencia para propietarios en ${esc(loc.countyName)}.`
+    : `The issues we resolve most often for ${esc(loc.countyName)} property owners.`;
+  const links = VIOLATIONS
+    .map((v) => `<a href="${base}/${loc.slug}/${v.slug}">${esc(v[L.code].label)} ${es ? 'en' : 'in'} ${esc(loc.cityName)} →</a>`)
+    .join('');
+  return `
+<section class="block alt">
+  <div class="wrap">
+    <h2 class="sec serif" style="font-size:22px">${title}</h2>
+    <p style="color:var(--muted);margin-top:6px;font-size:14px">${sub}</p>
+    <div class="links">${links}</div>
+  </div>
+</section>`;
+}
+
+// ---------------------------------------------------------------------------
+// Citation page — /violations/<location-slug>/<citation-slug>. Breadcrumb links
+// back to the parent city page (link equity); lead form + tool handoff carry
+// parentLocation + citationCode so sales sees "Lead Source Area | Violation".
+// ---------------------------------------------------------------------------
+function violationPage(loc, v, L) {
+  const es = L.code === 'es';
+  const vd = v[L.code];
+  const selfUrl = `https://palma.llc/${es ? 'es/' : ''}violations/${loc.slug}/${v.slug}`;
+  const enUrl = `https://palma.llc/violations/${loc.slug}/${v.slug}`;
+  const esUrl = `https://palma.llc/es/violations/${loc.slug}/${v.slug}`;
+  const cityPath = `${es ? '/es' : ''}/locations/${loc.slug}`;
+  const areasPath = `${es ? '/es' : ''}/locations`;
+  const toggleHref = `/${es ? '' : 'es/'}violations/${loc.slug}/${v.slug}`;
+  const toggleLabel = es ? 'EN' : 'ES';
+  const vBase = es ? '/es/violations' : '/violations';
+
+  const title = es
+    ? `${vd.label} en ${loc.cityName}, FL | Palma`
+    : `${vd.label} in ${loc.cityName}, FL | Palma`;
+  const metaDesc = es
+    ? `¿Tienes ${vd.label.toLowerCase()} en ${loc.cityName}, ${loc.countyName}? Palma coordina la resolución con profesionales con licencia en Florida — de la primera llamada a la aprobación final. Consulta gratis: ${PHONE}.`
+    : `Dealing with ${vd.label.toLowerCase()} in ${loc.cityName}, ${loc.countyName}? Palma coordinates the fix through licensed Florida pros — first call to final sign-off. Free check: ${PHONE}.`;
+  const h1 = es
+    ? `${esc(vd.label)}<br><i>en ${esc(loc.cityName)}, ${esc(loc.countyName)}.</i>`
+    : `${esc(vd.label)}<br><i>in ${esc(loc.cityName)}, ${esc(loc.countyName)}.</i>`;
+
+  // Breadcrumb — the crawlable link back to the city page (link equity).
+  const crumb = es
+    ? `<a href="${areasPath}">Áreas de servicio</a> / <a href="${cityPath}">${esc(loc.cityName)}</a> / <span>${esc(vd.label)}</span>`
+    : `<a href="${areasPath}">Service areas</a> / <a href="${cityPath}">${esc(loc.cityName)}</a> / <span>${esc(vd.label)}</span>`;
+
+  const lead = es
+    ? `Si tu propiedad en ${esc(loc.cityName)} tiene ${esc(vd.what)}, Palma Building Solutions lo resuelve: extraemos el registro de ${esc(loc.countyName)}, confirmamos el problema exacto y coordinamos ${esc(vd.fix)} — a través de una red de ingenieros y contratistas con licencia independiente en Florida.`
+    : `If your ${esc(loc.cityName)} property has ${esc(vd.what)}, Palma Building Solutions resolves it: we pull the ${esc(loc.countyName)} record, confirm exactly what you're dealing with, and coordinate ${esc(vd.fix)} — through a network of independently licensed Florida engineers and contractors.`;
+
+  const howTitle = es ? `Cómo Palma resuelve <i>${esc(vd.label.toLowerCase())}</i> en ${esc(loc.cityName)}` : `How Palma resolves <i>${esc(vd.label.toLowerCase())}</i> in ${esc(loc.cityName)}`;
+  const howBody = es
+    ? `La mayoría del trabajo en ${esc(loc.countyName)} se tramita a través de ${esc(loc.buildingDeptName)}, aunque las ciudades incorporadas suelen usar sus propios portales. ${esc(L.localNote(loc))}`
+    : `Most ${esc(loc.countyName)} work runs through the ${esc(loc.buildingDeptName)}, though incorporated cities often permit on their own portals. ${esc(L.localNote(loc))}`;
+
+  const siblingTitle = es ? `Otros problemas que resolvemos en <i>${esc(loc.cityName)}</i>` : `Other issues we resolve in <i>${esc(loc.cityName)}</i>`;
+  const siblings = VIOLATIONS.filter((x) => x.slug !== v.slug)
+    .map((x) => `<a href="${vBase}/${loc.slug}/${x.slug}">${esc(x[L.code].label)} ${es ? 'en' : 'in'} ${esc(loc.cityName)} →</a>`)
+    .join('');
+  const backToCity = es ? `← Volver a ${esc(loc.cityName)}` : `← Back to ${esc(loc.cityName)}`;
+
+  const faq = [
+    {
+      q: es ? `¿Cómo resuelvo ${vd.label.toLowerCase()} en ${loc.cityName}?` : `How do I resolve ${vd.label.toLowerCase()} in ${loc.cityName}?`,
+      a: es
+        ? `Palma extrae el registro de ${loc.countyName}, confirma el problema exacto y coordina la solución — ${vd.fix} — con profesionales con licencia en Florida, de la primera llamada a la aprobación final. Empieza con una consulta gratuita de la propiedad.`
+        : `Palma pulls the ${loc.countyName} record, confirms the exact issue, and coordinates the fix — ${vd.fix} — through licensed Florida pros, from first call to final sign-off. Start with a free property check.`,
+    },
+    {
+      q: es ? '¿Palma es un contratista o ingeniero?' : 'Is Palma a contractor or engineer?',
+      a: es
+        ? 'No. Palma Building Solutions es una empresa de permisos y coordinación de proyectos. La ingeniería y la construcción las realiza una red de profesionales con licencia independiente en Florida.'
+        : 'No. Palma Building Solutions is a permitting and project-coordination company. The engineering and construction are performed by a vetted network of independently licensed Florida professionals.',
+    },
+  ];
+  const faqHtml = faq.map((f) => `<details><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join('');
+
+  const ld = JSON.stringify([
+    { '@context': 'https://schema.org', '@type': 'Service', serviceType: `${vd.label} resolution`,
+      provider: { '@type': 'ProfessionalService', name: 'Palma Building Solutions', telephone: '+1-305-393-0690', url: 'https://palma.llc/' },
+      areaServed: { '@type': 'City', name: loc.cityName }, description: metaDesc, url: selfUrl },
+    { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) },
+    { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+      { '@type': 'ListItem', position: 1, name: es ? 'Inicio' : 'Home', item: es ? 'https://palma.llc/es' : 'https://palma.llc/' },
+      { '@type': 'ListItem', position: 2, name: es ? 'Áreas de servicio' : 'Service areas', item: `https://palma.llc${areasPath}` },
+      { '@type': 'ListItem', position: 3, name: loc.cityName, item: `https://palma.llc${cityPath}` },
+      { '@type': 'ListItem', position: 4, name: vd.label },
+    ] },
+  ]);
+
+  // Lead context baked into the message so sales sees the source + violation.
+  const leadCtx = `Lead Source Area: ${loc.cityName} | Violation: ${vd.label}`;
+
+  return `<!DOCTYPE html>
+<html lang="${L.htmlLang}">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>${esc(title)}</title>
+<meta name="description" content="${esc(metaDesc)}" />
+<link rel="canonical" href="${selfUrl}" />
+<link rel="alternate" hreflang="en" href="${enUrl}" />
+<link rel="alternate" hreflang="es" href="${esUrl}" />
+<link rel="alternate" hreflang="x-default" href="${enUrl}" />
+<meta name="theme-color" content="#f6f2e9" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=${GA_ID}"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');window.track=function(n,p){try{gtag('event',n,p||{});}catch(e){}};</script>
+<meta property="og:type" content="website" />
+<meta property="og:url" content="${selfUrl}" />
+<meta property="og:title" content="${esc(title)}" />
+<meta property="og:description" content="${esc(metaDesc)}" />
+<meta property="og:image" content="${OG_IMAGE}" />
+<script type="application/ld+json">${ld}</script>
+<link rel="stylesheet" href="/svc.css" />
+<style>
+  .lookup{background:var(--ink2);color:var(--paper);border-radius:14px;padding:24px 26px;margin-top:24px;max-width:820px}
+  .lookup .lab{color:#e7b9a6;font-size:12px;letter-spacing:.16em;font-weight:700;text-transform:uppercase}
+  .lookup b{display:block;font-family:"Fraunces",Georgia,serif;font-weight:500;color:#fff;font-size:20px;margin:9px 0 6px}
+  .lookup p{color:#c9c1b1;font-size:14px;line-height:1.55;margin:0 0 14px;max-width:640px}
+  .lookup .row{display:flex;gap:10px;flex-wrap:wrap}
+  .lookup input{flex:1;min-width:220px;background:#322d22;border:1px solid #4a4435;color:#fff;border-radius:8px;padding:12px 13px;font-size:15px}
+  .lookup input::placeholder{color:#9a9486}
+  .lookup button{background:var(--accent);color:#fff;font-weight:600;border:0;border-radius:8px;padding:12px 20px;font-size:15px;cursor:pointer}
+  .lookup button:hover{background:var(--accent2)}
+  .lookup .fine{color:#9a9486;font-size:12.5px;margin-top:11px}
+</style>
+</head>
+<body>
+<nav>
+  <a class="brand" href="${L.nav.brandHref}"><span class="mark">▲</span><b>PALMA</b><span>BUILDING SOLUTIONS</span></a>
+  <div class="navlinks"><a href="${L.nav.s[0]}">${L.nav.s[1]}</a><a href="${areasPath}">${es ? 'Áreas' : 'Areas'}</a><a href="#estimate">${L.nav.c[1]}</a><a href="${toggleHref}" title="${es ? 'English' : 'Español'}">${toggleLabel}</a><a class="navcta" href="tel:${PHONE_TEL}">${PHONE}</a></div>
+</nav>
+
+<div class="wrap" style="padding-top:18px">
+  <nav class="breadcrumb" aria-label="Breadcrumb">${crumb}</nav>
+</div>
+
+<header class="hero" style="padding-top:8px">
+  <div class="wrap">
+    <span class="eyebrow">● ${esc(vd.tag)} · ${esc(loc.cityName).toUpperCase()}</span>
+    <h1 class="serif">${h1}</h1>
+    <p class="lead">${lead}</p>
+    <div class="btns"><a class="btn solid" href="#estimate">${L.btnEstimate}</a><a class="btn ghost" href="tel:${PHONE_TEL}">${L.btnCall}</a></div>
+
+    <div class="lookup">
+      <span class="lab">${esc(L.toolLab)}</span>
+      <b>${es ? `Mira qué hay registrado para tu propiedad en ${esc(loc.cityName)}.` : `See what's on record for your ${esc(loc.cityName)} property.`}</b>
+      <p>${es ? `Ingresa la dirección. Extraemos los registros de propiedad y permisos de ${esc(loc.countyName)} y detectamos trabajo sin permiso en segundos.` : `Enter the address. We pull ${esc(loc.countyName)} property and permit records and flag unpermitted work in seconds.`}</p>
+      <div class="row">
+        <input id="taddr" placeholder="${es ? `Ingresa una dirección o folio en ${esc(loc.cityName)}` : `Enter ${article(loc.cityName)} ${esc(loc.cityName)} property address or folio`}" aria-label="${esc(loc.cityName)}" />
+        <button id="trun" type="button">${L.toolBtn}</button>
+      </div>
+      <div class="fine">${L.toolFine}</div>
+    </div>
+  </div>
+</header>
+
+<section class="block">
+  <div class="wrap">
+    <h2 class="sec serif">${howTitle}</h2>
+    <p class="lead2" style="max-width:760px">${howBody}</p>
+    <ul class="handle">${L.handleItems(loc).map((i) => `<li>${i}</li>`).join('')}</ul>
+  </div>
+</section>
+
+<section class="block alt">
+  <div class="wrap">
+    <h2 class="sec serif">${es ? 'Preguntas' : 'Questions'} <i>${es ? 'frecuentes' : 'answered'}</i></h2>
+    <div class="faq">${faqHtml}</div>
+  </div>
+</section>
+
+<section class="block" id="estimate">
+  <div class="wrap">
+    <span class="eyebrow">${L.estimateEyebrow}</span>
+    <h2 class="sec serif">${es ? `Resuelve esto en <i>${esc(loc.cityName)}</i>` : `Resolve this in <i>${esc(loc.cityName)}</i>`}</h2>
+    <p class="lead">${L.estimateLead}</p>
+    <form class="lf" id="leadform" novalidate>
+      <div class="two"><input id="lf-name" placeholder="${esc(L.form.name)}" autocomplete="name"><input id="lf-phone" type="tel" placeholder="${esc(L.form.phone)}" autocomplete="tel"></div>
+      <div class="two"><input id="lf-email" type="email" placeholder="${esc(L.form.email)}" autocomplete="email"><input id="lf-addr" placeholder="${esc(L.form.addr)}" autocomplete="street-address"></div>
+      <textarea id="lf-msg" placeholder="${esc(L.form.msg)}"></textarea>
+      <button class="submit" id="lf-submit" type="submit">${esc(L.form.submit)}</button>
+      <div class="status" id="lf-status" role="status"></div>
+    </form>
+  </div>
+</section>
+
+<section class="block alt">
+  <div class="wrap">
+    <h2 class="sec serif" style="font-size:22px">${siblingTitle}</h2>
+    <div class="links">${siblings}</div>
+    <div style="margin-top:16px"><a href="${cityPath}" style="color:var(--gold);font-weight:600">${backToCity}</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    ${L.footer}
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btn=document.getElementById("trun"),addr=document.getElementById("taddr");
+  if(btn&&addr){
+    var go=function(){var a=encodeURIComponent((addr.value||"").trim());if(window.track)track("tool_open",{page:"${loc.slug}",violation:"${v.slug}",lang:"${L.code}",has_address:!!a});window.open("https://permit-check-mvp.vercel.app/"+(a?("?address="+a+"&src=${loc.slug}&v=${v.slug}"):("?src=${loc.slug}&v=${v.slug}")),"_blank");};
+    btn.onclick=go;addr.addEventListener("keydown",function(e){if(e.key==="Enter")go();});
+  }
+  document.addEventListener("click",function(e){if(!e.target.closest)return;var t=e.target.closest('a[href^="tel:"]');if(t&&window.track)track("phone_click");});
+  var lf=document.getElementById("leadform"); if(!lf)return;
+  lf.addEventListener("submit",function(e){
+    e.preventDefault();
+    var v=function(id){return (document.getElementById(id).value||"").trim();};
+    var name=v("lf-name"),phone=v("lf-phone"),email=v("lf-email"),ad=v("lf-addr"),msg=v("lf-msg");
+    var st=document.getElementById("lf-status"),sb=document.getElementById("lf-submit");
+    st.className="status";st.textContent="";
+    if(!name||!phone||!/.+@.+\\..+/.test(email)){st.className="status err";st.textContent=${JSON.stringify(L.form.invalid)};return;}
+    var body={name:name,email:email,message:"[${L.form.tag}]\\n${leadCtx}\\nPhone: "+phone+"\\nAddress: "+(ad||"-")+"\\n\\n"+(msg||"-")};
+    sb.disabled=true;sb.textContent=${JSON.stringify(L.form.sending)};
+    fetch("/api/support",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)})
+      .then(function(r){return r.json().then(function(j){return {ok:r.ok,j:j};});})
+      .then(function(res){if(res.ok){if(window.track)track("generate_lead",{page:"${loc.slug}",violation:"${v.slug}",lang:"${L.code}"});lf.reset();st.className="status ok";st.textContent=${JSON.stringify(L.form.ok)};}else{st.className="status err";st.textContent=(res.j&&res.j.message)||${JSON.stringify(L.form.gerr)};}})
+      .catch(function(){st.className="status err";st.textContent=${JSON.stringify(L.form.nerr)};})
+      .finally(function(){sb.disabled=false;sb.textContent=${JSON.stringify(L.form.submit)};});
+  });
+})();
+</script>
+</body>
+</html>
+`;
+}
+
 // ---- run ----
 const locations = JSON.parse(readFileSync(DATA, 'utf8'));
 let total = 0;
+let violTotal = 0;
 for (const code of ['en', 'es']) {
   const L = pack(code);
   const outDir = resolve(ROOT, L.outDir);
@@ -436,8 +729,22 @@ for (const code of ['en', 'es']) {
     total++;
   }
   writeFileSync(resolve(outDir, 'index.html'), hubPage(locations, L));
+
+  // Citation pages: violations/<location>/<citation>.html
+  const vBaseDir = resolve(ROOT, code === 'es' ? 'es/violations' : 'violations');
+  for (const loc of locations) {
+    const locDir = resolve(vBaseDir, loc.slug);
+    if (!existsSync(locDir)) mkdirSync(locDir, { recursive: true });
+    for (const v of VIOLATIONS) {
+      const html = violationPage(loc, v, L);
+      const leak = html.match(/\{\{[^}]+\}\}/);
+      if (leak) { console.error(`LEAK ${code}/${loc.slug}/${v.slug}: ${leak[0]}`); process.exit(1); }
+      writeFileSync(resolve(locDir, `${v.slug}.html`), html);
+      violTotal++;
+    }
+  }
 }
-console.log(`Generated ${total} location pages (EN+ES) + 2 hubs.`);
+console.log(`Generated ${total} location pages + ${violTotal} citation pages (EN+ES) + 2 hubs.`);
 
 if (process.argv.includes('--wizard')) {
   const arr = locations.map((l) => ({ c: l.cityName, k: l.countyName, s: l.slug }));
@@ -452,5 +759,7 @@ if (process.argv.includes('--links')) {
   lines.push('  <url><loc>https://palma.llc/es/locations</loc><priority>0.7</priority></url>');
   for (const l of locations) lines.push(`  <url><loc>https://palma.llc/locations/${l.slug}</loc><priority>0.8</priority></url>`);
   for (const l of locations) lines.push(`  <url><loc>https://palma.llc/es/locations/${l.slug}</loc><priority>0.7</priority></url>`);
+  for (const l of locations) for (const v of VIOLATIONS) lines.push(`  <url><loc>https://palma.llc/violations/${l.slug}/${v.slug}</loc><priority>0.7</priority></url>`);
+  for (const l of locations) for (const v of VIOLATIONS) lines.push(`  <url><loc>https://palma.llc/es/violations/${l.slug}/${v.slug}</loc><priority>0.6</priority></url>`);
   console.log(lines.join('\n'));
 }

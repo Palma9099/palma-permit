@@ -78,6 +78,10 @@ ul.handle li:before{content:"";position:absolute;left:0;top:9px;width:14px;heigh
 .links{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}
 .links a{border:1px solid var(--line2);border-radius:4px;padding:8px 14px;font-size:13.5px;color:var(--ink);transition:background .15s,color .15s,border-color .15s}
 .links a:hover{border-color:var(--ink);background:var(--ink);color:var(--paper)}
+.breadcrumb{font-size:13px;color:var(--muted);letter-spacing:.01em}
+.breadcrumb a{color:var(--accent);font-weight:600}
+.breadcrumb a:hover{text-decoration:underline}
+.breadcrumb span{color:var(--ink)}
 
 /* lead form */
 .lf{max-width:580px;margin:22px 0 0;display:grid;gap:13px}.lf .two{display:grid;grid-template-columns:1fr 1fr;gap:13px}
