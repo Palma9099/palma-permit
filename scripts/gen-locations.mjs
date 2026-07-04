@@ -362,7 +362,7 @@ ${localViolationList(loc, L)}
     </form>
   </div>
 </section>
-
+${ahjSection(loc, L)}
 ${codeAndNews(loc, L)}
 <section class="block">
   <div class="wrap">
@@ -642,7 +642,7 @@ function violationPage(loc, v, L) {
 <section class="block">
   <div class="wrap">
     <h2 class="sec serif">${howTitle}</h2>
-    <p class="lead2" style="max-width:760px">${howBody}</p>
+    ${ahjParas(loc, L) || `<p class="lead2" style="max-width:760px">${howBody}</p>`}
     <ul class="handle">${L.handleItems(loc).map((i) => `<li>${i}</li>`).join('')}</ul>
   </div>
 </section>
@@ -653,7 +653,7 @@ function violationPage(loc, v, L) {
     <div class="faq">${faqHtml}</div>
   </div>
 </section>
-
+${codeAndNews(loc, L)}
 <section class="block" id="estimate">
   <div class="wrap">
     <span class="eyebrow">${L.estimateEyebrow}</span>
@@ -751,6 +751,29 @@ function codeAndNews(loc, L) {
 </section>`;
   }
   return out;
+}
+
+// AHJ verbiage - a paragraph or two of real, jurisdiction-specific permitting
+// context (the Authority Having Jurisdiction). Optional per city via `ahjInfo`
+// / `ahjInfoEs` (array of paragraph strings). Shared across that city's pages
+// since it describes the AHJ, not a single violation.
+function ahjParas(loc, L) {
+  const arr = L.code === 'es' ? loc.ahjInfoEs : loc.ahjInfo;
+  if (!Array.isArray(arr) || !arr.length) return null;
+  return arr.map((p) => `<p class="lead2" style="max-width:820px;margin-top:14px">${esc(p)}</p>`).join('');
+}
+function ahjSection(loc, L) {
+  const paras = ahjParas(loc, L);
+  if (!paras) return '';
+  const es = L.code === 'es';
+  const title = es ? `Permisos en <i>${esc(loc.cityName)}</i>` : `Permitting in <i>${esc(loc.cityName)}</i>`;
+  return `
+<section class="block">
+  <div class="wrap">
+    <h2 class="sec serif" style="font-size:22px">${title}</h2>
+    ${paras}
+  </div>
+</section>`;
 }
 
 // ---- run ----
