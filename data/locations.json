@@ -232,5 +232,70 @@
     "metaDescription": "Close expired permits and clear code violations in St. Augustine and St. Johns County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
     "localNote": "The City of St. Augustine and unincorporated St. Johns County permit separately, and work in the historic district carries added architectural-review requirements. As a fast-growing Atlantic-coast county in the wind-borne debris region, oceanfront and Intracoastal parcels also sit in mapped flood zones.",
     "nearby": ["St. Augustine Beach", "Ponte Vedra", "Nocatee", "St. Johns"]
+  },
+  {
+    "slug": "new-port-richey-pasco-county",
+    "cityName": "New Port Richey",
+    "countyName": "Pasco County",
+    "region": "Tampa Bay",
+    "buildingDeptName": "Pasco County Building Construction Services",
+    "permitPortal": "Pasco County online permitting",
+    "commonViolation": "unpermitted additions and expired permits",
+    "heroTitle": "Resolve Building Permits & Code Violations in New Port Richey",
+    "metaDescription": "Close expired permits and clear code violations in New Port Richey and Pasco County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
+    "localNote": "New Port Richey, Zephyrhills, and Dade City permit on their own portals while unincorporated Pasco uses the county — and Pasco is one of the Tampa Bay area's fastest-growing counties. West Pasco's coastal edge sits in the wind-borne debris region and flood zones, while inland east Pasco around Wesley Chapel is mostly standard wind-load design.",
+    "nearby": ["Wesley Chapel", "Zephyrhills", "Dade City", "Land O' Lakes"]
+  },
+  {
+    "slug": "clermont-lake-county",
+    "cityName": "Clermont",
+    "countyName": "Lake County",
+    "region": "Greater Orlando",
+    "buildingDeptName": "Lake County Building Services",
+    "permitPortal": "Lake County online permitting",
+    "commonViolation": "unpermitted alterations and expired permits",
+    "heroTitle": "Resolve Building Permits & Code Violations in Clermont",
+    "metaDescription": "Close expired permits and resolve code violations in Clermont and Lake County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
+    "localNote": "Clermont, Leesburg, Mount Dora, and other Lake County cities permit separately from the county Building Services division. On the hilly, lake-dotted western edge of the Orlando metro, most review comments center on standard wind-load and energy-code compliance, with lakefront parcels occasionally in mapped flood zones.",
+    "nearby": ["Leesburg", "Mount Dora", "Tavares", "Minneola"]
+  },
+  {
+    "slug": "punta-gorda-charlotte-county",
+    "cityName": "Punta Gorda",
+    "countyName": "Charlotte County",
+    "region": "Southwest Florida",
+    "buildingDeptName": "Charlotte County Building Construction Services",
+    "permitPortal": "Charlotte County online permitting",
+    "commonViolation": "unpermitted repairs, open permits, and expired permits",
+    "heroTitle": "Resolve Building Permits & Code Violations in Punta Gorda",
+    "metaDescription": "Close expired permits and resolve code violations in Punta Gorda and Charlotte County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
+    "localNote": "The City of Punta Gorda and unincorporated Charlotte County (including Port Charlotte) permit separately. This Gulf-coast county took a direct hit from Hurricane Ian, so storm-repair work makes open and expired permits especially common — and with much of the county in the wind-borne debris region and mapped flood zones, the FEMA 50% substantial-improvement rule frequently applies.",
+    "nearby": ["Port Charlotte", "Englewood", "Rotonda West", "Charlotte Harbor"]
+  },
+  {
+    "slug": "destin-okaloosa-county",
+    "cityName": "Destin",
+    "countyName": "Okaloosa County",
+    "region": "Northwest Florida",
+    "buildingDeptName": "Okaloosa County Building Division",
+    "permitPortal": "Okaloosa County online permitting",
+    "commonViolation": "unpermitted alterations and expired permits",
+    "heroTitle": "Resolve Building Permits & Code Violations in Destin",
+    "metaDescription": "Close expired permits and clear code violations in Destin and Okaloosa County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
+    "localNote": "Destin, Fort Walton Beach, Crestview, and Niceville permit on their own portals while unincorporated Okaloosa uses the county. The Emerald Coast carries some of Florida's highest design wind speeds and sits in the wind-borne debris region, so opening protection and product approvals are central to review — and beachfront and harbor parcels fall in coastal flood zones.",
+    "nearby": ["Fort Walton Beach", "Niceville", "Crestview", "Mary Esther"]
+  },
+  {
+    "slug": "orange-park-clay-county",
+    "cityName": "Orange Park",
+    "countyName": "Clay County",
+    "region": "Northeast Florida",
+    "buildingDeptName": "Clay County Building Division",
+    "permitPortal": "Clay County online permitting",
+    "commonViolation": "unpermitted additions and expired permits",
+    "heroTitle": "Resolve Building Permits & Code Violations in Orange Park",
+    "metaDescription": "Close expired permits and resolve code violations in Orange Park and Clay County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
+    "localNote": "Orange Park, Green Cove Springs, and Keystone Heights permit separately from unincorporated Clay County. On the southwest side of the Jacksonville metro, most work here is inland and driven by standard wind-load and energy-code compliance, with St. Johns River and tributary parcels occasionally in mapped flood zones.",
+    "nearby": ["Fleming Island", "Green Cove Springs", "Middleburg", "Keystone Heights"]
   }
 ]

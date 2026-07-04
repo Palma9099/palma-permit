@@ -79,4 +79,9 @@
   <url><loc>https://palma.llc/locations/tallahassee-leon-county</loc><priority>0.8</priority></url>
   <url><loc>https://palma.llc/locations/pensacola-escambia-county</loc><priority>0.8</priority></url>
   <url><loc>https://palma.llc/locations/st-augustine-st-johns-county</loc><priority>0.8</priority></url>
+  <url><loc>https://palma.llc/locations/new-port-richey-pasco-county</loc><priority>0.8</priority></url>
+  <url><loc>https://palma.llc/locations/clermont-lake-county</loc><priority>0.8</priority></url>
+  <url><loc>https://palma.llc/locations/punta-gorda-charlotte-county</loc><priority>0.8</priority></url>
+  <url><loc>https://palma.llc/locations/destin-okaloosa-county</loc><priority>0.8</priority></url>
+  <url><loc>https://palma.llc/locations/orange-park-clay-county</loc><priority>0.8</priority></url>
 </urlset>
