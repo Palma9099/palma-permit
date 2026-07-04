@@ -237,7 +237,7 @@
     .portalcta a:hover{background:var(--accent2)}
     .portalcta .sub{display:block;color:var(--muted);font-size:13px;margin-top:12px}
     /* Diagnostic wizard — one guided question replaces the multi-tool grid */
-    .wizpaths{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}
+    .wizpaths{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:26px;max-width:820px}
     @media(max-width:860px){.wizpaths{grid-template-columns:1fr}}
     .wizpath{display:flex;flex-direction:column;gap:9px;text-align:left;background:var(--paper2);border:1px solid var(--line);border-radius:14px;padding:22px 22px;cursor:pointer;font:inherit;color:var(--ink);transition:transform .2s,border-color .2s,box-shadow .2s}
     .wizpath:hover{transform:translateY(-3px);border-color:var(--accent)}
@@ -277,12 +277,6 @@
         <span class="ws">Addition, renovation, pool, or new build — get scoped and estimated on the spot.</span>
         <span class="wgo">Get an estimate →</span>
       </button>
-      <button class="wizpath" type="button" data-path="contractor">
-        <span class="wic">▤</span>
-        <span class="wt">I'm a Contractor checking a Permit Package</span>
-        <span class="ws">Verify a submittal against a city's exact requirements before you file it.</span>
-        <span class="wgo">Check a package →</span>
-      </button>
     </div>
 
     <!-- Path 1 — Code Violation / Expired Permit → free property check -->
@@ -315,18 +309,8 @@
       <div style="margin-top:16px;color:#9a9486;font-size:13px">Prefer to talk it through? <a href="#contact" style="color:#e8915f;font-weight:600">Request a free estimate →</a></div>
     </div>
 
-    <!-- Path 3 — Contractor → Palma Permit package check -->
-    <div class="tool wizpanel" id="wp-contractor" hidden>
-      <div class="toolhead"><span style="font-size:20px">▤</span><span style="letter-spacing:2px;font-size:13px">CONTRACTOR TOOLS</span></div>
-      <h3 class="serif">Check your package before you submit.</h3>
-      <p style="color:#c9c2b4;font-size:14.5px;margin:8px 0 0;line-height:1.55">Palma Permit checks your package against each city's exact requirements — 30 cities, 20+ permit types — and catches every missing document and known rejection trap.</p>
-      <div class="wizbtns">
-        <a class="wbtn primary" href="https://permit.palma.llc/" target="_blank" rel="noopener" data-tool="palma_permit">Check my package →</a>
-      </div>
-    </div>
-
     <div class="portalcta reveal">
-      <a href="https://tools.palma.llc/" target="_blank" rel="noopener" data-tool="portal">Or explore all four tools →</a>
+      <a href="https://tools.palma.llc/" target="_blank" rel="noopener" data-tool="portal">Or explore our tools →</a>
       <span class="sub">Every Palma tool in one place at tools.palma.llc — plus a free HVHZ permit checklist.</span>
     </div>
   </div>
@@ -520,7 +504,7 @@
     // Deep-link support: /#tool?path=violation (or #violation) pre-opens a panel.
     var hash=(location.hash||"").replace("#","");
     var qp=new URLSearchParams(location.search).get("path");
-    var pre=qp||(["violation","project","contractor"].indexOf(hash)>=0?hash:"");
+    var pre=qp||(["violation","project"].indexOf(hash)>=0?hash:"");
     if(pre)open(pre,false);
   })();
 

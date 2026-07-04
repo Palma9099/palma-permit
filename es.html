@@ -204,7 +204,7 @@
     .portalcta a:hover{background:var(--accent2)}
     .portalcta .sub{display:block;color:var(--muted);font-size:13px;margin-top:12px}
     /* Asistente de diagnóstico — una pregunta guiada reemplaza la cuadrícula de herramientas */
-    .wizpaths{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}
+    .wizpaths{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:26px;max-width:820px}
     @media(max-width:860px){.wizpaths{grid-template-columns:1fr}}
     .wizpath{display:flex;flex-direction:column;gap:9px;text-align:left;background:var(--paper2);border:1px solid var(--line);border-radius:14px;padding:22px 22px;cursor:pointer;font:inherit;color:var(--ink);transition:transform .2s,border-color .2s,box-shadow .2s}
     .wizpath:hover{transform:translateY(-3px);border-color:var(--accent)}
@@ -244,12 +244,6 @@
         <span class="ws">Ampliación, renovación, piscina u obra nueva — cotizado y estimado al instante.</span>
         <span class="wgo">Obtén una estimación →</span>
       </button>
-      <button class="wizpath" type="button" data-path="contractor">
-        <span class="wic">▤</span>
-        <span class="wt">Soy contratista revisando un paquete de permiso</span>
-        <span class="ws">Verifica un envío contra los requisitos exactos de la ciudad antes de presentarlo.</span>
-        <span class="wgo">Revisa un paquete →</span>
-      </button>
     </div>
 
     <!-- Ruta 1 — Violación / Permiso vencido → consulta gratuita -->
@@ -282,18 +276,8 @@
       <div style="margin-top:16px;color:#9a9486;font-size:13px">¿Prefieres hablarlo? <a href="#contact" style="color:#e8915f;font-weight:600">Solicita una estimación gratis →</a></div>
     </div>
 
-    <!-- Ruta 3 — Contratista → Palma Permit -->
-    <div class="tool wizpanel" id="wp-contractor" hidden>
-      <div class="toolhead"><span style="font-size:20px">▤</span><span style="letter-spacing:2px;font-size:13px">HERRAMIENTAS PARA CONTRATISTAS</span></div>
-      <h3 class="serif">Revisa tu paquete antes de enviarlo.</h3>
-      <p style="color:#c9c2b4;font-size:14.5px;margin:8px 0 0;line-height:1.55">Palma Permit verifica tu paquete contra los requisitos exactos de cada ciudad — 30 ciudades, más de 20 tipos de permiso — y detecta cada documento faltante y trampa de rechazo conocida.</p>
-      <div class="wizbtns">
-        <a class="wbtn primary" href="https://permit.palma.llc/" target="_blank" rel="noopener" data-tool="palma_permit">Revisar mi paquete →</a>
-      </div>
-    </div>
-
     <div class="portalcta reveal">
-      <a href="https://tools.palma.llc/" target="_blank" rel="noopener" data-tool="portal">O explora las cuatro herramientas →</a>
+      <a href="https://tools.palma.llc/" target="_blank" rel="noopener" data-tool="portal">O explora nuestras herramientas →</a>
       <span class="sub">Todas las herramientas de Palma en un solo lugar en tools.palma.llc — más una lista de verificación HVHZ gratuita.</span>
     </div>
   </div>
@@ -482,7 +466,7 @@
     });
     var hash=(location.hash||"").replace("#","");
     var qp=new URLSearchParams(location.search).get("path");
-    var pre=qp||(["violation","project","contractor"].indexOf(hash)>=0?hash:"");
+    var pre=qp||(["violation","project"].indexOf(hash)>=0?hash:"");
     if(pre)open(pre,false);
   })();
 
