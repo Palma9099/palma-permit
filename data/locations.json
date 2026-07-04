@@ -1,0 +1,93 @@
+[
+  {
+    "slug": "orlando-orange-county",
+    "cityName": "Orlando",
+    "countyName": "Orange County",
+    "region": "Central Florida",
+    "buildingDeptName": "Orange County Division of Building Safety",
+    "permitPortal": "Orange County Fast Track",
+    "commonViolation": "unpermitted additions, alterations, and expired permits",
+    "heroTitle": "Resolve Building Permits & Code Violations in Orlando",
+    "metaDescription": "Stop fines and close expired permits or code violations in Orlando and Orange County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
+    "localNote": "Orange County handles unincorporated permitting through its Fast Track online system, while the City of Orlando permits on its own portal — so the first step is confirming which authority holds the record. Central Florida isn't a High-Velocity Hurricane Zone, but wind-load and energy-code compliance still drive most plan-review comments.",
+    "nearby": ["Winter Park", "Kissimmee", "Apopka", "Winter Garden"]
+  },
+  {
+    "slug": "tampa-hillsborough-county",
+    "cityName": "Tampa",
+    "countyName": "Hillsborough County",
+    "region": "Tampa Bay",
+    "buildingDeptName": "Hillsborough County Building Services Division",
+    "permitPortal": "Hillsborough County Accela Citizen Access",
+    "commonViolation": "unpermitted work, open permits, and expired permits",
+    "heroTitle": "Resolve Building Permits & Code Violations in Tampa",
+    "metaDescription": "Close expired permits and clear code violations in Tampa and Hillsborough County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
+    "localNote": "Work inside the City of Tampa is permitted by the city, while unincorporated Hillsborough uses the county's Accela portal — the record can live in either place. Much of the Bay area sits in the wind-borne debris region and in mapped flood zones, so opening protection and flood elevation are frequent review triggers.",
+    "nearby": ["Brandon", "Riverview", "Plant City", "Temple Terrace"]
+  },
+  {
+    "slug": "jacksonville-duval-county",
+    "cityName": "Jacksonville",
+    "countyName": "Duval County",
+    "region": "Northeast Florida",
+    "buildingDeptName": "City of Jacksonville Building Inspection Division",
+    "permitPortal": "City of Jacksonville permitting portal",
+    "commonViolation": "unpermitted alterations and expired permits",
+    "heroTitle": "Resolve Building Permits & Code Violations in Jacksonville",
+    "metaDescription": "Close expired permits and resolve code violations in Jacksonville and Duval County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
+    "localNote": "Jacksonville and Duval County are consolidated, so nearly all permitting runs through one City of Jacksonville portal — simpler than most metros, but records still slip through when prior owners left permits open. Coastal and St. Johns River properties fall in the wind-borne debris region and mapped flood zones.",
+    "nearby": ["Jacksonville Beach", "Atlantic Beach", "Orange Park", "Neptune Beach"]
+  },
+  {
+    "slug": "st-petersburg-pinellas-county",
+    "cityName": "St. Petersburg",
+    "countyName": "Pinellas County",
+    "region": "Tampa Bay",
+    "buildingDeptName": "Pinellas County Building & Development Review Services",
+    "permitPortal": "Pinellas County Access portal",
+    "commonViolation": "unpermitted work and expired permits",
+    "heroTitle": "Resolve Building Permits & Code Violations in St. Petersburg",
+    "metaDescription": "Close expired permits and clear code violations in St. Petersburg and Pinellas County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
+    "localNote": "St. Petersburg, Clearwater, and Largo each permit on their own systems, while unincorporated Pinellas uses the county portal. As Florida's most densely built coastal county, much of it lies in flood zones where the FEMA 50%-of-value substantial-improvement rule can reshape a project's scope.",
+    "nearby": ["Clearwater", "Largo", "Pinellas Park", "Dunedin"]
+  },
+  {
+    "slug": "fort-myers-lee-county",
+    "cityName": "Fort Myers",
+    "countyName": "Lee County",
+    "region": "Southwest Florida",
+    "buildingDeptName": "Lee County Building Department",
+    "permitPortal": "Lee County online permitting",
+    "commonViolation": "unpermitted repairs, open permits, and expired permits",
+    "heroTitle": "Resolve Building Permits & Code Violations in Fort Myers",
+    "metaDescription": "Close expired permits and resolve code violations in Fort Myers and Lee County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
+    "localNote": "Cape Coral, Fort Myers, Bonita Springs, and Estero permit on their own portals; unincorporated Lee runs through the county. Southwest Florida is hurricane-exposed and heavily flood-zoned, and post-storm repair work makes open and expired permits especially common here — the FEMA 50% rule frequently applies.",
+    "nearby": ["Cape Coral", "Bonita Springs", "Estero", "Lehigh Acres"]
+  },
+  {
+    "slug": "lakeland-polk-county",
+    "cityName": "Lakeland",
+    "countyName": "Polk County",
+    "region": "Central Florida",
+    "buildingDeptName": "Polk County Building Division",
+    "permitPortal": "Polk County online permitting",
+    "commonViolation": "unpermitted additions and expired permits",
+    "heroTitle": "Resolve Building Permits & Code Violations in Lakeland",
+    "metaDescription": "Close expired permits and clear code violations in Lakeland and Polk County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
+    "localNote": "Lakeland, Winter Haven, and other Polk cities permit separately from the county Building Division. Inland Central Florida has fewer coastal flood concerns than the coasts, so most review comments here center on standard wind-load design, energy code, and closing out permits left open by prior owners or contractors.",
+    "nearby": ["Winter Haven", "Bartow", "Auburndale", "Mulberry"]
+  },
+  {
+    "slug": "melbourne-brevard-county",
+    "cityName": "Melbourne",
+    "countyName": "Brevard County",
+    "region": "Space Coast",
+    "buildingDeptName": "Brevard County Building Department",
+    "permitPortal": "Brevard County online permitting",
+    "commonViolation": "unpermitted work and expired permits",
+    "heroTitle": "Resolve Building Permits & Code Violations in Melbourne",
+    "metaDescription": "Close expired permits and resolve code violations in Melbourne and Brevard County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
+    "localNote": "Melbourne, Palm Bay, Titusville, and Cocoa permit on their own portals while unincorporated Brevard uses the county. The Space Coast sits in the wind-borne debris region, and Indian River and oceanfront parcels fall in mapped flood zones, so opening protection and flood elevation drive many plan-review comments.",
+    "nearby": ["Palm Bay", "Titusville", "Cocoa", "Rockledge"]
+  }
+]

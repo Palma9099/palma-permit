@@ -60,4 +60,12 @@
   <url><loc>https://palma.llc/final-signoff-coral-gables</loc><priority>0.7</priority></url>
   <url><loc>https://palma.llc/final-signoff-miami-beach</loc><priority>0.7</priority></url>
   <url><loc>https://palma.llc/final-signoff-boca-raton</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/locations</loc><priority>0.8</priority></url>
+  <url><loc>https://palma.llc/locations/orlando-orange-county</loc><priority>0.8</priority></url>
+  <url><loc>https://palma.llc/locations/tampa-hillsborough-county</loc><priority>0.8</priority></url>
+  <url><loc>https://palma.llc/locations/jacksonville-duval-county</loc><priority>0.8</priority></url>
+  <url><loc>https://palma.llc/locations/st-petersburg-pinellas-county</loc><priority>0.8</priority></url>
+  <url><loc>https://palma.llc/locations/fort-myers-lee-county</loc><priority>0.8</priority></url>
+  <url><loc>https://palma.llc/locations/lakeland-polk-county</loc><priority>0.8</priority></url>
+  <url><loc>https://palma.llc/locations/melbourne-brevard-county</loc><priority>0.8</priority></url>
 </urlset>
