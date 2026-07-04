@@ -499,7 +499,7 @@
       if(!l){if(ta)ta.placeholder="Ingresa una dirección o folio de Florida";if(note){note.hidden=true;note.innerHTML="";}return;}
       sel.value=slug;
       if(ta)ta.placeholder="Ingresa una dirección o folio en "+l.c;
-      if(note){note.innerHTML="Palma resuelve permisos y violaciones en el condado de "+l.k.replace(/ County$/,"")+". <a href=\"/locations/"+l.s+"\">Ver nuestra página de "+l.c+" →</a>";note.hidden=false;}
+      if(note){note.innerHTML="Palma resuelve permisos y violaciones en el condado de "+l.k.replace(/ County$/,"")+". <a href=\"/es/locations/"+l.s+"\">Ver nuestra página de "+l.c+" →</a>";note.hidden=false;}
       if(remember){try{localStorage.setItem("palma_region",slug);}catch(e){}if(window.track)track("wizard_region",{region:slug});}
     }
     sel.addEventListener("change",function(){apply(sel.value,true);});

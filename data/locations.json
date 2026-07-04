@@ -10,7 +10,13 @@
     "heroTitle": "Resolve Building Permits & Code Violations in Orlando",
     "metaDescription": "Stop fines and close expired permits or code violations in Orlando and Orange County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
     "localNote": "Orange County handles unincorporated permitting through its Fast Track online system, while the City of Orlando permits on its own portal — so the first step is confirming which authority holds the record. Central Florida isn't a High-Velocity Hurricane Zone, but wind-load and energy-code compliance still drive most plan-review comments.",
-    "nearby": ["Winter Park", "Kissimmee", "Apopka", "Winter Garden"]
+    "nearby": [
+      "Winter Park",
+      "Kissimmee",
+      "Apopka",
+      "Winter Garden"
+    ],
+    "localNoteEs": "El Condado de Orange gestiona los permisos de las áreas no incorporadas mediante su sistema en línea Fast Track, mientras que la Ciudad de Orlando emite permisos en su propio portal — así que el primer paso es confirmar qué autoridad tiene el registro. El centro de Florida no es Zona de Huracanes de Alta Velocidad, pero el cumplimiento de cargas de viento y del código de energía sigue generando la mayoría de los comentarios de revisión."
   },
   {
     "slug": "tampa-hillsborough-county",
@@ -23,7 +29,13 @@
     "heroTitle": "Resolve Building Permits & Code Violations in Tampa",
     "metaDescription": "Close expired permits and clear code violations in Tampa and Hillsborough County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
     "localNote": "Work inside the City of Tampa is permitted by the city, while unincorporated Hillsborough uses the county's Accela portal — the record can live in either place. Much of the Bay area sits in the wind-borne debris region and in mapped flood zones, so opening protection and flood elevation are frequent review triggers.",
-    "nearby": ["Brandon", "Riverview", "Plant City", "Temple Terrace"]
+    "nearby": [
+      "Brandon",
+      "Riverview",
+      "Plant City",
+      "Temple Terrace"
+    ],
+    "localNoteEs": "El trabajo dentro de la Ciudad de Tampa lo permite la ciudad, mientras que el área no incorporada de Hillsborough usa el portal Accela del condado — el registro puede estar en cualquiera de los dos. Gran parte del área de la bahía está en la región de escombros por viento y en zonas de inundación mapeadas, por lo que la protección de aberturas y la elevación por inundación son motivos frecuentes de revisión."
   },
   {
     "slug": "jacksonville-duval-county",
@@ -36,7 +48,13 @@
     "heroTitle": "Resolve Building Permits & Code Violations in Jacksonville",
     "metaDescription": "Close expired permits and resolve code violations in Jacksonville and Duval County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
     "localNote": "Jacksonville and Duval County are consolidated, so nearly all permitting runs through one City of Jacksonville portal — simpler than most metros, but records still slip through when prior owners left permits open. Coastal and St. Johns River properties fall in the wind-borne debris region and mapped flood zones.",
-    "nearby": ["Jacksonville Beach", "Atlantic Beach", "Orange Park", "Neptune Beach"]
+    "nearby": [
+      "Jacksonville Beach",
+      "Atlantic Beach",
+      "Orange Park",
+      "Neptune Beach"
+    ],
+    "localNoteEs": "Jacksonville y el Condado de Duval están consolidados, así que casi todos los permisos se tramitan por un solo portal de la Ciudad de Jacksonville — más simple que en otras metrópolis, pero aún se escapan registros cuando dueños anteriores dejaron permisos abiertos. Las propiedades costeras y del río St. Johns están en la región de escombros por viento y en zonas de inundación mapeadas."
   },
   {
     "slug": "st-petersburg-pinellas-county",
@@ -49,7 +67,13 @@
     "heroTitle": "Resolve Building Permits & Code Violations in St. Petersburg",
     "metaDescription": "Close expired permits and clear code violations in St. Petersburg and Pinellas County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
     "localNote": "St. Petersburg, Clearwater, and Largo each permit on their own systems, while unincorporated Pinellas uses the county portal. As Florida's most densely built coastal county, much of it lies in flood zones where the FEMA 50%-of-value substantial-improvement rule can reshape a project's scope.",
-    "nearby": ["Clearwater", "Largo", "Pinellas Park", "Dunedin"]
+    "nearby": [
+      "Clearwater",
+      "Largo",
+      "Pinellas Park",
+      "Dunedin"
+    ],
+    "localNoteEs": "St. Petersburg, Clearwater y Largo emiten permisos en sus propios sistemas, mientras que el área no incorporada de Pinellas usa el portal del condado. Como el condado costero más densamente construido de Florida, gran parte está en zonas de inundación donde la regla FEMA del 50% del valor (mejora sustancial) puede cambiar el alcance de un proyecto."
   },
   {
     "slug": "fort-myers-lee-county",
@@ -62,7 +86,13 @@
     "heroTitle": "Resolve Building Permits & Code Violations in Fort Myers",
     "metaDescription": "Close expired permits and resolve code violations in Fort Myers and Lee County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
     "localNote": "Cape Coral, Fort Myers, Bonita Springs, and Estero permit on their own portals; unincorporated Lee runs through the county. Southwest Florida is hurricane-exposed and heavily flood-zoned, and post-storm repair work makes open and expired permits especially common here — the FEMA 50% rule frequently applies.",
-    "nearby": ["Cape Coral", "Bonita Springs", "Estero", "Lehigh Acres"]
+    "nearby": [
+      "Cape Coral",
+      "Bonita Springs",
+      "Estero",
+      "Lehigh Acres"
+    ],
+    "localNoteEs": "Cape Coral, Fort Myers, Bonita Springs y Estero emiten permisos en sus propios portales; el área no incorporada de Lee se tramita por el condado. El suroeste de Florida está expuesto a huracanes y muy zonificado por inundación, y el trabajo de reparación tras las tormentas hace que los permisos abiertos y vencidos sean especialmente comunes aquí — la regla FEMA del 50% se aplica con frecuencia."
   },
   {
     "slug": "lakeland-polk-county",
@@ -75,7 +105,13 @@
     "heroTitle": "Resolve Building Permits & Code Violations in Lakeland",
     "metaDescription": "Close expired permits and clear code violations in Lakeland and Polk County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
     "localNote": "Lakeland, Winter Haven, and other Polk cities permit separately from the county Building Division. Inland Central Florida has fewer coastal flood concerns than the coasts, so most review comments here center on standard wind-load design, energy code, and closing out permits left open by prior owners or contractors.",
-    "nearby": ["Winter Haven", "Bartow", "Auburndale", "Mulberry"]
+    "nearby": [
+      "Winter Haven",
+      "Bartow",
+      "Auburndale",
+      "Mulberry"
+    ],
+    "localNoteEs": "Lakeland, Winter Haven y otras ciudades de Polk emiten permisos por separado de la División de Construcción del condado. En el interior del centro de Florida hay menos preocupaciones costeras por inundación, así que la mayoría de los comentarios de revisión se centran en el diseño estándar de cargas de viento, el código de energía y en cerrar permisos que dueños o contratistas anteriores dejaron abiertos."
   },
   {
     "slug": "melbourne-brevard-county",
@@ -88,7 +124,13 @@
     "heroTitle": "Resolve Building Permits & Code Violations in Melbourne",
     "metaDescription": "Close expired permits and resolve code violations in Melbourne and Brevard County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
     "localNote": "Melbourne, Palm Bay, Titusville, and Cocoa permit on their own portals while unincorporated Brevard uses the county. The Space Coast sits in the wind-borne debris region, and Indian River and oceanfront parcels fall in mapped flood zones, so opening protection and flood elevation drive many plan-review comments.",
-    "nearby": ["Palm Bay", "Titusville", "Cocoa", "Rockledge"]
+    "nearby": [
+      "Palm Bay",
+      "Titusville",
+      "Cocoa",
+      "Rockledge"
+    ],
+    "localNoteEs": "Melbourne, Palm Bay, Titusville y Cocoa emiten permisos en sus propios portales, mientras que el área no incorporada de Brevard usa el condado. La Costa Espacial está en la región de escombros por viento, y las parcelas frente al río Indian y al océano están en zonas de inundación mapeadas, por lo que la protección de aberturas y la elevación por inundación generan muchos comentarios de revisión."
   },
   {
     "slug": "sarasota-sarasota-county",
@@ -101,7 +143,13 @@
     "heroTitle": "Resolve Building Permits & Code Violations in Sarasota",
     "metaDescription": "Close expired permits and clear code violations in Sarasota and Sarasota County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
     "localNote": "The City of Sarasota and unincorporated Sarasota County permit separately, so the first step is confirming which authority holds your record. The Gulf coast and barrier islands like Siesta Key and Longboat Key sit in the wind-borne debris region and mapped flood zones, where opening protection and flood elevation frequently drive review.",
-    "nearby": ["Venice", "North Port", "Osprey", "Siesta Key"]
+    "nearby": [
+      "Venice",
+      "North Port",
+      "Osprey",
+      "Siesta Key"
+    ],
+    "localNoteEs": "La Ciudad de Sarasota y el área no incorporada del Condado de Sarasota emiten permisos por separado, así que el primer paso es confirmar qué autoridad tiene tu registro. La costa del Golfo y las islas barrera como Siesta Key y Longboat Key están en la región de escombros por viento y en zonas de inundación mapeadas, donde la protección de aberturas y la elevación por inundación suelen impulsar la revisión."
   },
   {
     "slug": "bradenton-manatee-county",
@@ -114,7 +162,13 @@
     "heroTitle": "Resolve Building Permits & Code Violations in Bradenton",
     "metaDescription": "Close expired permits and resolve code violations in Bradenton and Manatee County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
     "localNote": "Bradenton and unincorporated Manatee County run separate permitting systems. Coastal and barrier-island parcels around Anna Maria Island fall in the wind-borne debris region and mapped flood zones, so opening protection, flood elevation, and the FEMA 50% substantial-improvement rule commonly shape a project's scope.",
-    "nearby": ["Palmetto", "Lakewood Ranch", "Anna Maria", "Ellenton"]
+    "nearby": [
+      "Palmetto",
+      "Lakewood Ranch",
+      "Anna Maria",
+      "Ellenton"
+    ],
+    "localNoteEs": "Bradenton y el área no incorporada del Condado de Manatee tienen sistemas de permisos separados. Las parcelas costeras y de las islas barrera alrededor de Anna Maria Island están en la región de escombros por viento y en zonas de inundación mapeadas, por lo que la protección de aberturas, la elevación por inundación y la regla FEMA del 50% de mejora sustancial suelen definir el alcance de un proyecto."
   },
   {
     "slug": "daytona-beach-volusia-county",
@@ -127,7 +181,13 @@
     "heroTitle": "Resolve Building Permits & Code Violations in Daytona Beach",
     "metaDescription": "Close expired permits and clear code violations in Daytona Beach and Volusia County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
     "localNote": "Daytona Beach and the other Volusia cities permit on their own portals, while unincorporated Volusia uses the county. Oceanfront and Halifax River parcels sit in the wind-borne debris region and coastal flood zones, so opening protection and flood elevation are frequent review triggers.",
-    "nearby": ["Port Orange", "Ormond Beach", "DeLand", "New Smyrna Beach"]
+    "nearby": [
+      "Port Orange",
+      "Ormond Beach",
+      "DeLand",
+      "New Smyrna Beach"
+    ],
+    "localNoteEs": "Daytona Beach y las demás ciudades de Volusia emiten permisos en sus propios portales, mientras que el área no incorporada de Volusia usa el condado. Las parcelas frente al océano y al río Halifax están en la región de escombros por viento y en zonas de inundación costera, por lo que la protección de aberturas y la elevación por inundación son motivos frecuentes de revisión."
   },
   {
     "slug": "port-st-lucie-st-lucie-county",
@@ -140,7 +200,13 @@
     "heroTitle": "Resolve Building Permits & Code Violations in Port St. Lucie",
     "metaDescription": "Close expired permits and resolve code violations in Port St. Lucie and St. Lucie County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
     "localNote": "The City of Port St. Lucie runs its own high-volume building department, separate from unincorporated St. Lucie County. As a fast-growing Treasure Coast market in the wind-borne debris region, new construction and additions here draw close wind-load and product-approval review, with coastal parcels also in flood zones.",
-    "nearby": ["Fort Pierce", "Jensen Beach", "Stuart", "Tradition"]
+    "nearby": [
+      "Fort Pierce",
+      "Jensen Beach",
+      "Stuart",
+      "Tradition"
+    ],
+    "localNoteEs": "La Ciudad de Port St. Lucie tiene su propio departamento de construcción de alto volumen, separado del área no incorporada del Condado de St. Lucie. Como mercado de rápido crecimiento en la Costa del Tesoro y dentro de la región de escombros por viento, la construcción nueva y las ampliaciones reciben aquí una revisión estricta de cargas de viento y aprobaciones de producto, con parcelas costeras también en zonas de inundación."
   },
   {
     "slug": "kissimmee-osceola-county",
@@ -153,7 +219,13 @@
     "heroTitle": "Resolve Building Permits & Code Violations in Kissimmee",
     "metaDescription": "Close expired permits and clear code violations in Kissimmee and Osceola County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
     "localNote": "Kissimmee and St. Cloud permit on their own portals while unincorporated Osceola uses the county. This is inland Central Florida, so most review comments center on standard wind-load design, energy code, and closing out permits left open by prior owners or contractors rather than coastal flood requirements.",
-    "nearby": ["St. Cloud", "Celebration", "Poinciana", "Buenaventura Lakes"]
+    "nearby": [
+      "St. Cloud",
+      "Celebration",
+      "Poinciana",
+      "Buenaventura Lakes"
+    ],
+    "localNoteEs": "Kissimmee y St. Cloud emiten permisos en sus propios portales, mientras que el área no incorporada de Osceola usa el condado. Este es el interior del centro de Florida, así que la mayoría de los comentarios de revisión se centran en el diseño estándar de cargas de viento, el código de energía y en cerrar permisos que dueños o contratistas anteriores dejaron abiertos, más que en requisitos costeros de inundación."
   },
   {
     "slug": "sanford-seminole-county",
@@ -166,7 +238,13 @@
     "heroTitle": "Resolve Building Permits & Code Violations in Sanford",
     "metaDescription": "Close expired permits and resolve code violations in Sanford and Seminole County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
     "localNote": "Sanford, Altamonte Springs, and other Seminole cities permit separately from the county Building Division. As an inland Orlando-metro county, most plan-review comments involve standard wind-load and energy-code compliance, with lakefront parcels occasionally in mapped flood zones.",
-    "nearby": ["Altamonte Springs", "Lake Mary", "Oviedo", "Winter Springs"]
+    "nearby": [
+      "Altamonte Springs",
+      "Lake Mary",
+      "Oviedo",
+      "Winter Springs"
+    ],
+    "localNoteEs": "Sanford, Altamonte Springs y otras ciudades de Seminole emiten permisos por separado de la División de Construcción del condado. Como condado interior del área metropolitana de Orlando, la mayoría de los comentarios de revisión involucran el cumplimiento estándar de cargas de viento y del código de energía, con parcelas frente a lagos ocasionalmente en zonas de inundación mapeadas."
   },
   {
     "slug": "gainesville-alachua-county",
@@ -179,7 +257,13 @@
     "heroTitle": "Resolve Building Permits & Code Violations in Gainesville",
     "metaDescription": "Close expired permits and clear code violations in Gainesville and Alachua County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
     "localNote": "The City of Gainesville and unincorporated Alachua County permit separately. This inland North Central Florida market has few coastal flood concerns, so most review comments focus on standard wind-load and energy-code compliance and on closing out permits left open on rental and student-housing properties.",
-    "nearby": ["Alachua", "Newberry", "High Springs", "Archer"]
+    "nearby": [
+      "Alachua",
+      "Newberry",
+      "High Springs",
+      "Archer"
+    ],
+    "localNoteEs": "La Ciudad de Gainesville y el área no incorporada del Condado de Alachua emiten permisos por separado. Este mercado interior del centro-norte de Florida tiene pocas preocupaciones costeras por inundación, así que la mayoría de los comentarios de revisión se enfocan en el cumplimiento estándar de cargas de viento y del código de energía, y en cerrar permisos abiertos en propiedades de alquiler y de vivienda estudiantil."
   },
   {
     "slug": "ocala-marion-county",
@@ -192,7 +276,13 @@
     "heroTitle": "Resolve Building Permits & Code Violations in Ocala",
     "metaDescription": "Close expired permits and resolve code violations in Ocala and Marion County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
     "localNote": "The City of Ocala and unincorporated Marion County permit separately. This inland, fast-growing North Central Florida market sees few coastal flood requirements, so most review comments center on standard wind-load design, energy code, and after-the-fact permitting for barns, additions, and accessory structures.",
-    "nearby": ["Belleview", "Dunnellon", "Silver Springs", "The Villages"]
+    "nearby": [
+      "Belleview",
+      "Dunnellon",
+      "Silver Springs",
+      "The Villages"
+    ],
+    "localNoteEs": "La Ciudad de Ocala y el área no incorporada del Condado de Marion emiten permisos por separado. Este mercado interior y de rápido crecimiento del centro-norte de Florida ve pocos requisitos costeros de inundación, así que la mayoría de los comentarios de revisión se centran en el diseño estándar de cargas de viento, el código de energía y los permisos posteriores al hecho para establos, ampliaciones y estructuras accesorias."
   },
   {
     "slug": "tallahassee-leon-county",
@@ -205,7 +295,13 @@
     "heroTitle": "Resolve Building Permits & Code Violations in Tallahassee",
     "metaDescription": "Close expired permits and clear code violations in Tallahassee and Leon County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
     "localNote": "The City of Tallahassee and Leon County coordinate permitting through Growth Management, but city and county records are still distinct. This inland Big Bend market is hurricane-exposed from the Gulf, so wind-load design matters, while coastal flood requirements are limited compared with the peninsula's coasts.",
-    "nearby": ["Crawfordville", "Quincy", "Havana", "Monticello"]
+    "nearby": [
+      "Crawfordville",
+      "Quincy",
+      "Havana",
+      "Monticello"
+    ],
+    "localNoteEs": "La Ciudad de Tallahassee y el Condado de Leon coordinan los permisos a través de Growth Management, pero los registros de la ciudad y del condado siguen siendo distintos. Este mercado interior del Big Bend está expuesto a huracanes desde el Golfo, por lo que el diseño de cargas de viento importa, mientras que los requisitos costeros de inundación son limitados en comparación con las costas de la península."
   },
   {
     "slug": "pensacola-escambia-county",
@@ -218,7 +314,13 @@
     "heroTitle": "Resolve Building Permits & Code Violations in Pensacola",
     "metaDescription": "Close expired permits and resolve code violations in Pensacola and Escambia County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
     "localNote": "Pensacola and unincorporated Escambia County permit separately. The western Panhandle carries some of Florida's highest design wind speeds and sits squarely in the wind-borne debris region, so opening protection and product approvals are central to review — and Gulf and bayfront parcels fall in coastal flood zones.",
-    "nearby": ["Pensacola Beach", "Gulf Breeze", "Cantonment", "Pace"]
+    "nearby": [
+      "Pensacola Beach",
+      "Gulf Breeze",
+      "Cantonment",
+      "Pace"
+    ],
+    "localNoteEs": "Pensacola y el área no incorporada del Condado de Escambia emiten permisos por separado. El oeste del Panhandle tiene algunas de las velocidades de viento de diseño más altas de Florida y está de lleno en la región de escombros por viento, por lo que la protección de aberturas y las aprobaciones de producto son centrales en la revisión — y las parcelas frente al Golfo y a la bahía están en zonas de inundación costera."
   },
   {
     "slug": "st-augustine-st-johns-county",
@@ -231,7 +333,13 @@
     "heroTitle": "Resolve Building Permits & Code Violations in St. Augustine",
     "metaDescription": "Close expired permits and clear code violations in St. Augustine and St. Johns County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
     "localNote": "The City of St. Augustine and unincorporated St. Johns County permit separately, and work in the historic district carries added architectural-review requirements. As a fast-growing Atlantic-coast county in the wind-borne debris region, oceanfront and Intracoastal parcels also sit in mapped flood zones.",
-    "nearby": ["St. Augustine Beach", "Ponte Vedra", "Nocatee", "St. Johns"]
+    "nearby": [
+      "St. Augustine Beach",
+      "Ponte Vedra",
+      "Nocatee",
+      "St. Johns"
+    ],
+    "localNoteEs": "La Ciudad de St. Augustine y el área no incorporada del Condado de St. Johns emiten permisos por separado, y el trabajo en el distrito histórico conlleva requisitos adicionales de revisión arquitectónica. Como condado costero del Atlántico de rápido crecimiento en la región de escombros por viento, las parcelas frente al océano y al Intracoastal también están en zonas de inundación mapeadas."
   },
   {
     "slug": "new-port-richey-pasco-county",
@@ -244,7 +352,13 @@
     "heroTitle": "Resolve Building Permits & Code Violations in New Port Richey",
     "metaDescription": "Close expired permits and clear code violations in New Port Richey and Pasco County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
     "localNote": "New Port Richey, Zephyrhills, and Dade City permit on their own portals while unincorporated Pasco uses the county — and Pasco is one of the Tampa Bay area's fastest-growing counties. West Pasco's coastal edge sits in the wind-borne debris region and flood zones, while inland east Pasco around Wesley Chapel is mostly standard wind-load design.",
-    "nearby": ["Wesley Chapel", "Zephyrhills", "Dade City", "Land O' Lakes"]
+    "nearby": [
+      "Wesley Chapel",
+      "Zephyrhills",
+      "Dade City",
+      "Land O' Lakes"
+    ],
+    "localNoteEs": "New Port Richey, Zephyrhills y Dade City emiten permisos en sus propios portales, mientras que el área no incorporada de Pasco usa el condado — y Pasco es uno de los condados de más rápido crecimiento del área de Tampa Bay. El borde costero del oeste de Pasco está en la región de escombros por viento y en zonas de inundación, mientras que el interior del este de Pasco, alrededor de Wesley Chapel, es en su mayoría diseño estándar de cargas de viento."
   },
   {
     "slug": "clermont-lake-county",
@@ -257,7 +371,13 @@
     "heroTitle": "Resolve Building Permits & Code Violations in Clermont",
     "metaDescription": "Close expired permits and resolve code violations in Clermont and Lake County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
     "localNote": "Clermont, Leesburg, Mount Dora, and other Lake County cities permit separately from the county Building Services division. On the hilly, lake-dotted western edge of the Orlando metro, most review comments center on standard wind-load and energy-code compliance, with lakefront parcels occasionally in mapped flood zones.",
-    "nearby": ["Leesburg", "Mount Dora", "Tavares", "Minneola"]
+    "nearby": [
+      "Leesburg",
+      "Mount Dora",
+      "Tavares",
+      "Minneola"
+    ],
+    "localNoteEs": "Clermont, Leesburg, Mount Dora y otras ciudades del Condado de Lake emiten permisos por separado de la división de Building Services del condado. En el borde occidental, montañoso y salpicado de lagos del área metropolitana de Orlando, la mayoría de los comentarios de revisión se centran en el cumplimiento estándar de cargas de viento y del código de energía, con parcelas frente a lagos ocasionalmente en zonas de inundación mapeadas."
   },
   {
     "slug": "punta-gorda-charlotte-county",
@@ -270,7 +390,13 @@
     "heroTitle": "Resolve Building Permits & Code Violations in Punta Gorda",
     "metaDescription": "Close expired permits and resolve code violations in Punta Gorda and Charlotte County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
     "localNote": "The City of Punta Gorda and unincorporated Charlotte County (including Port Charlotte) permit separately. This Gulf-coast county took a direct hit from Hurricane Ian, so storm-repair work makes open and expired permits especially common — and with much of the county in the wind-borne debris region and mapped flood zones, the FEMA 50% substantial-improvement rule frequently applies.",
-    "nearby": ["Port Charlotte", "Englewood", "Rotonda West", "Charlotte Harbor"]
+    "nearby": [
+      "Port Charlotte",
+      "Englewood",
+      "Rotonda West",
+      "Charlotte Harbor"
+    ],
+    "localNoteEs": "La Ciudad de Punta Gorda y el área no incorporada del Condado de Charlotte (incluida Port Charlotte) emiten permisos por separado. Este condado de la costa del Golfo recibió un impacto directo del huracán Ian, por lo que el trabajo de reparación hace que los permisos abiertos y vencidos sean especialmente comunes — y con gran parte del condado en la región de escombros por viento y en zonas de inundación mapeadas, la regla FEMA del 50% de mejora sustancial se aplica con frecuencia."
   },
   {
     "slug": "destin-okaloosa-county",
@@ -283,7 +409,13 @@
     "heroTitle": "Resolve Building Permits & Code Violations in Destin",
     "metaDescription": "Close expired permits and clear code violations in Destin and Okaloosa County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
     "localNote": "Destin, Fort Walton Beach, Crestview, and Niceville permit on their own portals while unincorporated Okaloosa uses the county. The Emerald Coast carries some of Florida's highest design wind speeds and sits in the wind-borne debris region, so opening protection and product approvals are central to review — and beachfront and harbor parcels fall in coastal flood zones.",
-    "nearby": ["Fort Walton Beach", "Niceville", "Crestview", "Mary Esther"]
+    "nearby": [
+      "Fort Walton Beach",
+      "Niceville",
+      "Crestview",
+      "Mary Esther"
+    ],
+    "localNoteEs": "Destin, Fort Walton Beach, Crestview y Niceville emiten permisos en sus propios portales, mientras que el área no incorporada de Okaloosa usa el condado. La Costa Esmeralda tiene algunas de las velocidades de viento de diseño más altas de Florida y está en la región de escombros por viento, por lo que la protección de aberturas y las aprobaciones de producto son centrales en la revisión — y las parcelas frente a la playa y al puerto están en zonas de inundación costera."
   },
   {
     "slug": "orange-park-clay-county",
@@ -296,6 +428,12 @@
     "heroTitle": "Resolve Building Permits & Code Violations in Orange Park",
     "metaDescription": "Close expired permits and resolve code violations in Orange Park and Clay County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
     "localNote": "Orange Park, Green Cove Springs, and Keystone Heights permit separately from unincorporated Clay County. On the southwest side of the Jacksonville metro, most work here is inland and driven by standard wind-load and energy-code compliance, with St. Johns River and tributary parcels occasionally in mapped flood zones.",
-    "nearby": ["Fleming Island", "Green Cove Springs", "Middleburg", "Keystone Heights"]
+    "nearby": [
+      "Fleming Island",
+      "Green Cove Springs",
+      "Middleburg",
+      "Keystone Heights"
+    ],
+    "localNoteEs": "Orange Park, Green Cove Springs y Keystone Heights emiten permisos por separado del área no incorporada del Condado de Clay. En el lado suroeste del área metropolitana de Jacksonville, la mayoría del trabajo es en el interior e impulsado por el cumplimiento estándar de cargas de viento y del código de energía, con parcelas del río St. Johns y sus afluentes ocasionalmente en zonas de inundación mapeadas."
   }
 ]

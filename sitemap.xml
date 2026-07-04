@@ -84,4 +84,28 @@
   <url><loc>https://palma.llc/locations/punta-gorda-charlotte-county</loc><priority>0.8</priority></url>
   <url><loc>https://palma.llc/locations/destin-okaloosa-county</loc><priority>0.8</priority></url>
   <url><loc>https://palma.llc/locations/orange-park-clay-county</loc><priority>0.8</priority></url>
+  <url><loc>https://palma.llc/es/locations</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/es/locations/orlando-orange-county</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/es/locations/tampa-hillsborough-county</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/es/locations/jacksonville-duval-county</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/es/locations/st-petersburg-pinellas-county</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/es/locations/fort-myers-lee-county</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/es/locations/lakeland-polk-county</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/es/locations/melbourne-brevard-county</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/es/locations/sarasota-sarasota-county</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/es/locations/bradenton-manatee-county</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/es/locations/daytona-beach-volusia-county</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/es/locations/port-st-lucie-st-lucie-county</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/es/locations/kissimmee-osceola-county</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/es/locations/sanford-seminole-county</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/es/locations/gainesville-alachua-county</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/es/locations/ocala-marion-county</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/es/locations/tallahassee-leon-county</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/es/locations/pensacola-escambia-county</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/es/locations/st-augustine-st-johns-county</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/es/locations/new-port-richey-pasco-county</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/es/locations/clermont-lake-county</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/es/locations/punta-gorda-charlotte-county</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/es/locations/destin-okaloosa-county</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/es/locations/orange-park-clay-county</loc><priority>0.7</priority></url>
 </urlset>
