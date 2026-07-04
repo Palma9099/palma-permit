@@ -48,6 +48,7 @@ const REGION_ES = {
   'North Central Florida': 'Centro-Norte de Florida',
   'North Florida': 'Norte de Florida',
   'Northwest Florida': 'Noroeste de Florida',
+  'Florida Keys': 'Los Cayos de Florida',
 };
 
 // ---------------------------------------------------------------------------

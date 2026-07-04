@@ -435,5 +435,100 @@
       "Keystone Heights"
     ],
     "localNoteEs": "Orange Park, Green Cove Springs y Keystone Heights emiten permisos por separado del área no incorporada del Condado de Clay. En el lado suroeste del área metropolitana de Jacksonville, la mayoría del trabajo es en el interior e impulsado por el cumplimiento estándar de cargas de viento y del código de energía, con parcelas del río St. Johns y sus afluentes ocasionalmente en zonas de inundación mapeadas."
+  },
+  {
+    "slug": "key-largo-monroe-county",
+    "cityName": "Key Largo",
+    "countyName": "Monroe County",
+    "region": "Florida Keys",
+    "buildingDeptName": "Monroe County Building Department",
+    "permitPortal": "Monroe County online permitting",
+    "commonViolation": "unpermitted work, expired permits, and unpermitted post-storm repairs",
+    "heroTitle": "Resolve Building Permits & Code Violations in Key Largo",
+    "metaDescription": "Close expired permits and resolve code violations in Key Largo and Monroe County (the Florida Keys). Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
+    "localNote": "Key Largo is unincorporated Upper Keys, permitted by the Monroe County Building Department. Nearly all of the Keys lies in FEMA flood zones, so Monroe's strict floodplain rules — including the cumulative 50% substantial-improvement limit and base-flood elevation — shape most projects, and the county's ROGO permit-allocation system can affect new construction. Design wind speeds here are among the highest in Florida.",
+    "nearby": [
+      "Tavernier",
+      "Islamorada",
+      "Ocean Reef",
+      "Rock Harbor"
+    ],
+    "localNoteEs": "Key Largo es el Alto Cayo no incorporado, con permisos del Departamento de Construcción del Condado de Monroe. Casi todos los Cayos están en zonas de inundación de FEMA, así que las estrictas reglas de llanura de inundación de Monroe — incluido el límite acumulativo del 50% de mejora sustancial y la elevación sobre la inundación base — definen la mayoría de los proyectos, y el sistema de asignación de permisos ROGO del condado puede afectar la construcción nueva. Las velocidades de viento de diseño aquí están entre las más altas de Florida."
+  },
+  {
+    "slug": "marathon-monroe-county",
+    "cityName": "Marathon",
+    "countyName": "Monroe County",
+    "region": "Florida Keys",
+    "buildingDeptName": "City of Marathon Building Department",
+    "permitPortal": "City of Marathon online permitting",
+    "commonViolation": "unpermitted post-storm repairs, open permits, and expired permits",
+    "heroTitle": "Resolve Building Permits & Code Violations in Marathon",
+    "metaDescription": "Close expired permits and resolve code violations in Marathon and Monroe County (the Florida Keys). Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
+    "localNote": "Marathon is an incorporated Middle Keys city that permits through its own building department, separate from Monroe County. Almost the entire city is in FEMA flood zones, so base-flood elevation and the 50% substantial-improvement rule frequently govern renovations — and post-Irma repairs left many properties with open or unpermitted work. Design wind speeds are among Florida's highest.",
+    "nearby": [
+      "Key Colony Beach",
+      "Grassy Key",
+      "Duck Key",
+      "Vaca Key"
+    ],
+    "localNoteEs": "Marathon es una ciudad incorporada de los Cayos Centrales que emite permisos a través de su propio departamento de construcción, separado del Condado de Monroe. Casi toda la ciudad está en zonas de inundación de FEMA, así que la elevación sobre la inundación base y la regla del 50% de mejora sustancial suelen regir las renovaciones — y las reparaciones tras el huracán Irma dejaron muchas propiedades con trabajo abierto o sin permiso. Las velocidades de viento de diseño están entre las más altas de Florida."
+  },
+  {
+    "slug": "big-pine-key-monroe-county",
+    "cityName": "Big Pine Key",
+    "countyName": "Monroe County",
+    "region": "Florida Keys",
+    "buildingDeptName": "Monroe County Building Department",
+    "permitPortal": "Monroe County online permitting",
+    "commonViolation": "unpermitted work, expired permits, and unpermitted post-storm repairs",
+    "heroTitle": "Resolve Building Permits & Code Violations in Big Pine Key",
+    "metaDescription": "Close expired permits and resolve code violations in Big Pine Key and Monroe County (the Florida Keys). Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
+    "localNote": "Big Pine Key is unincorporated Lower Keys, permitted by the Monroe County Building Department, and parts fall within protected Key deer habitat that can add environmental review. The area is almost entirely in FEMA flood zones where elevation and the 50% substantial-improvement rule apply, and Lower Keys design wind speeds are among the highest in the state.",
+    "nearby": [
+      "Bahia Honda",
+      "Cudjoe Key",
+      "Summerland Key",
+      "Ramrod Key"
+    ],
+    "localNoteEs": "Big Pine Key es el Bajo Cayo no incorporado, con permisos del Departamento de Construcción del Condado de Monroe, y partes están dentro del hábitat protegido del venado de los Cayos, lo que puede añadir revisión ambiental. La zona está casi por completo en zonas de inundación de FEMA, donde aplican la elevación y la regla del 50% de mejora sustancial, y las velocidades de viento de diseño de los Bajos Cayos están entre las más altas del estado."
+  },
+  {
+    "slug": "key-colony-beach-monroe-county",
+    "cityName": "Key Colony Beach",
+    "countyName": "Monroe County",
+    "region": "Florida Keys",
+    "buildingDeptName": "City of Key Colony Beach Building Department",
+    "permitPortal": "City of Key Colony Beach permitting",
+    "commonViolation": "unpermitted work and expired permits",
+    "heroTitle": "Resolve Building Permits & Code Violations in Key Colony Beach",
+    "metaDescription": "Close expired permits and resolve code violations in Key Colony Beach and Monroe County (the Florida Keys). Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
+    "localNote": "Key Colony Beach is a small incorporated city near Marathon with its own building department, separate from Monroe County. As a low-lying island community it sits almost entirely in FEMA flood zones, so base-flood elevation and the 50% substantial-improvement rule commonly drive project scope, alongside some of Florida's highest design wind loads.",
+    "nearby": [
+      "Marathon",
+      "Grassy Key",
+      "Duck Key",
+      "Vaca Key"
+    ],
+    "localNoteEs": "Key Colony Beach es una pequeña ciudad incorporada cerca de Marathon con su propio departamento de construcción, separado del Condado de Monroe. Como comunidad isleña de baja altitud, está casi por completo en zonas de inundación de FEMA, así que la elevación sobre la inundación base y la regla del 50% de mejora sustancial suelen definir el alcance del proyecto, junto con algunas de las cargas de viento de diseño más altas de Florida."
+  },
+  {
+    "slug": "layton-monroe-county",
+    "cityName": "Layton",
+    "countyName": "Monroe County",
+    "region": "Florida Keys",
+    "buildingDeptName": "Monroe County Building Department",
+    "permitPortal": "Monroe County online permitting",
+    "commonViolation": "unpermitted work and expired permits",
+    "heroTitle": "Resolve Building Permits & Code Violations in Layton",
+    "metaDescription": "Close expired permits and resolve code violations in Layton and Monroe County (the Florida Keys). Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
+    "localNote": "Layton is a tiny incorporated city on Long Key; building permitting is coordinated with the Monroe County Building Department. Like the rest of the Keys it lies in FEMA flood zones where elevation and the cumulative 50% substantial-improvement rule apply, and design wind speeds are among the highest in Florida.",
+    "nearby": [
+      "Long Key",
+      "Islamorada",
+      "Marathon",
+      "Duck Key"
+    ],
+    "localNoteEs": "Layton es una pequeña ciudad incorporada en Long Key; los permisos de construcción se coordinan con el Departamento de Construcción del Condado de Monroe. Como el resto de los Cayos, está en zonas de inundación de FEMA donde aplican la elevación y el límite acumulativo del 50% de mejora sustancial, y las velocidades de viento de diseño están entre las más altas de Florida."
   }
 ]

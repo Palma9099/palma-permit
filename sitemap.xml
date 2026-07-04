@@ -84,6 +84,11 @@
   <url><loc>https://palma.llc/locations/punta-gorda-charlotte-county</loc><priority>0.8</priority></url>
   <url><loc>https://palma.llc/locations/destin-okaloosa-county</loc><priority>0.8</priority></url>
   <url><loc>https://palma.llc/locations/orange-park-clay-county</loc><priority>0.8</priority></url>
+  <url><loc>https://palma.llc/locations/key-largo-monroe-county</loc><priority>0.8</priority></url>
+  <url><loc>https://palma.llc/locations/marathon-monroe-county</loc><priority>0.8</priority></url>
+  <url><loc>https://palma.llc/locations/big-pine-key-monroe-county</loc><priority>0.8</priority></url>
+  <url><loc>https://palma.llc/locations/key-colony-beach-monroe-county</loc><priority>0.8</priority></url>
+  <url><loc>https://palma.llc/locations/layton-monroe-county</loc><priority>0.8</priority></url>
   <url><loc>https://palma.llc/es/locations</loc><priority>0.7</priority></url>
   <url><loc>https://palma.llc/es/locations/orlando-orange-county</loc><priority>0.7</priority></url>
   <url><loc>https://palma.llc/es/locations/tampa-hillsborough-county</loc><priority>0.7</priority></url>
@@ -108,4 +113,9 @@
   <url><loc>https://palma.llc/es/locations/punta-gorda-charlotte-county</loc><priority>0.7</priority></url>
   <url><loc>https://palma.llc/es/locations/destin-okaloosa-county</loc><priority>0.7</priority></url>
   <url><loc>https://palma.llc/es/locations/orange-park-clay-county</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/es/locations/key-largo-monroe-county</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/es/locations/marathon-monroe-county</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/es/locations/big-pine-key-monroe-county</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/es/locations/key-colony-beach-monroe-county</loc><priority>0.7</priority></url>
+  <url><loc>https://palma.llc/es/locations/layton-monroe-county</loc><priority>0.7</priority></url>
 </urlset>
