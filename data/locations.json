@@ -92,7 +92,39 @@
       "Estero",
       "Lehigh Acres"
     ],
-    "localNoteEs": "Cape Coral, Fort Myers, Bonita Springs y Estero emiten permisos en sus propios portales; el área no incorporada de Lee se tramita por el condado. El suroeste de Florida está expuesto a huracanes y muy zonificado por inundación, y el trabajo de reparación tras las tormentas hace que los permisos abiertos y vencidos sean especialmente comunes aquí - la regla FEMA del 50% se aplica con frecuencia."
+    "localNoteEs": "Cape Coral, Fort Myers, Bonita Springs y Estero emiten permisos en sus propios portales; el área no incorporada de Lee se tramita por el condado. El suroeste de Florida está expuesto a huracanes y muy zonificado por inundación, y el trabajo de reparación tras las tormentas hace que los permisos abiertos y vencidos sean especialmente comunes aquí - la regla FEMA del 50% se aplica con frecuencia.",
+    "codeRefs": [
+      {
+        "label": "Lee County Building & Permitting Services",
+        "url": "https://www.leegov.com/dcd/BldPermitServ"
+      },
+      {
+        "label": "Lee County Permits (Accela Citizen Access)",
+        "url": "https://aca-prod.accela.com/LEECO/Cap/CapHome.aspx?module=Permitting"
+      },
+      {
+        "label": "City of Fort Myers Building, Permitting & Inspections",
+        "url": "https://www.fortmyers.gov/1293/Building-Permitting-Inspections"
+      }
+    ],
+    "news": [
+      {
+        "title": "Officials implore: hurricane damage? Pull a permit",
+        "source": "Cape Coral Breeze",
+        "date": "2024",
+        "url": "https://www.capecoralbreeze.com/news/business/2024/10/17/officials-implore-hurricane-damage-pull-a-permit/"
+      },
+      {
+        "title": "Fort Myers Beach pier rebuild aims for completion in 2027",
+        "source": "WINK News",
+        "date": "2026",
+        "url": "https://www.winknews.com/news/lee/fort-myers-beach-pier-rebuild-aims-for-completion-in-2027/article_c68f0595-1559-4f0f-8815-d55d65c339b1.html"
+      }
+    ],
+    "ahjInfo": [
+      "Work inside the City of Fort Myers is permitted by the city's Building, Permitting & Inspections division, while unincorporated Lee County (and neighbors like Cape Coral) run through Lee County's Department of Community Development and its Accela Citizen Access portal - so the first step is confirming which authority holds your record. Both adopt the Florida Building Code and, under Florida Statute 553.791, let a licensed private provider handle plan review and inspections in place of staff. After Hurricane Ian's 2022 permit surge, Lee County has largely cleared the backlog, with typical residential reviews now running a few weeks.",
+      "Southwest Florida is hurricane-exposed and heavily flood-zoned. Much of the region sits in FEMA Special Flood Hazard Areas, some remapped after Ian, so base-flood elevation and the cumulative 50%-of-value 'substantial improvement' rule frequently reshape repairs and renovations, and the wind-borne debris region drives opening-protection and product-approval requirements. Post-storm work is exactly where open permits, expired permits, and unpermitted repairs pile up, and where Palma's coordination keeps a project moving to a clean closeout."
+    ]
   },
   {
     "slug": "lakeland-polk-county",
@@ -149,7 +181,39 @@
       "Osprey",
       "Siesta Key"
     ],
-    "localNoteEs": "La Ciudad de Sarasota y el área no incorporada del Condado de Sarasota emiten permisos por separado, así que el primer paso es confirmar qué autoridad tiene tu registro. La costa del Golfo y las islas barrera como Siesta Key y Longboat Key están en la región de escombros por viento y en zonas de inundación mapeadas, donde la protección de aberturas y la elevación por inundación suelen impulsar la revisión."
+    "localNoteEs": "La Ciudad de Sarasota y el área no incorporada del Condado de Sarasota emiten permisos por separado, así que el primer paso es confirmar qué autoridad tiene tu registro. La costa del Golfo y las islas barrera como Siesta Key y Longboat Key están en la región de escombros por viento y en zonas de inundación mapeadas, donde la protección de aberturas y la elevación por inundación suelen impulsar la revisión.",
+    "codeRefs": [
+      {
+        "label": "Sarasota County Building Division",
+        "url": "https://www.scgov.net/government/planning-and-development-services/building"
+      },
+      {
+        "label": "Sarasota County Code, Ch. 22 - Buildings & Building Regulations (Municode)",
+        "url": "https://library.municode.com/fl/sarasota_county/codes/code_of_ordinances?nodeId=PTIICOOR_CH22BUBURE"
+      },
+      {
+        "label": "Sarasota County Code Enforcement",
+        "url": "https://www.scgov.net/government/planning-and-development-services/code-enforcement"
+      }
+    ],
+    "news": [
+      {
+        "title": "Florida governor signs bill dropping permits for work valued at $7,500 or less (HB 803)",
+        "source": "Insurance Journal",
+        "date": "2026",
+        "url": "https://www.insurancejournal.com/news/southeast/2026/05/08/869167.htm"
+      },
+      {
+        "title": "New law cuts permit fees and speeds up home renovations",
+        "source": "Islander News",
+        "date": "2026",
+        "url": "https://www.islandernews.com/news/florida/new-law-cuts-permit-fees-and-speeds-up-home-renovations/article_87211310-2c14-4bc1-a957-a307d7be7347.html"
+      }
+    ],
+    "ahjInfo": [
+      "Work in unincorporated Sarasota County is permitted by the Sarasota County Building Division under Chapter 22 (Buildings and Building Regulations) of the county code and the Florida Building Code, while the City of Sarasota permits its own area - so the first step is confirming which authority holds your record. Under Florida Statute 553.791, a licensed private provider can handle plan review and inspections. The county has modernized permitting recently, adding live virtual inspections and expedited reviews for smaller residential work.",
+      "Sarasota's Gulf coast and barrier islands like Siesta Key and Longboat Key sit in FEMA Special Flood Hazard Areas and the wind-borne debris region, so base-flood elevation, the 50%-of-value substantial-improvement rule, opening protection, and product approvals frequently shape a project. Those local rules are where expired permits, open permits, and unpermitted coastal work surface, and where Palma's coordination keeps the project moving."
+    ]
   },
   {
     "slug": "bradenton-manatee-county",
@@ -168,7 +232,39 @@
       "Anna Maria",
       "Ellenton"
     ],
-    "localNoteEs": "Bradenton y el área no incorporada del Condado de Manatee tienen sistemas de permisos separados. Las parcelas costeras y de las islas barrera alrededor de Anna Maria Island están en la región de escombros por viento y en zonas de inundación mapeadas, por lo que la protección de aberturas, la elevación por inundación y la regla FEMA del 50% de mejora sustancial suelen definir el alcance de un proyecto."
+    "localNoteEs": "Bradenton y el área no incorporada del Condado de Manatee tienen sistemas de permisos separados. Las parcelas costeras y de las islas barrera alrededor de Anna Maria Island están en la región de escombros por viento y en zonas de inundación mapeadas, por lo que la protección de aberturas, la elevación por inundación y la regla FEMA del 50% de mejora sustancial suelen definir el alcance de un proyecto.",
+    "codeRefs": [
+      {
+        "label": "Manatee County Development Services (Building & Permitting)",
+        "url": "https://www.mymanatee.org/departments/development-services-department"
+      },
+      {
+        "label": "Manatee County Code, Ch. 2-6 - Buildings & Building Regulations (Municode)",
+        "url": "https://library.municode.com/fl/manatee_county/codes/code_of_ordinances?nodeId=PTIIMACOCOOR_CH2-6BUBURE"
+      },
+      {
+        "label": "Manatee County Land Development Code (Municode)",
+        "url": "https://library.municode.com/fl/manatee_county/codes/land_development_code"
+      }
+    ],
+    "news": [
+      {
+        "title": "Florida governor signs bill dropping permits for work valued at $7,500 or less (HB 803)",
+        "source": "Insurance Journal",
+        "date": "2026",
+        "url": "https://www.insurancejournal.com/news/southeast/2026/05/08/869167.htm"
+      },
+      {
+        "title": "New law cuts permit fees and speeds up home renovations",
+        "source": "Islander News",
+        "date": "2026",
+        "url": "https://www.islandernews.com/news/florida/new-law-cuts-permit-fees-and-speeds-up-home-renovations/article_87211310-2c14-4bc1-a957-a307d7be7347.html"
+      }
+    ],
+    "ahjInfo": [
+      "Bradenton is an incorporated city with its own building department, while unincorporated Manatee County permits through its Development Services Department under Chapter 2-6 (Buildings and Building Regulations) of the county code and the Florida Building Code (adopted per Florida Statute 553.73); the county Land Development Code governs setbacks and use. Under Florida Statute 553.791, a licensed private provider can perform plan review and inspections in place of staff, which can shorten timelines on a stalled project.",
+      "Coastal and barrier-island parcels around Anna Maria Island sit in FEMA Special Flood Hazard Areas and the wind-borne debris region, so base-flood elevation, the cumulative 50%-of-value substantial-improvement rule, opening protection, and product approvals frequently shape renovations. Those are the local rules behind most unpermitted work, expired permits, and open permits here, and where Palma's coordination gets a case to a clean closeout."
+    ]
   },
   {
     "slug": "daytona-beach-volusia-county",
@@ -206,7 +302,39 @@
       "Stuart",
       "Tradition"
     ],
-    "localNoteEs": "La Ciudad de Port St. Lucie tiene su propio departamento de construcción de alto volumen, separado del área no incorporada del Condado de St. Lucie. Como mercado de rápido crecimiento en la Costa del Tesoro y dentro de la región de escombros por viento, la construcción nueva y las ampliaciones reciben aquí una revisión estricta de cargas de viento y aprobaciones de producto, con parcelas costeras también en zonas de inundación."
+    "localNoteEs": "La Ciudad de Port St. Lucie tiene su propio departamento de construcción de alto volumen, separado del área no incorporada del Condado de St. Lucie. Como mercado de rápido crecimiento en la Costa del Tesoro y dentro de la región de escombros por viento, la construcción nueva y las ampliaciones reciben aquí una revisión estricta de cargas de viento y aprobaciones de producto, con parcelas costeras también en zonas de inundación.",
+    "codeRefs": [
+      {
+        "label": "City of Port St. Lucie Building Department",
+        "url": "https://www.cityofpsl.com/Government/Your-City-Government/Departments/Building"
+      },
+      {
+        "label": "Port St. Lucie Code, Ch. 150 - Building Regulations (Municode)",
+        "url": "https://library.municode.com/fl/port_st._lucie/codes/code_of_ordinances?nodeId=TITXVLAUS_CH150BURE"
+      },
+      {
+        "label": "St. Lucie County Permitting & Zoning",
+        "url": "https://www.stlucieco.gov/departments-and-services/planning-and-development-services/permitting-zoning"
+      }
+    ],
+    "news": [
+      {
+        "title": "Florida governor signs bill dropping permits for work valued at $7,500 or less (HB 803)",
+        "source": "Insurance Journal",
+        "date": "2026",
+        "url": "https://www.insurancejournal.com/news/southeast/2026/05/08/869167.htm"
+      },
+      {
+        "title": "New law cuts permit fees and speeds up home renovations",
+        "source": "Islander News",
+        "date": "2026",
+        "url": "https://www.islandernews.com/news/florida/new-law-cuts-permit-fees-and-speeds-up-home-renovations/article_87211310-2c14-4bc1-a957-a307d7be7347.html"
+      }
+    ],
+    "ahjInfo": [
+      "The City of Port St. Lucie runs its own high-volume Building Department - its Authority Having Jurisdiction - permitting city work under Chapter 150 (Building Regulations) of the city code and the Florida Building Code, while unincorporated St. Lucie County permits through its Planning & Development Services division. Under Florida Statute 553.791, a licensed private provider can perform plan review and inspections in place of staff. As one of Florida's fastest-growing cities (projected past 275,000 residents by 2026), Port St. Lucie processes heavy new-construction and renovation volume.",
+      "This is a Treasure Coast market in the wind-borne debris region, so new construction and additions draw close wind-load and product-approval review, and coastal and canal-front parcels fall in FEMA flood zones where elevation and the 50%-of-value substantial-improvement rule apply. Fast growth plus prior-owner work is exactly where expired permits, open permits, and unpermitted alterations surface, and where Palma's coordination saves the most time."
+    ]
   },
   {
     "slug": "kissimmee-osceola-county",
@@ -396,7 +524,39 @@
       "Rotonda West",
       "Charlotte Harbor"
     ],
-    "localNoteEs": "La Ciudad de Punta Gorda y el área no incorporada del Condado de Charlotte (incluida Port Charlotte) emiten permisos por separado. Este condado de la costa del Golfo recibió un impacto directo del huracán Ian, por lo que el trabajo de reparación hace que los permisos abiertos y vencidos sean especialmente comunes - y con gran parte del condado en la región de escombros por viento y en zonas de inundación mapeadas, la regla FEMA del 50% de mejora sustancial se aplica con frecuencia."
+    "localNoteEs": "La Ciudad de Punta Gorda y el área no incorporada del Condado de Charlotte (incluida Port Charlotte) emiten permisos por separado. Este condado de la costa del Golfo recibió un impacto directo del huracán Ian, por lo que el trabajo de reparación hace que los permisos abiertos y vencidos sean especialmente comunes - y con gran parte del condado en la región de escombros por viento y en zonas de inundación mapeadas, la regla FEMA del 50% de mejora sustancial se aplica con frecuencia.",
+    "codeRefs": [
+      {
+        "label": "City of Punta Gorda Building Department",
+        "url": "https://www.ci.punta-gorda.fl.us/government/building"
+      },
+      {
+        "label": "Charlotte County Code of Ordinances (Municode)",
+        "url": "https://library.municode.com/fl/charlotte_county/codes/code_of_ordinances"
+      },
+      {
+        "label": "Charlotte County Code Compliance",
+        "url": "https://www.charlottecountyfl.gov/departments/community-development/code-compliance/"
+      }
+    ],
+    "news": [
+      {
+        "title": "Florida governor signs bill dropping permits for work valued at $7,500 or less (HB 803)",
+        "source": "Insurance Journal",
+        "date": "2026",
+        "url": "https://www.insurancejournal.com/news/southeast/2026/05/08/869167.htm"
+      },
+      {
+        "title": "Officials implore: hurricane damage? Pull a permit",
+        "source": "Cape Coral Breeze",
+        "date": "2024",
+        "url": "https://www.capecoralbreeze.com/news/business/2024/10/17/officials-implore-hurricane-damage-pull-a-permit/"
+      }
+    ],
+    "ahjInfo": [
+      "Punta Gorda is an incorporated city, so its Authority Having Jurisdiction is the City of Punta Gorda Building Department, while unincorporated Charlotte County (including Port Charlotte) permits through Charlotte County Building Construction Services. Both adopt the Florida Building Code under Charlotte County's Code of Ordinances framework and, under Florida Statute 553.791, allow a licensed private provider to run plan review and inspections. Charlotte is one of Florida's fastest-growing counties, so permit volumes stay high from a mix of new construction and continued hurricane rebuilding.",
+      "The county took a direct hit from Hurricane Ian in 2022, so storm repairs make open and expired permits especially common, and much of the area sits in FEMA flood zones where base-flood elevation and the cumulative 50%-of-value 'substantial improvement' rule can turn a repair into a larger project. High design wind speeds keep opening protection and product approvals central to review - the exact issues behind most unpermitted work here, and where Palma coordinates the fix."
+    ]
   },
   {
     "slug": "destin-okaloosa-county",
