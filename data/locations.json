@@ -781,7 +781,39 @@
       "Havana",
       "Monticello"
     ],
-    "localNoteEs": "La Ciudad de Tallahassee y el Condado de Leon coordinan los permisos a través de Growth Management, pero los registros de la ciudad y del condado siguen siendo distintos. Este mercado interior del Big Bend está expuesto a huracanes desde el Golfo, por lo que el diseño de cargas de viento importa, mientras que los requisitos costeros de inundación son limitados en comparación con las costas de la península."
+    "localNoteEs": "La Ciudad de Tallahassee y el Condado de Leon coordinan los permisos a través de Growth Management, pero los registros de la ciudad y del condado siguen siendo distintos. Este mercado interior del Big Bend está expuesto a huracanes desde el Golfo, por lo que el diseño de cargas de viento importa, mientras que los requisitos costeros de inundación son limitados en comparación con las costas de la península.",
+    "codeRefs": [
+      {
+        "label": "Tallahassee-Leon County Permit Portal (tlcpermits.org)",
+        "url": "https://www.tlcpermits.org/"
+      },
+      {
+        "label": "Leon County Code, Ch. 5 - Building Code (Municode)",
+        "url": "https://library.municode.com/fl/leon_county/codes/code_of_ordinances?nodeId=PTIICOOR_CH5BUCO"
+      },
+      {
+        "label": "City of Tallahassee Growth Management (Apps & Forms)",
+        "url": "https://www.talgov.com/growth/growth-appsandforms"
+      }
+    ],
+    "news": [
+      {
+        "title": "Florida governor signs bill dropping permits for work valued at $7,500 or less (HB 803)",
+        "source": "Insurance Journal",
+        "date": "2026",
+        "url": "https://www.insurancejournal.com/news/southeast/2026/05/08/869167.htm"
+      },
+      {
+        "title": "New law cuts permit fees and speeds up home renovations",
+        "source": "Islander News",
+        "date": "2026",
+        "url": "https://www.islandernews.com/news/florida/new-law-cuts-permit-fees-and-speeds-up-home-renovations/article_87211310-2c14-4bc1-a957-a307d7be7347.html"
+      }
+    ],
+    "ahjInfo": [
+      "The City of Tallahassee and Leon County share a joint online permitting hub at tlcpermits.org, though city work and unincorporated-county work are still reviewed by their respective building offices, so the first step is confirming which authority holds your record. Both adopt the Florida Building Code, with the county code addressing building in Chapter 5, and under Florida Statute 553.791 a licensed private provider can perform plan review and inspections in place of staff. As the state capital and a university town, Tallahassee sees steady renovation and rental-conversion volume.",
+      "Inland North Florida is not a High-Velocity Hurricane Zone, but wind-load and energy-code compliance drive most plan-review comments, and creek-adjacent and low-lying parcels can fall in mapped FEMA flood zones where base-flood elevation applies. Older housing stock plus prior-owner work is exactly where expired permits, open permits, and unpermitted alterations surface, and where Palma's coordination keeps a project moving to a clean closeout."
+    ]
   },
   {
     "slug": "pensacola-escambia-county",
@@ -800,7 +832,39 @@
       "Cantonment",
       "Pace"
     ],
-    "localNoteEs": "Pensacola y el área no incorporada del Condado de Escambia emiten permisos por separado. El oeste del Panhandle tiene algunas de las velocidades de viento de diseño más altas de Florida y está de lleno en la región de escombros por viento, por lo que la protección de aberturas y las aprobaciones de producto son centrales en la revisión - y las parcelas frente al Golfo y a la bahía están en zonas de inundación costera."
+    "localNoteEs": "Pensacola y el área no incorporada del Condado de Escambia emiten permisos por separado. El oeste del Panhandle tiene algunas de las velocidades de viento de diseño más altas de Florida y está de lleno en la región de escombros por viento, por lo que la protección de aberturas y las aprobaciones de producto son centrales en la revisión - y las parcelas frente al Golfo y a la bahía están en zonas de inundación costera.",
+    "codeRefs": [
+      {
+        "label": "City of Pensacola Building Inspections (DSD)",
+        "url": "https://www.cityofpensacola.com/131/DSD---Building-Inspections"
+      },
+      {
+        "label": "Pensacola Code, Ch. 14-2 - Building Construction Standards (Municode)",
+        "url": "https://library.municode.com/fl/pensacola/codes/code_of_ordinances?nodeId=PTIICOOR_TITXIVBUCOFICO_CH14-2BUCOST"
+      },
+      {
+        "label": "Escambia County Building Services & Permitting",
+        "url": "https://myescambia.com/our-services/building-services/permitting"
+      }
+    ],
+    "news": [
+      {
+        "title": "Florida governor signs bill dropping permits for work valued at $7,500 or less (HB 803)",
+        "source": "Insurance Journal",
+        "date": "2026",
+        "url": "https://www.insurancejournal.com/news/southeast/2026/05/08/869167.htm"
+      },
+      {
+        "title": "New law cuts permit fees and speeds up home renovations",
+        "source": "Islander News",
+        "date": "2026",
+        "url": "https://www.islandernews.com/news/florida/new-law-cuts-permit-fees-and-speeds-up-home-renovations/article_87211310-2c14-4bc1-a957-a307d7be7347.html"
+      }
+    ],
+    "ahjInfo": [
+      "Work inside the City of Pensacola is permitted by the city's Development Services Department (Building Inspections) under Chapter 14-2 (Building Construction Standards) of the city code, while unincorporated Escambia County permits through its Building Services division, so the first step is confirming which authority holds your record. Both adopt the Florida Building Code, and under Florida Statute 553.791 a licensed private provider can perform plan review and inspections in place of staff.",
+      "This is the far-western Panhandle Gulf coast, where design wind speeds run high and the area sits in the wind-borne debris region, so impact-rated openings, product approvals, and method-of-wind-load documentation are routine review items, with local enforcement shaped by lessons from Hurricane Michael. Escambia County's FEMA Flood Insurance Rate Maps were updated effective August 19, 2025, so base-flood elevation and the substantial-improvement rule frequently apply, and storm-recovery work is where open permits, expired permits, and unpermitted repairs surface."
+    ]
   },
   {
     "slug": "st-augustine-st-johns-county",
@@ -1023,7 +1087,39 @@
       "Crestview",
       "Mary Esther"
     ],
-    "localNoteEs": "Destin, Fort Walton Beach, Crestview y Niceville emiten permisos en sus propios portales, mientras que el área no incorporada de Okaloosa usa el condado. La Costa Esmeralda tiene algunas de las velocidades de viento de diseño más altas de Florida y está en la región de escombros por viento, por lo que la protección de aberturas y las aprobaciones de producto son centrales en la revisión - y las parcelas frente a la playa y al puerto están en zonas de inundación costera."
+    "localNoteEs": "Destin, Fort Walton Beach, Crestview y Niceville emiten permisos en sus propios portales, mientras que el área no incorporada de Okaloosa usa el condado. La Costa Esmeralda tiene algunas de las velocidades de viento de diseño más altas de Florida y está en la región de escombros por viento, por lo que la protección de aberturas y las aprobaciones de producto son centrales en la revisión - y las parcelas frente a la playa y al puerto están en zonas de inundación costera.",
+    "codeRefs": [
+      {
+        "label": "City of Destin Building & Permitting Division",
+        "url": "https://www.cityofdestin.com/89/Building-and-Permitting"
+      },
+      {
+        "label": "Okaloosa County Code, Ch. 6 Art. VI - Building Code (Municode)",
+        "url": "https://library.municode.com/fl/okaloosa_county/codes/code_of_ordinances?nodeId=COOR_CH6BUCO_ARTVIBUCO"
+      },
+      {
+        "label": "Okaloosa County Permitting & Inspections",
+        "url": "https://permits.myokaloosa.com/"
+      }
+    ],
+    "news": [
+      {
+        "title": "Florida governor signs bill dropping permits for work valued at $7,500 or less (HB 803)",
+        "source": "Insurance Journal",
+        "date": "2026",
+        "url": "https://www.insurancejournal.com/news/southeast/2026/05/08/869167.htm"
+      },
+      {
+        "title": "New law cuts permit fees and speeds up home renovations",
+        "source": "Islander News",
+        "date": "2026",
+        "url": "https://www.islandernews.com/news/florida/new-law-cuts-permit-fees-and-speeds-up-home-renovations/article_87211310-2c14-4bc1-a957-a307d7be7347.html"
+      }
+    ],
+    "ahjInfo": [
+      "The City of Destin permits work within city limits through its own Building and Permitting Division, enforcing the 2023 Florida Building Code (8th edition) with modified flood provisions, while unincorporated Okaloosa County permits through its Growth Management department and the permits.myokaloosa.com portal under Chapter 6 (Building Code) of the county code, so the first step is confirming which authority holds your record. Under Florida Statute 553.791, a licensed private provider can perform plan review and inspections in place of staff.",
+      "This is an Emerald Coast resort market, so Gulf-front and Choctawhatchee Bay parcels sit in FEMA Special Flood Hazard Areas and the wind-borne debris region, with the county applying ASCE 7-22 wind criteria, making base-flood elevation, opening protection, and product approvals frequent review triggers. Heavy short-term-rental turnover and storm repairs are exactly where open permits, expired permits, and unpermitted work surface, and where Palma's coordination saves the most time."
+    ]
   },
   {
     "slug": "orange-park-clay-county",
@@ -1199,7 +1295,39 @@
       "Summerland Key",
       "Ramrod Key"
     ],
-    "localNoteEs": "Big Pine Key es el Bajo Cayo no incorporado, con permisos del Departamento de Construcción del Condado de Monroe, y partes están dentro del hábitat protegido del venado de los Cayos, lo que puede añadir revisión ambiental. La zona está casi por completo en zonas de inundación de FEMA, donde aplican la elevación y la regla del 50% de mejora sustancial, y las velocidades de viento de diseño de los Bajos Cayos están entre las más altas del estado."
+    "localNoteEs": "Big Pine Key es el Bajo Cayo no incorporado, con permisos del Departamento de Construcción del Condado de Monroe, y partes están dentro del hábitat protegido del venado de los Cayos, lo que puede añadir revisión ambiental. La zona está casi por completo en zonas de inundación de FEMA, donde aplican la elevación y la regla del 50% de mejora sustancial, y las velocidades de viento de diseño de los Bajos Cayos están entre las más altas del estado.",
+    "codeRefs": [
+      {
+        "label": "Monroe County Building & Permitting",
+        "url": "https://www.monroecounty-fl.gov/149/Building-and-Permitting"
+      },
+      {
+        "label": "Monroe County Code, Ch. 6 - Buildings & Building Regulations (Municode)",
+        "url": "https://library.municode.com/fl/monroe_county/codes/code_of_ordinances?nodeId=CH6BUCO"
+      },
+      {
+        "label": "Monroe County Online Permitting Services",
+        "url": "https://www.monroecounty-fl.gov/1278/Online-Permitting-Services"
+      }
+    ],
+    "news": [
+      {
+        "title": "Florida Keys building-permit moratorium rejected by commissioners",
+        "source": "WLRN",
+        "date": "2025",
+        "url": "https://www.wlrn.org/news-in-brief/2025-01-24/monroe-county-moratorium-building-permits"
+      },
+      {
+        "title": "County to 'stay the course' on ROGO building-permit allocations",
+        "source": "KeysNews",
+        "date": "2024",
+        "url": "https://www.keysnews.com/news/local/county-to-stay-the-course-on-allocations/article_3c4a66f9-cbac-4f0b-aa6a-9e994f89efe3.html"
+      }
+    ],
+    "ahjInfo": [
+      "Big Pine Key is an unincorporated community in the Lower Keys, so its Authority Having Jurisdiction is the Monroe County Building Department, which runs a permitting office right on the island at 179 Key Deer Blvd. The county adopts the Florida Building Code and operates the regional Keys land-development framework, including the ROGO/BPAS allocation system that caps new residential permits, and under Florida Statute 553.791 a licensed private provider can perform inspections in place of county staff to keep a project moving.",
+      "Big Pine Key sits in a high-wind zone and lies almost entirely within FEMA flood zones, so base-flood elevation and the cumulative 50%-of-value substantial-improvement rule frequently reshape repairs and renovations, and the National Key Deer Refuge adds habitat and ROGO constraints on the island. Older stilt and ground-level homes are exactly where legacy unpermitted work, expired permits, and open permits surface, and where Palma's coordination gets a case to a clean closeout."
+    ]
   },
   {
     "slug": "key-colony-beach-monroe-county",
@@ -1218,7 +1346,39 @@
       "Duck Key",
       "Vaca Key"
     ],
-    "localNoteEs": "Key Colony Beach es una pequeña ciudad incorporada cerca de Marathon con su propio departamento de construcción, separado del Condado de Monroe. Como comunidad isleña de baja altitud, está casi por completo en zonas de inundación de FEMA, así que la elevación sobre la inundación base y la regla del 50% de mejora sustancial suelen definir el alcance del proyecto, junto con algunas de las cargas de viento de diseño más altas de Florida."
+    "localNoteEs": "Key Colony Beach es una pequeña ciudad incorporada cerca de Marathon con su propio departamento de construcción, separado del Condado de Monroe. Como comunidad isleña de baja altitud, está casi por completo en zonas de inundación de FEMA, así que la elevación sobre la inundación base y la regla del 50% de mejora sustancial suelen definir el alcance del proyecto, junto con algunas de las cargas de viento de diseño más altas de Florida.",
+    "codeRefs": [
+      {
+        "label": "City of Key Colony Beach Building Department & Code Enforcement",
+        "url": "https://keycolonybeach.net/building-department-and-code-enforcement/"
+      },
+      {
+        "label": "Key Colony Beach Code, Ch. 6 - Buildings (Municode)",
+        "url": "https://library.municode.com/fl/key_colony_beach/codes/code_of_ordinances?nodeId=PTIICOOR_CH6BU"
+      },
+      {
+        "label": "Monroe County Code, Ch. 6 - Buildings & Building Regulations (Municode)",
+        "url": "https://library.municode.com/fl/monroe_county/codes/code_of_ordinances?nodeId=CH6BUCO"
+      }
+    ],
+    "news": [
+      {
+        "title": "Florida Keys building-permit moratorium rejected by commissioners",
+        "source": "WLRN",
+        "date": "2025",
+        "url": "https://www.wlrn.org/news-in-brief/2025-01-24/monroe-county-moratorium-building-permits"
+      },
+      {
+        "title": "County to 'stay the course' on ROGO building-permit allocations",
+        "source": "KeysNews",
+        "date": "2024",
+        "url": "https://www.keysnews.com/news/local/county-to-stay-the-course-on-allocations/article_3c4a66f9-cbac-4f0b-aa6a-9e994f89efe3.html"
+      }
+    ],
+    "ahjInfo": [
+      "Key Colony Beach is an incorporated Middle Keys city, so its Authority Having Jurisdiction is the City of Key Colony Beach Building Department at 600 West Ocean Drive, not Monroe County. The city runs its own plan review, permitting, inspections, and floodplain management through a Citizenserve portal while adopting the Florida Building Code and operating within the regional Keys land-development framework, including a ROGO allocation system for new residential permits. Under Florida Statute 553.791, a licensed private provider can perform inspections in place of city staff.",
+      "The city is a man-made island that lies entirely within FEMA flood zones and a high-wind coastal region, so base-flood elevation, opening protection, and the cumulative 50%-of-value substantial-improvement rule frequently shape a project. Older canal-front homes are exactly where legacy unpermitted work, expired permits, and open permits show up, and where Palma's coordination saves time."
+    ]
   },
   {
     "slug": "layton-monroe-county",
@@ -1237,6 +1397,38 @@
       "Marathon",
       "Duck Key"
     ],
-    "localNoteEs": "Layton es una pequeña ciudad incorporada en Long Key; los permisos de construcción se coordinan con el Departamento de Construcción del Condado de Monroe. Como el resto de los Cayos, está en zonas de inundación de FEMA donde aplican la elevación y el límite acumulativo del 50% de mejora sustancial, y las velocidades de viento de diseño están entre las más altas de Florida."
+    "localNoteEs": "Layton es una pequeña ciudad incorporada en Long Key; los permisos de construcción se coordinan con el Departamento de Construcción del Condado de Monroe. Como el resto de los Cayos, está en zonas de inundación de FEMA donde aplican la elevación y el límite acumulativo del 50% de mejora sustancial, y las velocidades de viento de diseño están entre las más altas de Florida.",
+    "codeRefs": [
+      {
+        "label": "Monroe County Building & Permitting (Keys regional framework)",
+        "url": "https://www.monroecounty-fl.gov/149/Building-and-Permitting"
+      },
+      {
+        "label": "Monroe County Code, Ch. 6 - Buildings & Building Regulations (Municode)",
+        "url": "https://library.municode.com/fl/monroe_county/codes/code_of_ordinances?nodeId=CH6BUCO"
+      },
+      {
+        "label": "Monroe County Online Permitting Services",
+        "url": "https://www.monroecounty-fl.gov/1278/Online-Permitting-Services"
+      }
+    ],
+    "news": [
+      {
+        "title": "Florida Keys building-permit moratorium rejected by commissioners",
+        "source": "WLRN",
+        "date": "2025",
+        "url": "https://www.wlrn.org/news-in-brief/2025-01-24/monroe-county-moratorium-building-permits"
+      },
+      {
+        "title": "County to 'stay the course' on ROGO building-permit allocations",
+        "source": "KeysNews",
+        "date": "2024",
+        "url": "https://www.keysnews.com/news/local/county-to-stay-the-course-on-allocations/article_3c4a66f9-cbac-4f0b-aa6a-9e994f89efe3.html"
+      }
+    ],
+    "ahjInfo": [
+      "Layton is a small incorporated city on Long Key, so it maintains its own building department while operating within the Monroe County regional Keys land-development framework, so the first step is confirming whether the city or county resource covers your record. The Florida Building Code applies, along with the ROGO/BPAS allocation system that caps new residential permits, and under Florida Statute 553.791 a licensed private provider can perform inspections in place of staff to keep a project moving.",
+      "Long Key lies almost entirely within FEMA flood zones and a high-wind coastal region, so base-flood elevation, opening protection, and the cumulative 50%-of-value substantial-improvement rule frequently reshape repairs and renovations. Older single-family and mobile-home structures are exactly where legacy unpermitted work, expired permits, and open permits surface, and where Palma's coordination gets a case to a clean closeout."
+    ]
   }
 ]
