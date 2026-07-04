@@ -16,7 +16,39 @@
       "Apopka",
       "Winter Garden"
     ],
-    "localNoteEs": "El Condado de Orange gestiona los permisos de las áreas no incorporadas mediante su sistema en línea Fast Track, mientras que la Ciudad de Orlando emite permisos en su propio portal - así que el primer paso es confirmar qué autoridad tiene el registro. El centro de Florida no es Zona de Huracanes de Alta Velocidad, pero el cumplimiento de cargas de viento y del código de energía sigue generando la mayoría de los comentarios de revisión."
+    "localNoteEs": "El Condado de Orange gestiona los permisos de las áreas no incorporadas mediante su sistema en línea Fast Track, mientras que la Ciudad de Orlando emite permisos en su propio portal - así que el primer paso es confirmar qué autoridad tiene el registro. El centro de Florida no es Zona de Huracanes de Alta Velocidad, pero el cumplimiento de cargas de viento y del código de energía sigue generando la mayoría de los comentarios de revisión.",
+    "codeRefs": [
+      {
+        "label": "City of Orlando Permitting Services Division",
+        "url": "https://www.orlando.gov/Building-Development/Permits-Inspections"
+      },
+      {
+        "label": "Orlando Code, Ch. 13 - Building Code (Municode)",
+        "url": "https://library.municode.com/fl/orlando/codes/code_of_ordinances?nodeId=TITIICICO_CH13BUCO"
+      },
+      {
+        "label": "Orange County Fast Track (permitting & permit search)",
+        "url": "https://fasttrack.ocfl.net/OnlineServices/"
+      }
+    ],
+    "news": [
+      {
+        "title": "Florida governor signs bill dropping permits for work valued at $7,500 or less (HB 803)",
+        "source": "Insurance Journal",
+        "date": "2026",
+        "url": "https://www.insurancejournal.com/news/southeast/2026/05/08/869167.htm"
+      },
+      {
+        "title": "New law cuts permit fees and speeds up home renovations",
+        "source": "Islander News",
+        "date": "2026",
+        "url": "https://www.islandernews.com/news/florida/new-law-cuts-permit-fees-and-speeds-up-home-renovations/article_87211310-2c14-4bc1-a957-a307d7be7347.html"
+      }
+    ],
+    "ahjInfo": [
+      "Work inside the City of Orlando is permitted by the city's Permitting Services Division under Chapter 13 (Building Code) of the city code, while unincorporated Orange County permits through its Division of Building Safety and the Fast Track online system, so the first step is confirming which authority holds your record. Both adopt the Florida Building Code, and under Florida Statute 553.791 a licensed private provider can perform plan review and inspections in place of staff. Orlando is the fastest-growing large metro in the country, so permit volumes stay high across new construction and renovation.",
+      "Central Florida is not a High-Velocity Hurricane Zone, but wind-load and energy-code compliance still drive most plan-review comments, and lakefront and low-lying parcels can fall in mapped FEMA flood zones where base-flood elevation applies. Rapid growth plus prior-owner work is exactly where expired permits, open permits, and unpermitted alterations surface, and where Palma's coordination keeps a project moving to a clean closeout."
+    ]
   },
   {
     "slug": "tampa-hillsborough-county",
@@ -411,7 +443,39 @@
       "DeLand",
       "New Smyrna Beach"
     ],
-    "localNoteEs": "Daytona Beach y las demás ciudades de Volusia emiten permisos en sus propios portales, mientras que el área no incorporada de Volusia usa el condado. Las parcelas frente al océano y al río Halifax están en la región de escombros por viento y en zonas de inundación costera, por lo que la protección de aberturas y la elevación por inundación son motivos frecuentes de revisión."
+    "localNoteEs": "Daytona Beach y las demás ciudades de Volusia emiten permisos en sus propios portales, mientras que el área no incorporada de Volusia usa el condado. Las parcelas frente al océano y al río Halifax están en la región de escombros por viento y en zonas de inundación costera, por lo que la protección de aberturas y la elevación por inundación son motivos frecuentes de revisión.",
+    "codeRefs": [
+      {
+        "label": "City of Daytona Beach Permits & Licensing",
+        "url": "https://www.daytonabeach.gov/258/Permits-Licensing"
+      },
+      {
+        "label": "Volusia County Building & Code Administration",
+        "url": "https://www.volusia.org/services/growth-and-resource-management/building-and-zoning/"
+      },
+      {
+        "label": "Volusia County Permit Guide (portal)",
+        "url": "https://permitguide.volusia.org/"
+      }
+    ],
+    "news": [
+      {
+        "title": "Florida governor signs bill dropping permits for work valued at $7,500 or less (HB 803)",
+        "source": "Insurance Journal",
+        "date": "2026",
+        "url": "https://www.insurancejournal.com/news/southeast/2026/05/08/869167.htm"
+      },
+      {
+        "title": "New law cuts permit fees and speeds up home renovations",
+        "source": "Islander News",
+        "date": "2026",
+        "url": "https://www.islandernews.com/news/florida/new-law-cuts-permit-fees-and-speeds-up-home-renovations/article_87211310-2c14-4bc1-a957-a307d7be7347.html"
+      }
+    ],
+    "ahjInfo": [
+      "The City of Daytona Beach permits work within city limits through its Permits and Licensing division, while unincorporated Volusia County permits through its Building and Code Administration and the Volusia Permit Guide portal, so the first step is confirming which authority holds your record. Both adopt the Florida Building Code, and under Florida Statute 553.791 a licensed private provider can perform plan review and inspections in place of staff.",
+      "This is an Atlantic-coast market on the Halifax River, so oceanfront and riverfront parcels sit in FEMA Special Flood Hazard Areas and the wind-borne debris region, making base-flood elevation, opening protection, and product approvals frequent review triggers. After the 2022 storm season the cumulative 50%-of-value substantial-improvement rule reshaped many repairs, and that storm-recovery work is where open permits, expired permits, and unpermitted repairs surface, and where Palma's coordination saves the most time."
+    ]
   },
   {
     "slug": "port-st-lucie-st-lucie-county",
@@ -481,7 +545,39 @@
       "Poinciana",
       "Buenaventura Lakes"
     ],
-    "localNoteEs": "Kissimmee y St. Cloud emiten permisos en sus propios portales, mientras que el área no incorporada de Osceola usa el condado. Este es el interior del centro de Florida, así que la mayoría de los comentarios de revisión se centran en el diseño estándar de cargas de viento, el código de energía y en cerrar permisos que dueños o contratistas anteriores dejaron abiertos, más que en requisitos costeros de inundación."
+    "localNoteEs": "Kissimmee y St. Cloud emiten permisos en sus propios portales, mientras que el área no incorporada de Osceola usa el condado. Este es el interior del centro de Florida, así que la mayoría de los comentarios de revisión se centran en el diseño estándar de cargas de viento, el código de energía y en cerrar permisos que dueños o contratistas anteriores dejaron abiertos, más que en requisitos costeros de inundación.",
+    "codeRefs": [
+      {
+        "label": "Osceola County Building & Permits",
+        "url": "https://www.osceola.org/Doing-Business/Building-and-Permits"
+      },
+      {
+        "label": "Osceola County Code, Ch. 5 - Buildings & Building Regulations (Municode)",
+        "url": "https://library.municode.com/fl/osceola_county/codes/code_of_ordinances?nodeId=PTIIOSCOCOOR_CH5BUBURE"
+      },
+      {
+        "label": "Osceola County Online Permit Center (Accela)",
+        "url": "https://permits.osceola.org/CitizenAccess/Cap/CapHome.aspx?module=Building"
+      }
+    ],
+    "news": [
+      {
+        "title": "Florida governor signs bill dropping permits for work valued at $7,500 or less (HB 803)",
+        "source": "Insurance Journal",
+        "date": "2026",
+        "url": "https://www.insurancejournal.com/news/southeast/2026/05/08/869167.htm"
+      },
+      {
+        "title": "New law cuts permit fees and speeds up home renovations",
+        "source": "Islander News",
+        "date": "2026",
+        "url": "https://www.islandernews.com/news/florida/new-law-cuts-permit-fees-and-speeds-up-home-renovations/article_87211310-2c14-4bc1-a957-a307d7be7347.html"
+      }
+    ],
+    "ahjInfo": [
+      "The City of Kissimmee permits work within city limits through its own building department, while unincorporated Osceola County permits through its Community Development Department and Online Permit Center under Chapter 5 (Buildings and Building Regulations) of the county code, so the first step is confirming which authority holds your record. Both adopt the Florida Building Code, and under Florida Statute 553.791 a licensed private provider can perform plan review and inspections. As part of the fast-growing Orlando tourism corridor, Osceola processes heavy residential and short-term-rental permit volume.",
+      "Inland Central Florida is not a High-Velocity Hurricane Zone, but wind-load and energy-code compliance drive most plan-review comments, and wetland-adjacent and low-lying parcels can fall in mapped flood zones where base-flood elevation applies. Rapid growth and vacation-rental conversions are exactly where unpermitted work, expired permits, and open permits show up, and where Palma's coordination saves time."
+    ]
   },
   {
     "slug": "sanford-seminole-county",
@@ -500,7 +596,39 @@
       "Oviedo",
       "Winter Springs"
     ],
-    "localNoteEs": "Sanford, Altamonte Springs y otras ciudades de Seminole emiten permisos por separado de la División de Construcción del condado. Como condado interior del área metropolitana de Orlando, la mayoría de los comentarios de revisión involucran el cumplimiento estándar de cargas de viento y del código de energía, con parcelas frente a lagos ocasionalmente en zonas de inundación mapeadas."
+    "localNoteEs": "Sanford, Altamonte Springs y otras ciudades de Seminole emiten permisos por separado de la División de Construcción del condado. Como condado interior del área metropolitana de Orlando, la mayoría de los comentarios de revisión involucran el cumplimiento estándar de cargas de viento y del código de energía, con parcelas frente a lagos ocasionalmente en zonas de inundación mapeadas.",
+    "codeRefs": [
+      {
+        "label": "City of Sanford Building Division",
+        "url": "https://sanfordfl.gov/government/development-services/building-division/"
+      },
+      {
+        "label": "Sanford Code, Ch. 18 - Buildings & Building Regulations (Municode)",
+        "url": "https://library.municode.com/fl/sanford/codes/code_of_ordinances?nodeId=PTIICOOR_CH18BUBURE"
+      },
+      {
+        "label": "Seminole County Building Division",
+        "url": "https://www.seminolecountyfl.gov/departments-services/development-services/building"
+      }
+    ],
+    "news": [
+      {
+        "title": "Florida governor signs bill dropping permits for work valued at $7,500 or less (HB 803)",
+        "source": "Insurance Journal",
+        "date": "2026",
+        "url": "https://www.insurancejournal.com/news/southeast/2026/05/08/869167.htm"
+      },
+      {
+        "title": "New law cuts permit fees and speeds up home renovations",
+        "source": "Islander News",
+        "date": "2026",
+        "url": "https://www.islandernews.com/news/florida/new-law-cuts-permit-fees-and-speeds-up-home-renovations/article_87211310-2c14-4bc1-a957-a307d7be7347.html"
+      }
+    ],
+    "ahjInfo": [
+      "The City of Sanford runs its own Building Division, taking applications through the Citizenserve portal under Chapter 18 (Buildings and Building Regulations) of the city code, while unincorporated Seminole County permits through its Building Division under Chapter 40 (Building Code) of the county code, so the first step is confirming which authority holds your record. Both adopt the Florida Building Code, and under Florida Statute 553.791 a licensed private provider can perform plan review and inspections in place of staff.",
+      "Sanford sits on Lake Monroe and the St. Johns River, so riverfront and low-lying parcels fall in mapped FEMA flood zones where base-flood elevation applies, while wind-load and energy-code compliance drive most plan-review comments elsewhere. The city's older historic-district housing stock is exactly where legacy unpermitted work, expired permits, and open permits surface, and where Palma's coordination gets a case to a clean closeout."
+    ]
   },
   {
     "slug": "gainesville-alachua-county",
@@ -665,7 +793,39 @@
       "Tavares",
       "Minneola"
     ],
-    "localNoteEs": "Clermont, Leesburg, Mount Dora y otras ciudades del Condado de Lake emiten permisos por separado de la división de Building Services del condado. En el borde occidental, montañoso y salpicado de lagos del área metropolitana de Orlando, la mayoría de los comentarios de revisión se centran en el cumplimiento estándar de cargas de viento y del código de energía, con parcelas frente a lagos ocasionalmente en zonas de inundación mapeadas."
+    "localNoteEs": "Clermont, Leesburg, Mount Dora y otras ciudades del Condado de Lake emiten permisos por separado de la división de Building Services del condado. En el borde occidental, montañoso y salpicado de lagos del área metropolitana de Orlando, la mayoría de los comentarios de revisión se centran en el cumplimiento estándar de cargas de viento y del código de energía, con parcelas frente a lagos ocasionalmente en zonas de inundación mapeadas.",
+    "codeRefs": [
+      {
+        "label": "City of Clermont Building Services",
+        "url": "https://www.clermontfl.gov/508/Building-Services"
+      },
+      {
+        "label": "Clermont Code, Ch. 8 - Buildings & Building Regulations (Municode)",
+        "url": "https://library.municode.com/fl/clermont/codes/code_of_ordinances?nodeId=SPAGEOR_CH8BUBURE"
+      },
+      {
+        "label": "Lake County Code of Ordinances (Municode)",
+        "url": "https://library.municode.com/fl/lake_county/codes/code_of_ordinances"
+      }
+    ],
+    "news": [
+      {
+        "title": "Florida governor signs bill dropping permits for work valued at $7,500 or less (HB 803)",
+        "source": "Insurance Journal",
+        "date": "2026",
+        "url": "https://www.insurancejournal.com/news/southeast/2026/05/08/869167.htm"
+      },
+      {
+        "title": "New law cuts permit fees and speeds up home renovations",
+        "source": "Islander News",
+        "date": "2026",
+        "url": "https://www.islandernews.com/news/florida/new-law-cuts-permit-fees-and-speeds-up-home-renovations/article_87211310-2c14-4bc1-a957-a307d7be7347.html"
+      }
+    ],
+    "ahjInfo": [
+      "The City of Clermont permits work within city limits through its Building Services division under Chapter 8 (Buildings and Building Regulations) of the city code, while unincorporated Lake County permits under its own Code of Ordinances, so the first step is confirming which authority holds your record. Both adopt the Florida Building Code, and under Florida Statute 553.791 a licensed private provider can perform plan review and inspections. Clermont is one of the fastest-growing cities on the western edge of the Orlando metro, so permit volumes stay high.",
+      "Lake County's rolling terrain and chain of lakes mean many lakefront and low-lying parcels fall in mapped FEMA flood zones where base-flood elevation applies, while wind-load and energy-code compliance drive most other plan-review comments. Fast growth plus prior-owner work is exactly where expired permits, open permits, and unpermitted alterations pile up, and where Palma's coordination keeps a project moving."
+    ]
   },
   {
     "slug": "punta-gorda-charlotte-county",
