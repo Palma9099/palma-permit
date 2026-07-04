@@ -118,7 +118,39 @@
       "Orange Park",
       "Neptune Beach"
     ],
-    "localNoteEs": "Jacksonville y el Condado de Duval están consolidados, así que casi todos los permisos se tramitan por un solo portal de la Ciudad de Jacksonville - más simple que en otras metrópolis, pero aún se escapan registros cuando dueños anteriores dejaron permisos abiertos. Las propiedades costeras y del río St. Johns están en la región de escombros por viento y en zonas de inundación mapeadas."
+    "localNoteEs": "Jacksonville y el Condado de Duval están consolidados, así que casi todos los permisos se tramitan por un solo portal de la Ciudad de Jacksonville - más simple que en otras metrópolis, pero aún se escapan registros cuando dueños anteriores dejaron permisos abiertos. Las propiedades costeras y del río St. Johns están en la región de escombros por viento y en zonas de inundación mapeadas.",
+    "codeRefs": [
+      {
+        "label": "City of Jacksonville Building Inspection Division",
+        "url": "https://www.jacksonville.gov/departments/public-works/building-inspection-division"
+      },
+      {
+        "label": "Jacksonville Permits (JaxEPICS)",
+        "url": "https://jaxepics.coj.net/"
+      },
+      {
+        "label": "Jacksonville Flood Protection Information",
+        "url": "https://www.jacksonville.gov/floodprotection"
+      }
+    ],
+    "news": [
+      {
+        "title": "Florida governor signs bill dropping permits for work valued at $7,500 or less (HB 803)",
+        "source": "Insurance Journal",
+        "date": "2026",
+        "url": "https://www.insurancejournal.com/news/southeast/2026/05/08/869167.htm"
+      },
+      {
+        "title": "New law cuts permit fees and speeds up home renovations",
+        "source": "Islander News",
+        "date": "2026",
+        "url": "https://www.islandernews.com/news/florida/new-law-cuts-permit-fees-and-speeds-up-home-renovations/article_87211310-2c14-4bc1-a957-a307d7be7347.html"
+      }
+    ],
+    "ahjInfo": [
+      "Jacksonville and Duval County are consolidated, so nearly all permitting runs through the City of Jacksonville Building Inspection Division and its JaxEPICS portal, which issues roughly 9,000 permits a month. That is simpler than most metros, but records still slip through when prior owners left permits open. The city adopts the Florida Building Code, and under Florida Statute 553.791 a licensed private provider can perform plan review and inspections in place of staff.",
+      "Coastal, riverfront, and St. Johns River properties fall in the wind-borne debris region and in mapped FEMA flood zones, with most flooding during the June-to-November rainy season, so opening protection, product approvals, and base-flood elevation are frequent review triggers. Storm and flood repair work is exactly where open permits, expired permits, and unpermitted alterations surface, and where Palma's coordination keeps a case moving to a clean closeout."
+    ]
   },
   {
     "slug": "st-petersburg-pinellas-county",
@@ -647,7 +679,39 @@
       "High Springs",
       "Archer"
     ],
-    "localNoteEs": "La Ciudad de Gainesville y el área no incorporada del Condado de Alachua emiten permisos por separado. Este mercado interior del centro-norte de Florida tiene pocas preocupaciones costeras por inundación, así que la mayoría de los comentarios de revisión se enfocan en el cumplimiento estándar de cargas de viento y del código de energía, y en cerrar permisos abiertos en propiedades de alquiler y de vivienda estudiantil."
+    "localNoteEs": "La Ciudad de Gainesville y el área no incorporada del Condado de Alachua emiten permisos por separado. Este mercado interior del centro-norte de Florida tiene pocas preocupaciones costeras por inundación, así que la mayoría de los comentarios de revisión se enfocan en el cumplimiento estándar de cargas de viento y del código de energía, y en cerrar permisos abiertos en propiedades de alquiler y de vivienda estudiantil.",
+    "codeRefs": [
+      {
+        "label": "City of Gainesville Building Division",
+        "url": "https://www.gainesvillefl.gov/Government-Pages/Government/Departments/Sustainable-Development/Building-Division/Building-Application-Process"
+      },
+      {
+        "label": "Gainesville Code, Ch. 13 - Housing & Commercial Building Code (Municode)",
+        "url": "https://library.municode.com/fl/gainesville/codes/code_of_ordinances?nodeId=PTIICOOR_CH13HOCOBUCO"
+      },
+      {
+        "label": "Alachua County Building (Growth Management)",
+        "url": "https://growth-management.alachuacounty.us/building"
+      }
+    ],
+    "news": [
+      {
+        "title": "Florida governor signs bill dropping permits for work valued at $7,500 or less (HB 803)",
+        "source": "Insurance Journal",
+        "date": "2026",
+        "url": "https://www.insurancejournal.com/news/southeast/2026/05/08/869167.htm"
+      },
+      {
+        "title": "New law cuts permit fees and speeds up home renovations",
+        "source": "Islander News",
+        "date": "2026",
+        "url": "https://www.islandernews.com/news/florida/new-law-cuts-permit-fees-and-speeds-up-home-renovations/article_87211310-2c14-4bc1-a957-a307d7be7347.html"
+      }
+    ],
+    "ahjInfo": [
+      "Work inside the City of Gainesville is permitted by the city's Building Division through the PermitGNV system under Chapter 13 (Housing and Commercial Building Code) of the city code, while unincorporated Alachua County permits through Growth Management under Title 33 (Building Code) of the county code, so the first step is confirming which authority holds your record. Both adopt the Florida Building Code, and under Florida Statute 553.791 a licensed private provider can perform plan review and inspections in place of staff. As a university town, Gainesville sees steady renovation and rental-conversion volume.",
+      "North Central Florida is not a High-Velocity Hurricane Zone, but wind-load and energy-code compliance drive most plan-review comments, and creek-adjacent and low-lying parcels can fall in mapped FEMA flood zones where base-flood elevation applies. Older near-campus rental stock is exactly where legacy unpermitted work, expired permits, and open permits surface, and where Palma's coordination keeps a project moving to a clean closeout."
+    ]
   },
   {
     "slug": "ocala-marion-county",
@@ -666,7 +730,39 @@
       "Silver Springs",
       "The Villages"
     ],
-    "localNoteEs": "La Ciudad de Ocala y el área no incorporada del Condado de Marion emiten permisos por separado. Este mercado interior y de rápido crecimiento del centro-norte de Florida ve pocos requisitos costeros de inundación, así que la mayoría de los comentarios de revisión se centran en el diseño estándar de cargas de viento, el código de energía y los permisos posteriores al hecho para establos, ampliaciones y estructuras accesorias."
+    "localNoteEs": "La Ciudad de Ocala y el área no incorporada del Condado de Marion emiten permisos por separado. Este mercado interior y de rápido crecimiento del centro-norte de Florida ve pocos requisitos costeros de inundación, así que la mayoría de los comentarios de revisión se centran en el diseño estándar de cargas de viento, el código de energía y los permisos posteriores al hecho para establos, ampliaciones y estructuras accesorias.",
+    "codeRefs": [
+      {
+        "label": "City of Ocala Building Services",
+        "url": "https://www.ocalafl.gov/government/city-departments-a-h/growth-management/building"
+      },
+      {
+        "label": "Ocala Code, Ch. 82 - Buildings & Building Regulations (Municode)",
+        "url": "https://library.municode.com/fl/ocala/codes/code_of_ordinances?nodeId=PTIICOOR_CH82BUBURE"
+      },
+      {
+        "label": "Marion County Building Safety",
+        "url": "https://www.marionfl.org/agencies-departments/departments-facilities-offices/building-safety"
+      }
+    ],
+    "news": [
+      {
+        "title": "Florida governor signs bill dropping permits for work valued at $7,500 or less (HB 803)",
+        "source": "Insurance Journal",
+        "date": "2026",
+        "url": "https://www.insurancejournal.com/news/southeast/2026/05/08/869167.htm"
+      },
+      {
+        "title": "New law cuts permit fees and speeds up home renovations",
+        "source": "Islander News",
+        "date": "2026",
+        "url": "https://www.islandernews.com/news/florida/new-law-cuts-permit-fees-and-speeds-up-home-renovations/article_87211310-2c14-4bc1-a957-a307d7be7347.html"
+      }
+    ],
+    "ahjInfo": [
+      "The City of Ocala permits work within city limits through its Building Services division and the ProjectDox plan-review system under Chapter 82 (Buildings and Building Regulations) of the city code, while unincorporated Marion County permits through its Building Safety department, so the first step is confirming which authority holds your record. Both adopt the Florida Building Code (8th edition), and under Florida Statute 553.791 a licensed private provider can perform plan review and inspections. Marion County's horse-country growth keeps residential permit volume high.",
+      "Inland Marion County is not a High-Velocity Hurricane Zone, but wind-load and energy-code compliance drive most plan-review comments, and spring-fed and low-lying parcels can fall in mapped flood zones where base-flood elevation applies. Rapid growth plus prior-owner work is exactly where expired permits, open permits, and unpermitted alterations pile up, and where Palma's coordination saves time."
+    ]
   },
   {
     "slug": "tallahassee-leon-county",
@@ -723,7 +819,39 @@
       "Nocatee",
       "St. Johns"
     ],
-    "localNoteEs": "La Ciudad de St. Augustine y el área no incorporada del Condado de St. Johns emiten permisos por separado, y el trabajo en el distrito histórico conlleva requisitos adicionales de revisión arquitectónica. Como condado costero del Atlántico de rápido crecimiento en la región de escombros por viento, las parcelas frente al océano y al Intracoastal también están en zonas de inundación mapeadas."
+    "localNoteEs": "La Ciudad de St. Augustine y el área no incorporada del Condado de St. Johns emiten permisos por separado, y el trabajo en el distrito histórico conlleva requisitos adicionales de revisión arquitectónica. Como condado costero del Atlántico de rápido crecimiento en la región de escombros por viento, las parcelas frente al océano y al Intracoastal también están en zonas de inundación mapeadas.",
+    "codeRefs": [
+      {
+        "label": "City of St. Augustine Planning & Building",
+        "url": "https://www.citystaug.com/164/Planning-Building"
+      },
+      {
+        "label": "St. Johns County Building Department",
+        "url": "https://www.sjcfl.us/departments/building-department/"
+      },
+      {
+        "label": "St. Johns County Online Permitting & Status (Accela)",
+        "url": "https://www.sjcfl.us/permit-status/"
+      }
+    ],
+    "news": [
+      {
+        "title": "Florida governor signs bill dropping permits for work valued at $7,500 or less (HB 803)",
+        "source": "Insurance Journal",
+        "date": "2026",
+        "url": "https://www.insurancejournal.com/news/southeast/2026/05/08/869167.htm"
+      },
+      {
+        "title": "New law cuts permit fees and speeds up home renovations",
+        "source": "Islander News",
+        "date": "2026",
+        "url": "https://www.islandernews.com/news/florida/new-law-cuts-permit-fees-and-speeds-up-home-renovations/article_87211310-2c14-4bc1-a957-a307d7be7347.html"
+      }
+    ],
+    "ahjInfo": [
+      "Work inside the City of St. Augustine is permitted by the city's Planning and Building Department, while unincorporated St. Johns County permits online through the Accela Citizen Access portal, so the first step is confirming which authority holds your record. Both adopt the Florida Building Code, and under Florida Statute 553.791 a licensed private provider can perform plan review and inspections. The nation's oldest city has a large historic district, so older-structure review is a routine part of the process here.",
+      "St. Augustine is an Atlantic-coast market on the Matanzas River and Intracoastal, so oceanfront and riverfront parcels sit in FEMA Special Flood Hazard Areas and the wind-borne debris region. FEMA recently redrew St. Johns County's flood maps for the first time in 14 years, and the county's CRS Class 5 rating earns flood-insurance discounts, so base-flood elevation and the substantial-improvement rule frequently shape a project. Storm and flood work is where open permits, expired permits, and unpermitted repairs surface, and where Palma's coordination saves the most time."
+    ]
   },
   {
     "slug": "new-port-richey-pasco-county",
@@ -914,7 +1042,39 @@
       "Middleburg",
       "Keystone Heights"
     ],
-    "localNoteEs": "Orange Park, Green Cove Springs y Keystone Heights emiten permisos por separado del área no incorporada del Condado de Clay. En el lado suroeste del área metropolitana de Jacksonville, la mayoría del trabajo es en el interior e impulsado por el cumplimiento estándar de cargas de viento y del código de energía, con parcelas del río St. Johns y sus afluentes ocasionalmente en zonas de inundación mapeadas."
+    "localNoteEs": "Orange Park, Green Cove Springs y Keystone Heights emiten permisos por separado del área no incorporada del Condado de Clay. En el lado suroeste del área metropolitana de Jacksonville, la mayoría del trabajo es en el interior e impulsado por el cumplimiento estándar de cargas de viento y del código de energía, con parcelas del río St. Johns y sus afluentes ocasionalmente en zonas de inundación mapeadas.",
+    "codeRefs": [
+      {
+        "label": "Town of Orange Park Building Inspections & Permitting",
+        "url": "https://www.townoforangepark.com/departments/economic-community-development/building-inspections-permitting/"
+      },
+      {
+        "label": "Clay County Building Division",
+        "url": "https://www.claycountygov.com/government/building"
+      },
+      {
+        "label": "Clay County Code of Ordinances, Ch. 6 - Buildings (Municode)",
+        "url": "https://library.municode.com/fl/clay_county/codes/code_of_ordinances"
+      }
+    ],
+    "news": [
+      {
+        "title": "Florida governor signs bill dropping permits for work valued at $7,500 or less (HB 803)",
+        "source": "Insurance Journal",
+        "date": "2026",
+        "url": "https://www.insurancejournal.com/news/southeast/2026/05/08/869167.htm"
+      },
+      {
+        "title": "New law cuts permit fees and speeds up home renovations",
+        "source": "Islander News",
+        "date": "2026",
+        "url": "https://www.islandernews.com/news/florida/new-law-cuts-permit-fees-and-speeds-up-home-renovations/article_87211310-2c14-4bc1-a957-a307d7be7347.html"
+      }
+    ],
+    "ahjInfo": [
+      "The Town of Orange Park permits work within town limits through its Building Inspections and Permitting division and an online iWorq portal, while unincorporated Clay County permits through its Building Division on the Tyler Technologies Citizens Access Portal, so the first step is confirming which authority holds your record. Both adopt the Florida Building Code (8th edition), and under Florida Statute 553.791 a licensed private provider can perform plan review and inspections in place of staff.",
+      "Clay County sits along the St. Johns River and Black Creek, so riverfront and low-lying parcels fall in mapped FEMA flood zones where base-flood elevation applies, while wind-load and energy-code compliance drive most other plan-review comments. Suburban growth plus prior-owner work is exactly where expired permits, open permits, and unpermitted alterations show up, and where Palma's coordination keeps a project moving."
+    ]
   },
   {
     "slug": "key-largo-monroe-county",
