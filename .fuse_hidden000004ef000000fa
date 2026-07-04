@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Palma Permit</title>
+<meta name="description" content="Privacy policy for Palma Permit.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="">
+<div id="app-header"></div>
+<main>
+  <section class="section tight">
+    <div class="wrap" style="max-width:780px">
+      <span class="eyebrow">Legal</span>
+      <h1 style="font-size:clamp(2rem,4vw,3rem)">Privacy Policy</h1>
+      <p class="muted">Last updated: June 2026</p>
+
+      <div class="card pad-lg" style="margin-top:18px;border-left:3px solid var(--warn)">
+        <p class="muted" style="margin:0"><strong>Template notice:</strong> This is a starting-point template, not legal advice. Review and finalize it with your attorney (and align it with your hosting/processor agreements) before publishing.</p>
+      </div>
+
+      <h3 style="margin-top:28px">What we collect</h3>
+      <p class="muted">Free checklist-mode checks run entirely in your browser — no documents are uploaded. For automated deep-reads, the files you upload are processed only to generate your readiness report. We also collect basic account information (name, email, organization) and standard usage analytics.</p>
+
+      <h3>How we use it</h3>
+      <p class="muted">To provide and improve the service, generate your reports, support your account, and communicate about your plan. We do not sell your data or your uploaded documents.</p>
+
+      <h3>Document handling &amp; security</h3>
+      <p class="muted">Uploaded files are processed to produce your report and are retained only as needed for your project history. You can delete uploaded files from your project history at any time. We use encryption in transit and at rest and operate on SOC 2-aligned infrastructure.</p>
+
+      <h3>Third parties</h3>
+      <p class="muted">We use reputable infrastructure and processing providers under data-processing agreements. Enterprise customers can request a current sub-processor list and a DPA.</p>
+
+      <h3>Your choices</h3>
+      <p class="muted">You may request access to, correction of, or deletion of your data at any time by contacting us.</p>
+
+      <h3>Contact</h3>
+      <p class="muted">Privacy questions or data requests: <a class="accent" href="mailto:sales@palma.llc">sales@palma.llc</a>.</p>
+    </div>
+  </section>
+</main>
+<div id="app-footer"></div>
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/auth.js"></script>
+</body>
+</html>

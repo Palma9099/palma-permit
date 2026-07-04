@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ — Palma Permit</title>
+<meta name="description" content="Answers about how Palma Permit checks Florida building permit packages, what it covers, pricing, and data privacy.">
+<meta name="theme-color" content="#0a0f1c">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="FAQ">
+<div id="app-header"></div>
+
+<main>
+  <section class="section tight">
+    <div class="wrap" style="max-width:820px">
+      <span class="eyebrow">Questions</span>
+      <h1 style="font-size:clamp(2rem,4vw,3rem)">Frequently asked.</h1>
+
+      <details class="faq-item" open><summary>What exactly does Palma Permit do?<span class="plus">+</span></summary><div class="body">You pick your city and permit type, and we load that municipality's exact document requirements and documented rejection reasons. You confirm what's in your package — or upload it for automated review on Pro — and get a readiness score with every missing item and city-specific gotcha, plus how to fix each one, before you submit.</div></details>
+
+      <details class="faq-item"><summary>Which cities do you cover?<span class="plus">+</span></summary><div class="body">30 municipalities across Broward, Palm Beach, and Miami-Dade — including Fort Lauderdale, Hollywood, Pompano Beach, Coral Springs, Davie, Pembroke Pines, Boca Raton, Delray Beach, West Palm Beach, Wellington, Miami, Miami Beach, Hialeah, Homestead, and more. See the full list on the <a class="accent" href="cities.html">Cities</a> page.</div></details>
+
+      <details class="faq-item"><summary>How accurate is it?<span class="plus">+</span></summary><div class="body">Our requirement sets are built from each city's published submittal checklists, building-department guidance, and real documented rejections. We update them as cities change their rules. That said, requirements change and edge cases exist — Palma Permit is a readiness tool, not the authority having jurisdiction. Always confirm with the building department before filing.</div></details>
+
+      <details class="faq-item"><summary>What's the difference between a free check and an automated deep-read?<span class="plus">+</span></summary><div class="body">A free checklist check lets you confirm documents manually against the city's requirements — unlimited value, no upload. An automated deep-read (Pro / pay-as-you-go) indexes your actual uploaded PDFs, confirms each document type, and checks for signatures, seals, and valid product-approval numbers, filling the checklist for you.</div></details>
+
+      <details class="faq-item"><summary>What does it cost?<span class="plus">+</span></summary><div class="body">Free includes 3 checks a month. Pay-as-you-go automated deep-reads are $3.99 each. Pro is $19/month for 40 checks; Business is $49/month for unlimited checks and up to 5 seats. Full details on <a class="accent" href="pricing.html">Pricing</a>.</div></details>
+
+      <details class="faq-item"><summary>What is HVHZ and why does it matter?<span class="plus">+</span></summary><div class="body">The High-Velocity Hurricane Zone covers Broward and Miami-Dade counties, where exterior products must carry a Florida Product Approval (FL#) or Miami-Dade NOA. Generic spec sheets get rejected. Palma Permit automatically flags HVHZ product-approval requirements for those cities.</div></details>
+
+      <details class="faq-item"><summary>Is my data private?<span class="plus">+</span></summary><div class="body">Free checklist checks run entirely in your browser — nothing is uploaded. For automated deep-reads, your files are processed only to generate your report and are not sold or shared. You can delete uploaded files from your project history at any time.</div></details>
+
+      <details class="faq-item"><summary>Can you add my city or a permit type?<span class="plus">+</span></summary><div class="body">Yes — email <a class="accent" href="mailto:support@palma.llc">support@palma.llc</a>. New-city requests from Business customers get priority.</div></details>
+
+      <div id="disclaimer" class="card pad-lg" style="margin-top:28px">
+        <h3>Disclaimer</h3>
+        <p class="muted" style="margin:0">Palma Permit provides document-readiness information to help contractors and homeowners prepare permit submittals. It is not legal advice, engineering, or a code review, and it is not affiliated with or endorsed by any municipal building department. Final permitting decisions rest solely with the authority having jurisdiction.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="app-footer"></div>
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/auth.js"></script>
+</body>
+</html>

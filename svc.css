@@ -1,4 +1,4 @@
-/* Palma design system — "Editorial Light" — shared by service, city, guide, results & how-it-works pages */
+/* Palma design system - "Editorial Light" - shared by service, city, guide, results & how-it-works pages */
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap');
 
 :root{
@@ -93,7 +93,7 @@ ul.handle li:before{content:"";position:absolute;left:0;top:9px;width:14px;heigh
 .lf .submit:hover{background:var(--accent2)}.lf .submit:disabled{opacity:.55}
 .lf .status{font-size:14px;min-height:18px}.lf .status.ok{color:var(--green)}.lf .status.err{color:var(--red)}
 
-/* dark callout card (free-tool hook) — high contrast against the light page */
+/* dark callout card (free-tool hook) - high contrast against the light page */
 .toolhook{background:var(--ink2);color:var(--paper);border-radius:14px;padding:30px;margin-top:28px;max-width:860px}
 .toolhook .lab{color:#e7b9a6;font-size:12px;letter-spacing:.16em;font-weight:700;text-transform:uppercase}
 .toolhook b{display:block;font-family:"Fraunces",Georgia,serif;font-weight:500;color:#fff;font-size:23px;margin:10px 0 6px}
@@ -150,7 +150,7 @@ ul.handle li:before{content:"";position:absolute;left:0;top:9px;width:14px;heigh
 .prose a{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
 .cback{display:inline-block;margin-top:10px;color:var(--accent);font-size:15px;font-weight:600}
 
-/* footer — dark ink bookend */
+/* footer - dark ink bookend */
 footer{padding:48px 0;background:var(--ink);color:#b8b1a2;font-size:14px;line-height:1.7}
 footer .wrap{max-width:1120px}
 footer a{color:#e9c0ad}footer a:hover{color:#fff}

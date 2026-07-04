@@ -236,7 +236,7 @@
     .portalcta a{display:inline-flex;align-items:center;gap:9px;background:var(--accent);color:#fff;font-weight:600;font-size:15px;border-radius:6px;padding:15px 30px;transition:background .2s}
     .portalcta a:hover{background:var(--accent2)}
     .portalcta .sub{display:block;color:var(--muted);font-size:13px;margin-top:12px}
-    /* Diagnostic wizard — one guided question replaces the multi-tool grid */
+    /* Diagnostic wizard - one guided question replaces the multi-tool grid */
     .wizpaths{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:26px;max-width:820px}
     @media(max-width:860px){.wizpaths{grid-template-columns:1fr}}
     .wizpath{display:flex;flex-direction:column;gap:9px;text-align:left;background:var(--paper2);border:1px solid var(--line);border-radius:14px;padding:22px 22px;cursor:pointer;font:inherit;color:var(--ink);transition:transform .2s,border-color .2s,box-shadow .2s}
@@ -262,7 +262,7 @@
     .regionnote a{color:#e8915f;font-weight:600}
   </style>
   <div class="wrap">
-    <div class="reveal" style="margin-bottom:6px"><span class="eyebrow">● START HERE</span><h2 class="sec serif">What are you dealing <i>with today?</i></h2><p class="lead">Pick the one that sounds like you. We'll take you straight to the right tool — no guessing between options.</p></div>
+    <div class="reveal" style="margin-bottom:6px"><span class="eyebrow">● START HERE</span><h2 class="sec serif">What are you dealing <i>with today?</i></h2><p class="lead">Pick the one that sounds like you. We'll take you straight to the right tool - no guessing between options.</p></div>
 
     <div class="wizpaths reveal">
       <button class="wizpath" type="button" data-path="violation">
@@ -274,16 +274,16 @@
       <button class="wizpath" type="button" data-path="project">
         <span class="wic">▶</span>
         <span class="wt">I'm planning a New Project or Remodel</span>
-        <span class="ws">Addition, renovation, pool, or new build — get scoped and estimated on the spot.</span>
+        <span class="ws">Addition, renovation, pool, or new build - get scoped and estimated on the spot.</span>
         <span class="wgo">Get an estimate →</span>
       </button>
     </div>
 
-    <!-- Path 1 — Code Violation / Expired Permit → free property check -->
+    <!-- Path 1 - Code Violation / Expired Permit → free property check -->
     <div class="tool wizpanel" id="wp-violation" hidden>
       <div class="toolhead"><span style="font-size:20px">⌕</span><span style="letter-spacing:2px;font-size:13px">FREE PERMIT &amp; VIOLATION CHECK</span></div>
       <h3 class="serif">Start with a free property check.</h3>
-      <p style="color:#c9c2b4;font-size:14.5px;margin:8px 0 0;line-height:1.55">Enter the address. We pull county permit history and flag unpermitted work in seconds — then we map the exact path to clear it.</p>
+      <p style="color:#c9c2b4;font-size:14.5px;margin:8px 0 0;line-height:1.55">Enter the address. We pull county permit history and flag unpermitted work in seconds - then we map the exact path to clear it.</p>
       <div class="regionpick">
         <label for="wregion">Where's the property?</label>
         <select id="wregion" aria-label="Select your Florida region"><option value="">Select your area (optional)</option></select>
@@ -297,11 +297,11 @@
       <div style="margin-top:14px"><a href="/code-violations" style="color:#e8915f;font-size:13px;font-weight:600">How Palma resolves violations →</a></div>
     </div>
 
-    <!-- Path 2 — New Project / Remodel → guided estimate + feasibility -->
+    <!-- Path 2 - New Project / Remodel → guided estimate + feasibility -->
     <div class="tool wizpanel" id="wp-project" hidden>
       <div class="toolhead"><span style="font-size:20px">▶</span><span style="letter-spacing:2px;font-size:13px">PLAN YOUR PROJECT</span></div>
       <h3 class="serif">Get an instant, guided estimate.</h3>
-      <p style="color:#c9c2b4;font-size:14.5px;margin:8px 0 0;line-height:1.55">Answer a few quick questions and get scoped on the spot — permits, plans, inspections, and engineering, with clear next steps.</p>
+      <p style="color:#c9c2b4;font-size:14.5px;margin:8px 0 0;line-height:1.55">Answer a few quick questions and get scoped on the spot - permits, plans, inspections, and engineering, with clear next steps.</p>
       <div class="wizbtns">
         <a class="wbtn primary" href="https://app.palma.llc/" target="_blank" rel="noopener" data-tool="start_project">Start a project →</a>
         <a class="wbtn ghost" href="https://permitready.vercel.app/" target="_blank" rel="noopener" data-tool="permit_ready">Run an AI feasibility report ($29) →</a>
@@ -311,7 +311,7 @@
 
     <div class="portalcta reveal">
       <a href="https://tools.palma.llc/" target="_blank" rel="noopener" data-tool="portal">Or explore our tools →</a>
-      <span class="sub">Every Palma tool in one place at tools.palma.llc — plus a free HVHZ permit checklist.</span>
+      <span class="sub">Every Palma tool in one place at tools.palma.llc - plus a free HVHZ permit checklist.</span>
     </div>
   </div>
 </section>
@@ -433,7 +433,7 @@
 
   /* ---- still-frame build: scroll-scrub crossfade on desktop, timed autoplay on mobile ----
      Each stage is its own locked image (images/hero/stages/s1..s9.jpg). To edit one stage,
-     replace that single file — nothing else moves. No video, no re-rolling neighbors. ---- */
+     replace that single file - nothing else moves. No video, no re-rolling neighbors. ---- */
   var frames=[].slice.call(document.querySelectorAll("#frames .frame"));
   var isMobile=(window.matchMedia&&window.matchMedia("(pointer:coarse)").matches)||window.innerWidth<=820;
 
@@ -510,7 +510,7 @@
 
   // Region picker: localizes the violation-path tool to the visitor's metro and
   // links to that region's local page. Single source of truth in
-  // data/locations.json — regenerate via `node scripts/gen-locations.mjs --wizard`.
+  // data/locations.json - regenerate via `node scripts/gen-locations.mjs --wizard`.
   (function(){
     var LOCATIONS=[{"c":"Orlando","k":"Orange County","s":"orlando-orange-county"},{"c":"Tampa","k":"Hillsborough County","s":"tampa-hillsborough-county"},{"c":"Jacksonville","k":"Duval County","s":"jacksonville-duval-county"},{"c":"St. Petersburg","k":"Pinellas County","s":"st-petersburg-pinellas-county"},{"c":"Fort Myers","k":"Lee County","s":"fort-myers-lee-county"},{"c":"Lakeland","k":"Polk County","s":"lakeland-polk-county"},{"c":"Melbourne","k":"Brevard County","s":"melbourne-brevard-county"},{"c":"Sarasota","k":"Sarasota County","s":"sarasota-sarasota-county"},{"c":"Bradenton","k":"Manatee County","s":"bradenton-manatee-county"},{"c":"Daytona Beach","k":"Volusia County","s":"daytona-beach-volusia-county"},{"c":"Port St. Lucie","k":"St. Lucie County","s":"port-st-lucie-st-lucie-county"},{"c":"Kissimmee","k":"Osceola County","s":"kissimmee-osceola-county"},{"c":"Sanford","k":"Seminole County","s":"sanford-seminole-county"},{"c":"Gainesville","k":"Alachua County","s":"gainesville-alachua-county"},{"c":"Ocala","k":"Marion County","s":"ocala-marion-county"},{"c":"Tallahassee","k":"Leon County","s":"tallahassee-leon-county"},{"c":"Pensacola","k":"Escambia County","s":"pensacola-escambia-county"},{"c":"St. Augustine","k":"St. Johns County","s":"st-augustine-st-johns-county"},{"c":"New Port Richey","k":"Pasco County","s":"new-port-richey-pasco-county"},{"c":"Clermont","k":"Lake County","s":"clermont-lake-county"},{"c":"Punta Gorda","k":"Charlotte County","s":"punta-gorda-charlotte-county"},{"c":"Destin","k":"Okaloosa County","s":"destin-okaloosa-county"},{"c":"Orange Park","k":"Clay County","s":"orange-park-clay-county"},{"c":"Key Largo","k":"Monroe County","s":"key-largo-monroe-county"},{"c":"Marathon","k":"Monroe County","s":"marathon-monroe-county"},{"c":"Big Pine Key","k":"Monroe County","s":"big-pine-key-monroe-county"},{"c":"Key Colony Beach","k":"Monroe County","s":"key-colony-beach-monroe-county"},{"c":"Layton","k":"Monroe County","s":"layton-monroe-county"}];
     var sel=document.getElementById("wregion"),note=document.getElementById("regionnote"),ta=document.getElementById("taddr");
