@@ -35,7 +35,39 @@
       "Plant City",
       "Temple Terrace"
     ],
-    "localNoteEs": "El trabajo dentro de la Ciudad de Tampa lo permite la ciudad, mientras que el área no incorporada de Hillsborough usa el portal Accela del condado - el registro puede estar en cualquiera de los dos. Gran parte del área de la bahía está en la región de escombros por viento y en zonas de inundación mapeadas, por lo que la protección de aberturas y la elevación por inundación son motivos frecuentes de revisión."
+    "localNoteEs": "El trabajo dentro de la Ciudad de Tampa lo permite la ciudad, mientras que el área no incorporada de Hillsborough usa el portal Accela del condado - el registro puede estar en cualquiera de los dos. Gran parte del área de la bahía está en la región de escombros por viento y en zonas de inundación mapeadas, por lo que la protección de aberturas y la elevación por inundación son motivos frecuentes de revisión.",
+    "codeRefs": [
+      {
+        "label": "City of Tampa Permits (Building & Development)",
+        "url": "https://www.tampa.gov/guide/permits"
+      },
+      {
+        "label": "City of Tampa Permits (Accela Citizen Access)",
+        "url": "https://aca-prod.accela.com/TAMPA/Default.aspx"
+      },
+      {
+        "label": "Hillsborough County Development Services (HillsGovHub)",
+        "url": "https://aca-prod.accela.com/HCFL/Default.aspx"
+      }
+    ],
+    "news": [
+      {
+        "title": "Homeowners in flood-prone areas reminded of FEMA's 50% rule",
+        "source": "Bay News 9",
+        "date": "2024",
+        "url": "https://baynews9.com/fl/tampa/news/2024/10/18/homeowners-in-flood-prone-areas-reminded-of-fema-s-50--rule"
+      },
+      {
+        "title": "Florida governor signs bill dropping permits for work valued at $7,500 or less (HB 803)",
+        "source": "Insurance Journal",
+        "date": "2026",
+        "url": "https://www.insurancejournal.com/news/southeast/2026/05/08/869167.htm"
+      }
+    ],
+    "ahjInfo": [
+      "Work inside the City of Tampa is permitted by the city's Building and Development division through its Accela Citizen Access portal, while unincorporated Hillsborough County runs through HillsGovHub, the county's own Accela system, so the first step is confirming which authority holds your record. Both adopt the Florida Building Code, and under Florida Statute 553.791 a licensed private provider can perform plan review and inspections in place of staff, which often shortens timelines on a stalled project.",
+      "Much of the Bay area sits in the wind-borne debris region and in mapped FEMA flood zones, so opening protection, product approvals, and base-flood elevation are frequent review triggers. The FEMA 50%-of-value substantial-improvement threshold is cumulative over a rolling 12-month period, so successive projects get added together, and after the 2024 hurricane season a lot of storm repair work is exactly where open permits, expired permits, and unpermitted alterations pile up, and where Palma's coordination keeps a case moving to a clean closeout."
+    ]
   },
   {
     "slug": "jacksonville-duval-county",
@@ -73,7 +105,39 @@
       "Pinellas Park",
       "Dunedin"
     ],
-    "localNoteEs": "St. Petersburg, Clearwater y Largo emiten permisos en sus propios sistemas, mientras que el área no incorporada de Pinellas usa el portal del condado. Como el condado costero más densamente construido de Florida, gran parte está en zonas de inundación donde la regla FEMA del 50% del valor (mejora sustancial) puede cambiar el alcance de un proyecto."
+    "localNoteEs": "St. Petersburg, Clearwater y Largo emiten permisos en sus propios sistemas, mientras que el área no incorporada de Pinellas usa el portal del condado. Como el condado costero más densamente construido de Florida, gran parte está en zonas de inundación donde la regla FEMA del 50% del valor (mejora sustancial) puede cambiar el alcance de un proyecto.",
+    "codeRefs": [
+      {
+        "label": "Pinellas County Building & Development Review Services",
+        "url": "https://pinellas.gov/department/building-and-development-review-services/"
+      },
+      {
+        "label": "Pinellas County Substantial Damage / FEMA 50% Rule",
+        "url": "https://pinellas.gov/substantial-damage-substantial-improvement/"
+      },
+      {
+        "label": "Pinellas County Access Portal (Accela)",
+        "url": "https://aca-prod.accela.com/PINELLAS/Cap/CapHome.aspx?module=Building&TabName=Home"
+      }
+    ],
+    "news": [
+      {
+        "title": "Homeowners in flood-prone areas reminded of FEMA's 50% rule",
+        "source": "Bay News 9",
+        "date": "2024",
+        "url": "https://baynews9.com/fl/tampa/news/2024/10/18/homeowners-in-flood-prone-areas-reminded-of-fema-s-50--rule"
+      },
+      {
+        "title": "Florida governor signs bill dropping permits for work valued at $7,500 or less (HB 803)",
+        "source": "Insurance Journal",
+        "date": "2026",
+        "url": "https://www.insurancejournal.com/news/southeast/2026/05/08/869167.htm"
+      }
+    ],
+    "ahjInfo": [
+      "St. Petersburg, Clearwater, and Largo each permit on their own municipal systems, while unincorporated Pinellas County and several partner communities go through the county's Building and Development Review Services and its Access portal, so the first step is confirming which authority holds your record. All adopt the Florida Building Code, and under Florida Statute 553.791 a licensed private provider can handle plan review and inspections in place of staff.",
+      "Pinellas is Florida's most densely built coastal county, and barrier-island areas like St. Pete Beach and Treasure Island sit in FEMA Special Flood Hazard Areas where the cumulative 50%-of-value substantial-improvement rule can reshape a project's scope. After the 2024 hurricane season several beach municipalities reworked how they apply the rule to keep more storm-damaged homes repairable, and the state waived after-the-fact permit penalties through June 30, 2026, though standard fees still apply. That storm-recovery backdrop is where expired permits, open permits, and unpermitted repairs surface, and where Palma's coordination saves the most time."
+    ]
   },
   {
     "slug": "fort-myers-lee-county",
@@ -143,7 +207,39 @@
       "Auburndale",
       "Mulberry"
     ],
-    "localNoteEs": "Lakeland, Winter Haven y otras ciudades de Polk emiten permisos por separado de la División de Construcción del condado. En el interior del centro de Florida hay menos preocupaciones costeras por inundación, así que la mayoría de los comentarios de revisión se centran en el diseño estándar de cargas de viento, el código de energía y en cerrar permisos que dueños o contratistas anteriores dejaron abiertos."
+    "localNoteEs": "Lakeland, Winter Haven y otras ciudades de Polk emiten permisos por separado de la División de Construcción del condado. En el interior del centro de Florida hay menos preocupaciones costeras por inundación, así que la mayoría de los comentarios de revisión se centran en el diseño estándar de cargas de viento, el código de energía y en cerrar permisos que dueños o contratistas anteriores dejaron abiertos.",
+    "codeRefs": [
+      {
+        "label": "City of Lakeland Building Inspection & Permits",
+        "url": "https://www.lakelandgov.net/departments/community-economic-development/building-inspection/permit-applications/"
+      },
+      {
+        "label": "Polk County Land Development Code (Municode)",
+        "url": "https://library.municode.com/fl/polk_county/codes/land_development_code"
+      },
+      {
+        "label": "Polk County Permits (Citizen Access / Accela)",
+        "url": "https://aca-prod.accela.com/POLKCO/Default.aspx"
+      }
+    ],
+    "news": [
+      {
+        "title": "Florida governor signs bill dropping permits for work valued at $7,500 or less (HB 803)",
+        "source": "Insurance Journal",
+        "date": "2026",
+        "url": "https://www.insurancejournal.com/news/southeast/2026/05/08/869167.htm"
+      },
+      {
+        "title": "New law cuts permit fees and speeds up home renovations",
+        "source": "Islander News",
+        "date": "2026",
+        "url": "https://www.islandernews.com/news/florida/new-law-cuts-permit-fees-and-speeds-up-home-renovations/article_87211310-2c14-4bc1-a957-a307d7be7347.html"
+      }
+    ],
+    "ahjInfo": [
+      "The City of Lakeland runs its own Building Inspection division, taking plan submittals through iMS and ProjectDox, while unincorporated Polk County permits through its Citizen Access portal under the Polk County Land Development Code, so the first step is confirming which authority holds your record. Both adopt the Florida Building Code, and under Florida Statute 553.791 a licensed private provider can perform plan review and inspections. Polk is one of the fastest-growing counties on the I-4 corridor, so permit volumes stay high from new construction and renovation alike.",
+      "Inland Polk County has less coastal flood exposure than the Gulf and Atlantic metros, but wind-load and energy-code compliance still drive most plan-review comments, and lakefront and low-lying parcels can fall in mapped flood zones where base-flood elevation applies. Rapid growth plus prior-owner work is exactly where expired permits, open permits, and unpermitted alterations show up, and where Palma's coordination keeps a project moving."
+    ]
   },
   {
     "slug": "melbourne-brevard-county",
@@ -162,7 +258,39 @@
       "Cocoa",
       "Rockledge"
     ],
-    "localNoteEs": "Melbourne, Palm Bay, Titusville y Cocoa emiten permisos en sus propios portales, mientras que el área no incorporada de Brevard usa el condado. La Costa Espacial está en la región de escombros por viento, y las parcelas frente al río Indian y al océano están en zonas de inundación mapeadas, por lo que la protección de aberturas y la elevación por inundación generan muchos comentarios de revisión."
+    "localNoteEs": "Melbourne, Palm Bay, Titusville y Cocoa emiten permisos en sus propios portales, mientras que el área no incorporada de Brevard usa el condado. La Costa Espacial está en la región de escombros por viento, y las parcelas frente al río Indian y al océano están en zonas de inundación mapeadas, por lo que la protección de aberturas y la elevación por inundación generan muchos comentarios de revisión.",
+    "codeRefs": [
+      {
+        "label": "Brevard County Building Permits",
+        "url": "https://www.brevardfl.gov/PlanningAndDevelopment/BuildingPermits/BrevardCountyBuildingPermits"
+      },
+      {
+        "label": "Brevard County Code, Ch. 22 - Buildings & Building Regulations (Municode)",
+        "url": "https://library.municode.com/fl/brevard_county/codes/code_of_ordinances?nodeId=PTIICOOR_CH22BUBURE"
+      },
+      {
+        "label": "City of Melbourne Code of Ordinances (Municode)",
+        "url": "https://library.municode.com/fl/melbourne/codes/code_of_ordinances"
+      }
+    ],
+    "news": [
+      {
+        "title": "Florida governor signs bill dropping permits for work valued at $7,500 or less (HB 803)",
+        "source": "Insurance Journal",
+        "date": "2026",
+        "url": "https://www.insurancejournal.com/news/southeast/2026/05/08/869167.htm"
+      },
+      {
+        "title": "New law cuts permit fees and speeds up home renovations",
+        "source": "Islander News",
+        "date": "2026",
+        "url": "https://www.islandernews.com/news/florida/new-law-cuts-permit-fees-and-speeds-up-home-renovations/article_87211310-2c14-4bc1-a957-a307d7be7347.html"
+      }
+    ],
+    "ahjInfo": [
+      "The City of Melbourne permits work within city limits through its own building department, while unincorporated Brevard County permits through its Planning and Development Department under Chapter 22 (Buildings and Building Regulations) of the county code and the Florida Building Code; the county uses the Permit Assist platform and the BASS database for existing-permit lookups. Under Florida Statute 553.791, a licensed private provider can perform plan review and inspections in place of staff, which can shorten timelines on a stalled record.",
+      "This is a Space Coast market, so Atlantic barrier islands and Indian River Lagoon frontage sit in FEMA Special Flood Hazard Areas and the wind-borne debris region, making base-flood elevation, opening protection, and product approvals frequent review triggers. Coastal storm repairs are where open permits, expired permits, and unpermitted work most often surface here, and where Palma's coordination gets a case to a clean closeout."
+    ]
   },
   {
     "slug": "sarasota-sarasota-county",
@@ -486,7 +614,39 @@
       "Dade City",
       "Land O' Lakes"
     ],
-    "localNoteEs": "New Port Richey, Zephyrhills y Dade City emiten permisos en sus propios portales, mientras que el área no incorporada de Pasco usa el condado - y Pasco es uno de los condados de más rápido crecimiento del área de Tampa Bay. El borde costero del oeste de Pasco está en la región de escombros por viento y en zonas de inundación, mientras que el interior del este de Pasco, alrededor de Wesley Chapel, es en su mayoría diseño estándar de cargas de viento."
+    "localNoteEs": "New Port Richey, Zephyrhills y Dade City emiten permisos en sus propios portales, mientras que el área no incorporada de Pasco usa el condado - y Pasco es uno de los condados de más rápido crecimiento del área de Tampa Bay. El borde costero del oeste de Pasco está en la región de escombros por viento y en zonas de inundación, mientras que el interior del este de Pasco, alrededor de Wesley Chapel, es en su mayoría diseño estándar de cargas de viento.",
+    "codeRefs": [
+      {
+        "label": "Pasco County Building Construction Services",
+        "url": "https://www.pascocountyfl.gov/services/building_construction/index.php"
+      },
+      {
+        "label": "Pasco County Land Development Code (Municode)",
+        "url": "https://library.municode.com/fl/pasco_county/codes/land_development_code"
+      },
+      {
+        "label": "City of New Port Richey Building Division",
+        "url": "https://www.cityofnewportrichey.org/Business/Development/Building-Division"
+      }
+    ],
+    "news": [
+      {
+        "title": "Homeowners in flood-prone areas reminded of FEMA's 50% rule",
+        "source": "Bay News 9",
+        "date": "2024",
+        "url": "https://baynews9.com/fl/tampa/news/2024/10/18/homeowners-in-flood-prone-areas-reminded-of-fema-s-50--rule"
+      },
+      {
+        "title": "Florida governor signs bill dropping permits for work valued at $7,500 or less (HB 803)",
+        "source": "Insurance Journal",
+        "date": "2026",
+        "url": "https://www.insurancejournal.com/news/southeast/2026/05/08/869167.htm"
+      }
+    ],
+    "ahjInfo": [
+      "The City of New Port Richey permits work within city limits through its own Building Division, while unincorporated Pasco County permits through its Building Construction Services department and the PascoGateway (Accela) portal under the Pasco County Land Development Code, so the first step is confirming which authority holds your record. Both adopt the Florida Building Code, and under Florida Statute 553.791 a licensed private provider can perform plan review and inspections; Pasco operates permitting offices in New Port Richey, Land O' Lakes, and Dade City.",
+      "Coastal west Pasco sits in FEMA flood zones and the wind-borne debris region, so base-flood elevation, opening protection, and the cumulative 50%-of-value substantial-improvement rule frequently shape a repair or renovation. As one of Florida's fastest-growing counties, Pasco sees heavy permit volume, and fast growth plus storm work is exactly where expired permits, open permits, and unpermitted alterations pile up, and where Palma's coordination saves time."
+    ]
   },
   {
     "slug": "clermont-lake-county",
