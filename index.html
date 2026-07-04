@@ -236,46 +236,87 @@
     .portalcta a{display:inline-flex;align-items:center;gap:9px;background:var(--accent);color:#fff;font-weight:600;font-size:15px;border-radius:6px;padding:15px 30px;transition:background .2s}
     .portalcta a:hover{background:var(--accent2)}
     .portalcta .sub{display:block;color:var(--muted);font-size:13px;margin-top:12px}
+    /* Diagnostic wizard — one guided question replaces the multi-tool grid */
+    .wizpaths{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}
+    @media(max-width:860px){.wizpaths{grid-template-columns:1fr}}
+    .wizpath{display:flex;flex-direction:column;gap:9px;text-align:left;background:var(--paper2);border:1px solid var(--line);border-radius:14px;padding:22px 22px;cursor:pointer;font:inherit;color:var(--ink);transition:transform .2s,border-color .2s,box-shadow .2s}
+    .wizpath:hover{transform:translateY(-3px);border-color:var(--accent)}
+    .wizpath.active{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-soft)}
+    .wizpath .wic{width:40px;height:40px;border-radius:10px;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent);font-size:20px}
+    .wizpath .wt{font-family:"Fraunces",serif;font-size:18px;font-weight:500;line-height:1.25}
+    .wizpath .ws{color:var(--muted);font-size:13px;line-height:1.45}
+    .wizpath .wgo{margin-top:2px;color:var(--accent);font-weight:600;font-size:13px}
+    .wizpanel{margin-top:22px}
+    .wizpanel[hidden]{display:none}
+    .wizbtns{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+    .wbtn{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;border-radius:8px;padding:13px 22px;transition:background .2s,color .2s,border-color .2s}
+    .wbtn.primary{background:var(--accent);color:#fff}
+    .wbtn.primary:hover{background:var(--accent2)}
+    .wbtn.ghost{background:transparent;border:1px solid #4a4435;color:#e8e3d8}
+    .wbtn.ghost:hover{border-color:#e8915f;color:#fff}
   </style>
   <div class="wrap">
-    <div class="reveal" style="margin-bottom:6px"><span class="eyebrow">● FREE &amp; INSTANT TOOLS</span><h2 class="sec serif">Your South Florida <i>permit toolkit.</i></h2><p class="lead">Four engineer-built tools that move you from question to answer in seconds — feasibility, estimates, permit history, and submittal readiness. Start with the free property check below, then explore the full portal.</p></div>
-    <div class="tool reveal">
-      <div class="toolhead"><span style="font-size:20px">⌕</span><span style="letter-spacing:2px;font-size:13px">PERMIT HISTORY &amp; VIOLATION CHECK · FREE</span></div>
-      <h3 class="serif">Uncover unpermitted work, free.</h3>
+    <div class="reveal" style="margin-bottom:6px"><span class="eyebrow">● START HERE</span><h2 class="sec serif">What are you dealing <i>with today?</i></h2><p class="lead">Pick the one that sounds like you. We'll take you straight to the right tool — no guessing between options.</p></div>
+
+    <div class="wizpaths reveal">
+      <button class="wizpath" type="button" data-path="violation">
+        <span class="wic">⚠</span>
+        <span class="wt">I have a Code Violation or Expired Permit</span>
+        <span class="ws">Notice of violation, an open or expired permit, or unpermitted work found at closing.</span>
+        <span class="wgo">Run a free check →</span>
+      </button>
+      <button class="wizpath" type="button" data-path="project">
+        <span class="wic">▶</span>
+        <span class="wt">I'm planning a New Project or Remodel</span>
+        <span class="ws">Addition, renovation, pool, or new build — get scoped and estimated on the spot.</span>
+        <span class="wgo">Get an estimate →</span>
+      </button>
+      <button class="wizpath" type="button" data-path="contractor">
+        <span class="wic">▤</span>
+        <span class="wt">I'm a Contractor checking a Permit Package</span>
+        <span class="ws">Verify a submittal against a city's exact requirements before you file it.</span>
+        <span class="wgo">Check a package →</span>
+      </button>
+    </div>
+
+    <!-- Path 1 — Code Violation / Expired Permit → free property check -->
+    <div class="tool wizpanel" id="wp-violation" hidden>
+      <div class="toolhead"><span style="font-size:20px">⌕</span><span style="letter-spacing:2px;font-size:13px">FREE PERMIT &amp; VIOLATION CHECK</span></div>
+      <h3 class="serif">Start with a free property check.</h3>
+      <p style="color:#c9c2b4;font-size:14.5px;margin:8px 0 0;line-height:1.55">Enter the address. We pull county permit history and flag unpermitted work in seconds — then we map the exact path to clear it.</p>
       <div class="row">
         <input id="taddr" placeholder="Enter a Florida property address or folio" />
         <button id="trun">Check this property</button>
       </div>
-      <div id="tnote" style="color:var(--muted);font-size:13px;margin-top:14px">Runs a live search on county records in our free tool. No login required.</div>
+      <div id="tnote" style="color:#9a9486;font-size:13px;margin-top:14px">Live county-records search. No login. Or call <a href="tel:+13053930690" style="color:#e8915f">305-393-0690</a> and we'll run it with you.</div>
+      <div style="margin-top:14px"><a href="/code-violations" style="color:#e8915f;font-size:13px;font-weight:600">How Palma resolves violations →</a></div>
     </div>
 
-    <div class="toolgrid">
-      <a class="tcard reveal" href="https://permitready.vercel.app/" target="_blank" rel="noopener" data-tool="permit_ready">
-        <div class="tt"><span class="ic">◆</span><span class="tag">AI · $29</span></div>
-        <h4>Permit Ready</h4>
-        <p>AI feasibility reports for South Florida residential projects — know the cost, timeline, and code requirements before you spend a dollar.</p>
-        <ul><li>Instant cost &amp; timeline estimates</li><li>Zoning, setback &amp; HVHZ flags</li><li>Built for homeowners &amp; developers</li></ul>
-        <span class="go">Generate a report →</span>
-      </a>
-      <a class="tcard reveal" href="https://app.palma.llc/" target="_blank" rel="noopener" data-tool="start_project">
-        <div class="tt"><span class="ic">▶</span><span class="tag">GUIDED · INSTANT</span></div>
-        <h4>Start a Project</h4>
-        <p>Answer a few guided questions and get an instant estimate for permits, plans, inspections, or engineering — and onboard to Palma in minutes.</p>
-        <ul><li>Guided project questionnaire</li><li>Permits, plans, inspections &amp; more</li><li>Scoped on the spot</li></ul>
-        <span class="go">Get started →</span>
-      </a>
-      <a class="tcard reveal" href="https://permit.palma.llc/" target="_blank" rel="noopener" data-tool="palma_permit">
-        <div class="tt"><span class="ic">▤</span><span class="tag">FREE · 30s</span></div>
-        <h4>Palma Permit</h4>
-        <p>Check your permit package against each city's exact requirements before you submit. Catch every missing document and known rejection trap.</p>
-        <ul><li>30 cities &amp; 20+ permit types</li><li>City-specific gotcha &amp; HVHZ alerts</li><li>Built for contractors &amp; expediters</li></ul>
-        <span class="go">Check my package →</span>
-      </a>
+    <!-- Path 2 — New Project / Remodel → guided estimate + feasibility -->
+    <div class="tool wizpanel" id="wp-project" hidden>
+      <div class="toolhead"><span style="font-size:20px">▶</span><span style="letter-spacing:2px;font-size:13px">PLAN YOUR PROJECT</span></div>
+      <h3 class="serif">Get an instant, guided estimate.</h3>
+      <p style="color:#c9c2b4;font-size:14.5px;margin:8px 0 0;line-height:1.55">Answer a few quick questions and get scoped on the spot — permits, plans, inspections, and engineering, with clear next steps.</p>
+      <div class="wizbtns">
+        <a class="wbtn primary" href="https://app.palma.llc/" target="_blank" rel="noopener" data-tool="start_project">Start a project →</a>
+        <a class="wbtn ghost" href="https://permitready.vercel.app/" target="_blank" rel="noopener" data-tool="permit_ready">Run an AI feasibility report ($29) →</a>
+      </div>
+      <div style="margin-top:16px;color:#9a9486;font-size:13px">Prefer to talk it through? <a href="#contact" style="color:#e8915f;font-weight:600">Request a free estimate →</a></div>
+    </div>
+
+    <!-- Path 3 — Contractor → Palma Permit package check -->
+    <div class="tool wizpanel" id="wp-contractor" hidden>
+      <div class="toolhead"><span style="font-size:20px">▤</span><span style="letter-spacing:2px;font-size:13px">CONTRACTOR TOOLS</span></div>
+      <h3 class="serif">Check your package before you submit.</h3>
+      <p style="color:#c9c2b4;font-size:14.5px;margin:8px 0 0;line-height:1.55">Palma Permit checks your package against each city's exact requirements — 30 cities, 20+ permit types — and catches every missing document and known rejection trap.</p>
+      <div class="wizbtns">
+        <a class="wbtn primary" href="https://permit.palma.llc/" target="_blank" rel="noopener" data-tool="palma_permit">Check my package →</a>
+      </div>
     </div>
 
     <div class="portalcta reveal">
-      <a href="https://tools.palma.llc/" target="_blank" rel="noopener" data-tool="portal">Explore the full tools portal →</a>
-      <span class="sub">All four tools in one place at tools.palma.llc — plus a free HVHZ permit checklist.</span>
+      <a href="https://tools.palma.llc/" target="_blank" rel="noopener" data-tool="portal">Or explore all four tools →</a>
+      <span class="sub">Every Palma tool in one place at tools.palma.llc — plus a free HVHZ permit checklist.</span>
     </div>
   </div>
 </section>
@@ -443,8 +484,33 @@
   document.querySelectorAll(".count").forEach(function(el){cio.observe(el);});
 
   var btn=document.getElementById("trun"),addr=document.getElementById("taddr");
-  function go(){var a=encodeURIComponent((addr.value||"").trim());if(window.track)track("tool_open",{has_address:!!a});window.open("https://permit-check-mvp.vercel.app/"+(a?("?address="+a):""),"_blank");}
-  btn.onclick=go;addr.addEventListener("keydown",function(e){if(e.key==="Enter")go();});
+  if(btn&&addr){
+    var go=function(){var a=encodeURIComponent((addr.value||"").trim());if(window.track)track("tool_open",{has_address:!!a});window.open("https://permit-check-mvp.vercel.app/"+(a?("?address="+a):""),"_blank");};
+    btn.onclick=go;addr.addEventListener("keydown",function(e){if(e.key==="Enter")go();});
+  }
+
+  // Diagnostic wizard: one guided question routes the user to the right path.
+  (function(){
+    var paths=document.querySelectorAll(".wizpath");
+    if(!paths.length)return;
+    function open(key,doScroll){
+      document.querySelectorAll(".wizpath").forEach(function(p){p.classList.toggle("active",p.getAttribute("data-path")===key);});
+      document.querySelectorAll(".wizpanel").forEach(function(panel){panel.hidden=(panel.id!=="wp-"+key);});
+      if(doScroll){var el=document.getElementById("wp-"+key);if(el)el.scrollIntoView({behavior:"smooth",block:"nearest"});}
+    }
+    paths.forEach(function(p){
+      p.addEventListener("click",function(){
+        var key=p.getAttribute("data-path");
+        open(key,true);
+        if(window.track)track("wizard_path",{path:key});
+      });
+    });
+    // Deep-link support: /#tool?path=violation (or #violation) pre-opens a panel.
+    var hash=(location.hash||"").replace("#","");
+    var qp=new URLSearchParams(location.search).get("path");
+    var pre=qp||(["violation","project","contractor"].indexOf(hash)>=0?hash:"");
+    if(pre)open(pre,false);
+  })();
 
   // conversion tracking: phone clicks anywhere on the page (delegated so it covers the sticky bar too)
   document.addEventListener("click",function(e){

@@ -203,46 +203,87 @@
     .portalcta a{display:inline-flex;align-items:center;gap:9px;background:var(--accent);color:#fff;font-weight:600;font-size:15px;border-radius:6px;padding:15px 30px;transition:background .2s}
     .portalcta a:hover{background:var(--accent2)}
     .portalcta .sub{display:block;color:var(--muted);font-size:13px;margin-top:12px}
+    /* Asistente de diagnóstico — una pregunta guiada reemplaza la cuadrícula de herramientas */
+    .wizpaths{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}
+    @media(max-width:860px){.wizpaths{grid-template-columns:1fr}}
+    .wizpath{display:flex;flex-direction:column;gap:9px;text-align:left;background:var(--paper2);border:1px solid var(--line);border-radius:14px;padding:22px 22px;cursor:pointer;font:inherit;color:var(--ink);transition:transform .2s,border-color .2s,box-shadow .2s}
+    .wizpath:hover{transform:translateY(-3px);border-color:var(--accent)}
+    .wizpath.active{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-soft)}
+    .wizpath .wic{width:40px;height:40px;border-radius:10px;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent);font-size:20px}
+    .wizpath .wt{font-family:"Fraunces",serif;font-size:18px;font-weight:500;line-height:1.25}
+    .wizpath .ws{color:var(--muted);font-size:13px;line-height:1.45}
+    .wizpath .wgo{margin-top:2px;color:var(--accent);font-weight:600;font-size:13px}
+    .wizpanel{margin-top:22px}
+    .wizpanel[hidden]{display:none}
+    .wizbtns{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+    .wbtn{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;border-radius:8px;padding:13px 22px;transition:background .2s,color .2s,border-color .2s}
+    .wbtn.primary{background:var(--accent);color:#fff}
+    .wbtn.primary:hover{background:var(--accent2)}
+    .wbtn.ghost{background:transparent;border:1px solid #4a4435;color:#e8e3d8}
+    .wbtn.ghost:hover{border-color:#e8915f;color:#fff}
   </style>
   <div class="wrap">
-    <div class="reveal" style="margin-bottom:6px"><span class="eyebrow">● HERRAMIENTAS GRATIS E INSTANTÁNEAS</span><h2 class="sec serif">Tu <i>kit de herramientas</i> de permisos.</h2><p class="lead">Cuatro herramientas creadas por ingenieros que te llevan de la pregunta a la respuesta en segundos — viabilidad, estimaciones, historial de permisos y revisión de envío. Empieza con la consulta gratuita de la propiedad y luego explora el portal completo.</p></div>
-    <div class="tool reveal">
-      <div class="toolhead"><span style="font-size:20px">⌕</span><span style="letter-spacing:2px;font-size:13px">HISTORIAL DE PERMISOS Y VIOLACIONES · GRATIS</span></div>
-      <h3 class="serif">Descubre trabajos sin permiso, gratis.</h3>
+    <div class="reveal" style="margin-bottom:6px"><span class="eyebrow">● EMPIEZA AQUÍ</span><h2 class="sec serif">¿Qué necesitas <i>resolver hoy?</i></h2><p class="lead">Elige la opción que más se parezca a tu caso. Te llevamos directo a la herramienta correcta — sin adivinar entre opciones.</p></div>
+
+    <div class="wizpaths reveal">
+      <button class="wizpath" type="button" data-path="violation">
+        <span class="wic">⚠</span>
+        <span class="wt">Tengo una violación de código o un permiso vencido</span>
+        <span class="ws">Aviso de violación, permiso abierto o vencido, o trabajo sin permiso descubierto en el cierre.</span>
+        <span class="wgo">Consulta gratis →</span>
+      </button>
+      <button class="wizpath" type="button" data-path="project">
+        <span class="wic">▶</span>
+        <span class="wt">Estoy planeando un proyecto o remodelación</span>
+        <span class="ws">Ampliación, renovación, piscina u obra nueva — cotizado y estimado al instante.</span>
+        <span class="wgo">Obtén una estimación →</span>
+      </button>
+      <button class="wizpath" type="button" data-path="contractor">
+        <span class="wic">▤</span>
+        <span class="wt">Soy contratista revisando un paquete de permiso</span>
+        <span class="ws">Verifica un envío contra los requisitos exactos de la ciudad antes de presentarlo.</span>
+        <span class="wgo">Revisa un paquete →</span>
+      </button>
+    </div>
+
+    <!-- Ruta 1 — Violación / Permiso vencido → consulta gratuita -->
+    <div class="tool wizpanel" id="wp-violation" hidden>
+      <div class="toolhead"><span style="font-size:20px">⌕</span><span style="letter-spacing:2px;font-size:13px">CONSULTA GRATIS DE PERMISOS Y VIOLACIONES</span></div>
+      <h3 class="serif">Empieza con una consulta gratuita.</h3>
+      <p style="color:#c9c2b4;font-size:14.5px;margin:8px 0 0;line-height:1.55">Ingresa la dirección. Extraemos el historial de permisos del condado y detectamos trabajo sin permiso en segundos — y luego trazamos el camino exacto para resolverlo.</p>
       <div class="row">
         <input id="taddr" placeholder="Ingresa una dirección o folio de Florida" />
         <button id="trun">Consultar propiedad</button>
       </div>
-      <div id="tnote" style="color:var(--muted);font-size:13px;margin-top:14px">Realiza una búsqueda en vivo en los registros del condado con nuestra herramienta gratuita. Sin registro.</div>
+      <div id="tnote" style="color:#9a9486;font-size:13px;margin-top:14px">Búsqueda en vivo de registros del condado. Sin registro. O llama al <a href="tel:+13053930690" style="color:#e8915f">305-393-0690</a> y la hacemos contigo.</div>
+      <div style="margin-top:14px"><a href="/es/code-violations" style="color:#e8915f;font-size:13px;font-weight:600">Cómo Palma resuelve violaciones →</a></div>
     </div>
 
-    <div class="toolgrid">
-      <a class="tcard reveal" href="https://permitready.vercel.app/" target="_blank" rel="noopener" data-tool="permit_ready">
-        <div class="tt"><span class="ic">◆</span><span class="tag">IA · $29</span></div>
-        <h4>Permit Ready</h4>
-        <p>Informes de viabilidad con IA para proyectos residenciales del Sur de Florida — conoce el costo, el cronograma y los requisitos de código antes de gastar un dólar.</p>
-        <ul><li>Estimaciones instantáneas de costo y tiempo</li><li>Alertas de zonificación, retiros y HVHZ</li><li>Para propietarios y desarrolladores</li></ul>
-        <span class="go">Generar un informe →</span>
-      </a>
-      <a class="tcard reveal" href="https://app.palma.llc/" target="_blank" rel="noopener" data-tool="start_project">
-        <div class="tt"><span class="ic">▶</span><span class="tag">GUIADO · INSTANTÁNEO</span></div>
-        <h4>Comenzar un proyecto</h4>
-        <p>Responde unas preguntas guiadas y obtén una estimación instantánea para permisos, planos, inspecciones o ingeniería — e incorpórate a Palma en minutos.</p>
-        <ul><li>Cuestionario guiado del proyecto</li><li>Permisos, planos, inspecciones y más</li><li>Cotizado al instante</li></ul>
-        <span class="go">Comenzar →</span>
-      </a>
-      <a class="tcard reveal" href="https://permit.palma.llc/" target="_blank" rel="noopener" data-tool="palma_permit">
-        <div class="tt"><span class="ic">▤</span><span class="tag">GRATIS · 30s</span></div>
-        <h4>Palma Permit</h4>
-        <p>Verifica tu paquete de permiso contra los requisitos exactos de cada ciudad antes de enviarlo. Detecta cada documento faltante y trampa de rechazo conocida.</p>
-        <ul><li>30 ciudades y más de 20 tipos de permiso</li><li>Alertas específicas por ciudad y de HVHZ</li><li>Para contratistas y tramitadores</li></ul>
-        <span class="go">Revisar mi paquete →</span>
-      </a>
+    <!-- Ruta 2 — Proyecto / Remodelación → estimación guiada + viabilidad -->
+    <div class="tool wizpanel" id="wp-project" hidden>
+      <div class="toolhead"><span style="font-size:20px">▶</span><span style="letter-spacing:2px;font-size:13px">PLANEA TU PROYECTO</span></div>
+      <h3 class="serif">Obtén una estimación guiada al instante.</h3>
+      <p style="color:#c9c2b4;font-size:14.5px;margin:8px 0 0;line-height:1.55">Responde unas preguntas rápidas y quedas cotizado al instante — permisos, planos, inspecciones e ingeniería, con próximos pasos claros.</p>
+      <div class="wizbtns">
+        <a class="wbtn primary" href="https://app.palma.llc/" target="_blank" rel="noopener" data-tool="start_project">Comenzar un proyecto →</a>
+        <a class="wbtn ghost" href="https://permitready.vercel.app/" target="_blank" rel="noopener" data-tool="permit_ready">Informe de viabilidad con IA ($29) →</a>
+      </div>
+      <div style="margin-top:16px;color:#9a9486;font-size:13px">¿Prefieres hablarlo? <a href="#contact" style="color:#e8915f;font-weight:600">Solicita una estimación gratis →</a></div>
+    </div>
+
+    <!-- Ruta 3 — Contratista → Palma Permit -->
+    <div class="tool wizpanel" id="wp-contractor" hidden>
+      <div class="toolhead"><span style="font-size:20px">▤</span><span style="letter-spacing:2px;font-size:13px">HERRAMIENTAS PARA CONTRATISTAS</span></div>
+      <h3 class="serif">Revisa tu paquete antes de enviarlo.</h3>
+      <p style="color:#c9c2b4;font-size:14.5px;margin:8px 0 0;line-height:1.55">Palma Permit verifica tu paquete contra los requisitos exactos de cada ciudad — 30 ciudades, más de 20 tipos de permiso — y detecta cada documento faltante y trampa de rechazo conocida.</p>
+      <div class="wizbtns">
+        <a class="wbtn primary" href="https://permit.palma.llc/" target="_blank" rel="noopener" data-tool="palma_permit">Revisar mi paquete →</a>
+      </div>
     </div>
 
     <div class="portalcta reveal">
-      <a href="https://tools.palma.llc/" target="_blank" rel="noopener" data-tool="portal">Explora el portal completo de herramientas →</a>
-      <span class="sub">Las cuatro herramientas en un solo lugar en tools.palma.llc — más una lista de verificación HVHZ gratuita.</span>
+      <a href="https://tools.palma.llc/" target="_blank" rel="noopener" data-tool="portal">O explora las cuatro herramientas →</a>
+      <span class="sub">Todas las herramientas de Palma en un solo lugar en tools.palma.llc — más una lista de verificación HVHZ gratuita.</span>
     </div>
   </div>
 </section>
@@ -407,8 +448,32 @@
   document.querySelectorAll(".count").forEach(function(el){cio.observe(el);});
 
   var btn=document.getElementById("trun"),addr=document.getElementById("taddr");
-  function go(){var a=encodeURIComponent((addr.value||"").trim());window.open("https://permit-check-mvp.vercel.app/"+(a?("?address="+a):""),"_blank");}
-  btn.onclick=go;addr.addEventListener("keydown",function(e){if(e.key==="Enter")go();});
+  if(btn&&addr){
+    var go=function(){var a=encodeURIComponent((addr.value||"").trim());window.open("https://permit-check-mvp.vercel.app/"+(a?("?address="+a):""),"_blank");};
+    btn.onclick=go;addr.addEventListener("keydown",function(e){if(e.key==="Enter")go();});
+  }
+
+  // Asistente de diagnóstico: una pregunta guiada dirige al usuario a la ruta correcta.
+  (function(){
+    var paths=document.querySelectorAll(".wizpath");
+    if(!paths.length)return;
+    function open(key,doScroll){
+      document.querySelectorAll(".wizpath").forEach(function(p){p.classList.toggle("active",p.getAttribute("data-path")===key);});
+      document.querySelectorAll(".wizpanel").forEach(function(panel){panel.hidden=(panel.id!=="wp-"+key);});
+      if(doScroll){var el=document.getElementById("wp-"+key);if(el)el.scrollIntoView({behavior:"smooth",block:"nearest"});}
+    }
+    paths.forEach(function(p){
+      p.addEventListener("click",function(){
+        var key=p.getAttribute("data-path");
+        open(key,true);
+        if(window.track)track("wizard_path",{path:key});
+      });
+    });
+    var hash=(location.hash||"").replace("#","");
+    var qp=new URLSearchParams(location.search).get("path");
+    var pre=qp||(["violation","project","contractor"].indexOf(hash)>=0?hash:"");
+    if(pre)open(pre,false);
+  })();
 
   var lform=document.getElementById("leadform");
   if(lform){lform.addEventListener("submit",function(e){
