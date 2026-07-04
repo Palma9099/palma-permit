@@ -385,6 +385,15 @@ writeFileSync(resolve(OUT_DIR, 'index.html'), hubPage(locations));
 
 console.log(`Generated ${count} location pages + hub → locations/`);
 
+if (process.argv.includes('--wizard')) {
+  // Compact region list for the homepage Diagnostic Wizard picker (EN + ES).
+  // Keep this the single source of truth: regenerate and paste into index.html
+  // and es.html whenever data/locations.json changes.
+  const arr = locations.map((l) => ({ c: l.cityName, k: l.countyName, s: l.slug }));
+  console.log('\n--- WIZARD REGION ARRAY (paste as LOCATIONS) ---');
+  console.log('var LOCATIONS=' + JSON.stringify(arr) + ';');
+}
+
 if (process.argv.includes('--links')) {
   console.log('\n--- FOOTER SNIPPET (Expanded Service Areas) ---');
   console.log(

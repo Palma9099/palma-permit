@@ -254,6 +254,12 @@
     .wbtn.primary:hover{background:var(--accent2)}
     .wbtn.ghost{background:transparent;border:1px solid #4a4435;color:#e8e3d8}
     .wbtn.ghost:hover{border-color:#e8915f;color:#fff}
+    .regionpick{margin-top:18px}
+    .regionpick label{display:block;color:#c9c1b1;font-size:13px;margin-bottom:7px}
+    .regionpick select{width:100%;max-width:440px;background:#322d22;border:1px solid #4a4435;color:#fff;border-radius:8px;padding:12px 13px;font-size:15px;font-family:inherit;appearance:none;cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23c9c1b1' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:34px}
+    .regionpick select:focus{border-color:var(--accent);outline:none}
+    .regionnote{margin-top:12px;color:#c9c1b1;font-size:13.5px;line-height:1.5}
+    .regionnote a{color:#e8915f;font-weight:600}
   </style>
   <div class="wrap">
     <div class="reveal" style="margin-bottom:6px"><span class="eyebrow">● START HERE</span><h2 class="sec serif">What are you dealing <i>with today?</i></h2><p class="lead">Pick the one that sounds like you. We'll take you straight to the right tool — no guessing between options.</p></div>
@@ -284,6 +290,11 @@
       <div class="toolhead"><span style="font-size:20px">⌕</span><span style="letter-spacing:2px;font-size:13px">FREE PERMIT &amp; VIOLATION CHECK</span></div>
       <h3 class="serif">Start with a free property check.</h3>
       <p style="color:#c9c2b4;font-size:14.5px;margin:8px 0 0;line-height:1.55">Enter the address. We pull county permit history and flag unpermitted work in seconds — then we map the exact path to clear it.</p>
+      <div class="regionpick">
+        <label for="wregion">Where's the property?</label>
+        <select id="wregion" aria-label="Select your Florida region"><option value="">Select your area (optional)</option></select>
+      </div>
+      <div class="regionnote" id="regionnote" hidden></div>
       <div class="row">
         <input id="taddr" placeholder="Enter a Florida property address or folio" />
         <button id="trun">Check this property</button>
@@ -511,6 +522,31 @@
     var qp=new URLSearchParams(location.search).get("path");
     var pre=qp||(["violation","project","contractor"].indexOf(hash)>=0?hash:"");
     if(pre)open(pre,false);
+  })();
+
+  // Region picker: localizes the violation-path tool to the visitor's metro and
+  // links to that region's local page. Single source of truth in
+  // data/locations.json — regenerate via `node scripts/gen-locations.mjs --wizard`.
+  (function(){
+    var LOCATIONS=[{"c":"Orlando","k":"Orange County","s":"orlando-orange-county"},{"c":"Tampa","k":"Hillsborough County","s":"tampa-hillsborough-county"},{"c":"Jacksonville","k":"Duval County","s":"jacksonville-duval-county"},{"c":"St. Petersburg","k":"Pinellas County","s":"st-petersburg-pinellas-county"},{"c":"Fort Myers","k":"Lee County","s":"fort-myers-lee-county"},{"c":"Lakeland","k":"Polk County","s":"lakeland-polk-county"},{"c":"Melbourne","k":"Brevard County","s":"melbourne-brevard-county"},{"c":"Sarasota","k":"Sarasota County","s":"sarasota-sarasota-county"},{"c":"Bradenton","k":"Manatee County","s":"bradenton-manatee-county"},{"c":"Daytona Beach","k":"Volusia County","s":"daytona-beach-volusia-county"},{"c":"Port St. Lucie","k":"St. Lucie County","s":"port-st-lucie-st-lucie-county"},{"c":"Kissimmee","k":"Osceola County","s":"kissimmee-osceola-county"},{"c":"Sanford","k":"Seminole County","s":"sanford-seminole-county"},{"c":"Gainesville","k":"Alachua County","s":"gainesville-alachua-county"},{"c":"Ocala","k":"Marion County","s":"ocala-marion-county"},{"c":"Tallahassee","k":"Leon County","s":"tallahassee-leon-county"},{"c":"Pensacola","k":"Escambia County","s":"pensacola-escambia-county"},{"c":"St. Augustine","k":"St. Johns County","s":"st-augustine-st-johns-county"},{"c":"New Port Richey","k":"Pasco County","s":"new-port-richey-pasco-county"},{"c":"Clermont","k":"Lake County","s":"clermont-lake-county"},{"c":"Punta Gorda","k":"Charlotte County","s":"punta-gorda-charlotte-county"},{"c":"Destin","k":"Okaloosa County","s":"destin-okaloosa-county"},{"c":"Orange Park","k":"Clay County","s":"orange-park-clay-county"}];
+    var sel=document.getElementById("wregion"),note=document.getElementById("regionnote"),ta=document.getElementById("taddr");
+    if(!sel)return;
+    var byCity=LOCATIONS.slice().sort(function(a,b){return a.c.localeCompare(b.c);});
+    byCity.forEach(function(l){var o=document.createElement("option");o.value=l.s;o.textContent=l.c+" ("+l.k.replace(/ County$/,"")+")";sel.appendChild(o);});
+    function art(w){return /^[aeiou]/i.test(w.trim())?"an":"a";}
+    function find(s){for(var i=0;i<LOCATIONS.length;i++){if(LOCATIONS[i].s===s)return LOCATIONS[i];}return null;}
+    function apply(slug,remember){
+      var l=find(slug);
+      if(!l){if(ta)ta.placeholder="Enter a Florida property address or folio";if(note){note.hidden=true;note.innerHTML="";}return;}
+      sel.value=slug;
+      if(ta)ta.placeholder="Enter "+art(l.c)+" "+l.c+" property address or folio";
+      if(note){note.innerHTML="Palma handles permits &amp; code violations in "+l.k+". <a href=\"/locations/"+l.s+"\">See our "+l.c+" page →</a>";note.hidden=false;}
+      if(remember){try{localStorage.setItem("palma_region",slug);}catch(e){}if(window.track)track("wizard_region",{region:slug});}
+    }
+    sel.addEventListener("change",function(){apply(sel.value,true);});
+    var qr=new URLSearchParams(location.search).get("region"),saved=qr;
+    try{if(!saved)saved=localStorage.getItem("palma_region");}catch(e){}
+    if(saved&&find(saved))apply(saved,false);
   })();
 
   // conversion tracking: phone clicks anywhere on the page (delegated so it covers the sticky bar too)
