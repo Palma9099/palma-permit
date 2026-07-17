@@ -50,6 +50,9 @@
     .xmark.ok{border-color:#5dcaa5;background:rgba(93,202,165,.13)}
     .xflag{position:absolute;z-index:6;font-size:12.5px;letter-spacing:.04em;padding:7px 12px;border-radius:6px;background:#501313;color:#f7c1c1;opacity:0;transition:opacity .25s;white-space:nowrap;transform:translateY(-130%)}
     .xflag.ok{background:#04342c;color:#9fe1cb}
+    .xflag.draw{background:#0c2e26;color:#9fe1cb;border:1px solid rgba(93,202,165,.4)}
+    #xwin{position:absolute;z-index:5;opacity:0;overflow:visible}
+    #xwin path{fill:none;stroke:#5dcaa5;stroke-width:2;vector-effect:non-scaling-stroke;stroke-dasharray:1;stroke-dashoffset:1;stroke-linecap:square}
     .xcap{position:absolute;left:0;right:0;bottom:0;z-index:7;padding:22px max(24px,calc((100vw - 1120px)/2 + 32px)) 26px;background:linear-gradient(transparent,rgba(10,14,20,.82));color:#f6f2e9}
     .xcap .k{color:#f0c3b1;font-size:11px;letter-spacing:.2em;font-weight:600}
     .xcap h2{font-family:"Fraunces",serif;font-size:clamp(20px,3vw,30px);margin:6px 0 4px}
@@ -65,6 +68,12 @@
     <img class="xafter" src="/images/violation/after.jpg" alt="The same home, violation cleared and in good standing" />
     <div class="xbeam" id="xbeam"></div>
     <div class="xmark" id="xmark"></div>
+    <svg id="xwin" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+      <path pathLength="1" d="M32 20 H80 V80 H32 Z"/>
+      <path pathLength="1" d="M56 20 V80"/>
+      <path pathLength="1" d="M28 83 H84"/>
+      <path pathLength="1" d="M32 88 V94 M32 91 H80 M80 88 V94"/>
+    </svg>
     <div class="xflag" id="xflag">ADDITION — NO PERMIT ON RECORD</div>
     <div class="xcap">
       <span class="k" id="xkick">● THE PALMA PLAN REVIEW</span>
@@ -218,6 +227,8 @@
   var sec=document.getElementById("xray");if(!sec)return;
   var stage=sec.querySelector(".xstage"),plan=sec.querySelector(".xplan"),after=sec.querySelector(".xafter");
   var beam=document.getElementById("xbeam"),mark=document.getElementById("xmark"),flag=document.getElementById("xflag");
+  var xwin=document.getElementById("xwin"),wpaths=[].slice.call(xwin.querySelectorAll("path"));
+  var WSEG=[[0,.4],[.25,.6],[.5,.8],[.65,1]];
   var title=document.getElementById("xtitle"),body=document.getElementById("xbody"),stamps=[].slice.call(document.getElementById("xstamps").children);
   var IW=1376,IH=768,AX=.752,AY=.385,AW=.187,AH=.225; // addition box as image fractions
   function coverRect(){ // where the cover-cropped image actually sits in the stage
@@ -225,31 +236,39 @@
     return {x:(sw-IW*s)/2,y:(sh-IH*s)/2,w:IW*s,h:IH*s};
   }
   function placeMark(){
-    var r=coverRect();
-    mark.style.left=(r.x+AX*r.w)+"px";mark.style.top=(r.y+AY*r.h)+"px";
-    mark.style.width=(AW*r.w)+"px";mark.style.height=(AH*r.h)+"px";
-    flag.style.left=Math.max(8,Math.min(stage.clientWidth-230,r.x+AX*r.w))+"px";
-    flag.style.top=(r.y+AY*r.h)+"px";
+    var r=coverRect(),L=(r.x+AX*r.w),T=(r.y+AY*r.h),W=(AW*r.w),H=(AH*r.h);
+    mark.style.left=L+"px";mark.style.top=T+"px";mark.style.width=W+"px";mark.style.height=H+"px";
+    xwin.style.left=L+"px";xwin.style.top=T+"px";xwin.style.width=W+"px";xwin.style.height=H+"px";
+    flag.style.left=Math.max(8,Math.min(stage.clientWidth-240,L))+"px";
+    flag.style.top=T+"px";
   }
   var COPY=[
     [0,"This is how a violation looks to us.","Scroll - we read your property the way a plans examiner does."],
     [.12,"Plan review begins.","The elevation is redrawn as as-built linework - every wall, every opening, on record."],
-    [.38,"The finding.","The addition has no permit on record. Now it is a defined scope, not an open-ended problem."],
-    [.62,"Corrections, permitted and inspected.","Licensed pros bring it to code under an after-the-fact permit."],
+    [.36,"The finding.","The addition has no permit on record. Now it is a defined scope, not an open-ended problem."],
+    [.46,"The fix, drawn first.","One code-compliant egress window, engineered into the plans before anyone touches a wall."],
+    [.66,"Corrections, permitted and inspected.","Licensed pros build exactly what the plans show, under an after-the-fact permit."],
     [.9,"Case closed.","Back in full legal standing."]
   ];
   var lastC=-1;
   function render(p){
-    var e1=Math.min(1,p/0.45),e2=Math.max(0,Math.min(1,(p-0.55)/0.4));
+    var e1=Math.min(1,p/0.42),e2=Math.max(0,Math.min(1,(p-0.66)/0.29));
     plan.style.clipPath="inset(0 "+((1-e1)*100)+"% 0 0)";
     after.style.clipPath="inset(0 "+((1-e2)*100)+"% 0 0)";
     var edge=e2>0?e2:e1;
     beam.style.left=(edge*stage.clientWidth-1)+"px";
-    beam.style.opacity=(p>0.02&&p<0.97)?1:0;
-    var found=p>=0.38&&p<0.62,ok=p>=0.62&&p<0.93;
-    mark.style.opacity=(found||ok)?1:0;mark.className="xmark"+(ok?" ok":"");
-    flag.style.opacity=(found||ok)?1:0;flag.className="xflag"+(ok?" ok":"");
-    flag.textContent=ok?"PASSED - ATF PERMIT CLOSED":"ADDITION - NO PERMIT ON RECORD";
+    beam.style.opacity=((p>0.02&&p<0.44)||(p>0.66&&p<0.97))?1:0;
+    var wp=Math.max(0,Math.min(1,(p-0.46)/0.18));
+    wpaths.forEach(function(el,i){
+      var a=WSEG[i][0],b=WSEG[i][1];
+      el.style.strokeDashoffset=1-Math.max(0,Math.min(1,(wp-a)/(b-a)));
+    });
+    xwin.style.opacity=(p>=0.46&&p<0.82)?1:0;
+    var found=p>=0.36&&p<0.46,draw=p>=0.46&&p<0.66,ok=p>=0.66&&p<0.93;
+    mark.style.opacity=(found||draw||ok)?1:0;mark.className="xmark"+(ok?" ok":"");
+    flag.style.opacity=(found||draw||ok)?1:0;
+    flag.className="xflag"+(ok?" ok":draw?" draw":"");
+    flag.textContent=ok?"PASSED - ATF PERMIT CLOSED":draw?"PROPOSED EGRESS WINDOW":"ADDITION - NO PERMIT ON RECORD";
     var n=Math.max(0,Math.min(6,Math.floor((p-0.3)/0.62*7)));
     stamps.forEach(function(s,i){s.classList.toggle("on",i<n);});
     var c=0;for(var i=0;i<COPY.length;i++)if(p>=COPY[i][0])c=i;
