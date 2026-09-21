@@ -81,10 +81,10 @@ const VIOLATIONS = [
   {
     slug: 'open-permits',
     en: { label: 'Open Permits', tag: 'OPEN PERMITS',
-      what: 'permits still open on the record because a final inspection was never passed - a frequent surprise at closing',
+      what: 'permits still open on the record because a final inspection was never passed, a frequent surprise at closing',
       fix: 'pulling the record, identifying the missing inspections, and coordinating the closeout so a sale can move forward' },
     es: { label: 'Permisos Abiertos', tag: 'PERMISOS ABIERTOS',
-      what: 'permisos que siguen abiertos en el registro porque nunca se aprobó la inspección final - una sorpresa frecuente en el cierre',
+      what: 'permisos que siguen abiertos en el registro porque nunca se aprobó la inspección final, una sorpresa frecuente en el cierre',
       fix: 'extraer el registro, identificar las inspecciones faltantes y coordinar el cierre para que una venta pueda avanzar' },
   },
   {
@@ -135,16 +135,16 @@ function pack(langCode) {
       ? `Permisos y cumplimiento en<br><i>${esc(l.cityName)} y ${esc(l.countyName)}.</i>`
       : `Navigating Permits &amp; Compliance in<br><i>${esc(l.cityName)} and ${esc(l.countyName)}.</i>`),
     heroLead: (l) => (es
-      ? `Resuelve permisos de construcción y violaciones de código en ${esc(l.cityName)}. Palma Building Solutions es tu único punto de contacto para permisos, cierre de permisos vencidos y resolución de violaciones de código en ${esc(l.cityName)} y ${esc(l.countyName)} - te emparejamos con una red de ingenieros y contratistas con licencia independiente en Florida, desde la primera llamada hasta un permiso cerrado y en regla.`
-      : `${esc(l.heroTitle)}. Palma Building Solutions is your single point of contact for permits, expired-permit closeouts, and code-violation resolution across ${esc(l.cityName)} and ${esc(l.countyName)} - pairing you with a vetted network of independently licensed Florida engineers and contractors from the first call to a closed, compliant permit.`),
+      ? `Resuelve permisos de construcción y violaciones de código en ${esc(l.cityName)}. Palma Building Solutions es tu único punto de contacto para permisos, cierre de permisos vencidos y resolución de violaciones de código en ${esc(l.cityName)} y ${esc(l.countyName)}, te emparejamos con una red de ingenieros y contratistas con licencia independiente en Florida, desde la primera llamada hasta un permiso cerrado y en regla.`
+      : `${esc(l.heroTitle)}. Palma Building Solutions is your single point of contact for permits, expired-permit closeouts, and code-violation resolution across ${esc(l.cityName)} and ${esc(l.countyName)}, pairing you with a vetted network of independently licensed Florida engineers and contractors from the first call to a closed, compliant permit.`),
     btnEstimate: es ? 'Presupuesto gratis' : 'Get a free estimate',
     btnCall: es ? `Llama al ${PHONE}` : `Call ${PHONE}`,
     // tool card
     toolLab: es ? 'Consulta gratis de permisos y violaciones' : 'Free permit & violation check',
     toolHead: (l) => (es ? `Mira qué hay registrado para tu propiedad en ${esc(l.cityName)}.` : `See what's on record for your ${esc(l.cityName)} property.`),
     toolPara: (l) => (es
-      ? `Ingresa la dirección. Nuestra herramienta gratuita extrae los registros de propiedad y permisos de ${esc(l.countyName)} y detecta trabajo sin permiso en segundos - y luego trazamos el camino exacto para resolverlo.`
-      : `Enter the address. Our free tool pulls ${esc(l.countyName)} property and permit records and flags unpermitted work in seconds - then we map the exact path to clear it.`),
+      ? `Ingresa la dirección. Nuestra herramienta gratuita extrae los registros de propiedad y permisos de ${esc(l.countyName)} y detecta trabajo sin permiso en segundos, y luego trazamos el camino exacto para resolverlo.`
+      : `Enter the address. Our free tool pulls ${esc(l.countyName)} property and permit records and flags unpermitted work in seconds, then we map the exact path to clear it.`),
     toolPlaceholder: (l) => (es ? `Ingresa una dirección o folio en ${l.cityName}` : `Enter ${article(l.cityName)} ${l.cityName} property address or folio…`),
     toolBtn: es ? 'Consultar propiedad' : 'Check this property',
     toolFine: es ? `Búsqueda en vivo de registros del condado. Sin registro. O llama al <a href="tel:${PHONE_TEL}" style="color:#e8915f">${PHONE}</a> y la hacemos contigo.` : `Live county-records search. No login. Or call <a href="tel:${PHONE_TEL}" style="color:#e8915f">${PHONE}</a> and we'll run it with you.`,
@@ -153,7 +153,7 @@ function pack(langCode) {
     handleItems: (l) => (es
       ? [`Extraer el registro de permisos y código de ${esc(l.countyName)} de tu propiedad`, `Cerrar permisos abiertos y vencidos que dejaron dueños o contratistas anteriores`, `Trazar las correcciones que requiere una violación de código y coordinar el arreglo`, `Preparar y sellar planos con socios de ingeniería con licencia`, `Coordinar inspecciones y cerrar formalmente el caso`]
       : [`Pull the ${esc(l.countyName)} permit and code record for your property`, `Close open and expired permits left behind by prior owners or contractors`, `Map the corrections a code violation requires and coordinate the fix`, `Prepare and seal drawings through licensed engineering partners`, `Coordinate inspections and get the case formally closed`]),
-    noteLabel: (l) => (es ? `Nota local - ${esc(l.cityName)}.` : `Local note - ${esc(l.cityName)}.`),
+    noteLabel: (l) => (es ? `Nota local, ${esc(l.cityName)}.` : `Local note, ${esc(l.cityName)}.`),
     howTitle: es ? `Cómo <i>funciona</i>` : `How it <i>works</i>`,
     steps: (l) => (es
       ? [['01', 'Dinos la dirección', `Extraemos el registro de permisos y código de ${esc(l.cityName)} y confirmamos exactamente a qué te enfrentas.`], ['02', 'Armamos el plan', `Un alcance claro y un camino fijo a través de ${esc(l.buildingDeptName)}, gestionado por profesionales con licencia en Florida.`], ['03', 'Cerrado y en regla', `Inspecciones aprobadas, comentarios resueltos y tu propiedad en plena regularidad legal.`]]
@@ -198,10 +198,10 @@ function pack(langCode) {
           { q: `Is Palma a contractor or engineer?`, a: `No. Palma Building Solutions is a permitting and project-coordination company. The engineering and construction are performed by a vetted network of independently licensed Florida professionals.` },
         ]),
     hubTitle: es ? 'Áreas de servicio en Florida | Palma Building Solutions' : 'Florida Service Areas | Palma Building Solutions',
-    hubDesc: es ? `Palma Building Solutions gestiona permisos, cierre de permisos vencidos y resolución de violaciones de código en las principales metrópolis de Florida - Orlando, Tampa, Jacksonville y más. Presupuesto gratis: ${PHONE}.` : `Palma Building Solutions handles permits, expired-permit closeouts, and code-violation resolution across Florida's major metros - Orlando, Tampa, Jacksonville, and more. Free estimate: ${PHONE}.`,
+    hubDesc: es ? `Palma Building Solutions gestiona permisos, cierre de permisos vencidos y resolución de violaciones de código en las principales metrópolis de Florida, Orlando, Tampa, Jacksonville y más. Presupuesto gratis: ${PHONE}.` : `Palma Building Solutions handles permits, expired-permit closeouts, and code-violation resolution across Florida's major metros, Orlando, Tampa, Jacksonville, and more. Free estimate: ${PHONE}.`,
     hubEyebrow: es ? '● ÁREAS DE SERVICIO EN FLORIDA' : '● FLORIDA SERVICE AREAS',
     hubH1: es ? `Permisos y cumplimiento, <i>en todo el estado.</i>` : `Permits &amp; compliance, <i>statewide.</i>`,
-    hubLead: es ? `Palma coordina permisos, cierre de permisos vencidos y resolución de violaciones de código en los 67 condados de Florida - con orientación local dedicada para estas principales metrópolis.` : `Palma coordinates permitting, expired-permit closeouts, and code-violation resolution across all 67 Florida counties - with dedicated local guidance for these major metros.`,
+    hubLead: es ? `Palma coordina permisos, cierre de permisos vencidos y resolución de violaciones de código en los 67 condados de Florida, con orientación local dedicada para estas principales metrópolis.` : `Palma coordinates permitting, expired-permit closeouts, and code-violation resolution across all 67 Florida counties, with dedicated local guidance for these major metros.`,
     hubBtn: es ? 'Consultar una propiedad' : 'Check a property',
     hubChoose: es ? `Elige tu <i>región</i>` : `Choose your <i>region</i>`,
     hubCard: (l) => (es ? `${esc(l.countyName)} · ${esc(REGION_ES[l.region] || l.region)}. Permisos, cierre de permisos vencidos y resolución de violaciones de código.` : `${esc(l.countyName)} · ${esc(l.region)}. Permits, expired-permit closeouts, and code-violation resolution.`),
@@ -219,7 +219,7 @@ function jsonLd(loc, L) {
   const url = L.selfUrl(loc.slug);
   const lb = {
     '@context': 'https://schema.org', '@type': 'LocalBusiness',
-    name: `Palma Building Solutions - ${loc.cityName} Region`,
+    name: `Palma Building Solutions, ${loc.cityName} Region`,
     description: L.ldDesc(loc), telephone: PHONE, url, image: OG_IMAGE,
     address: { '@type': 'PostalAddress', addressRegion: 'FL', addressLocality: loc.cityName },
     areaServed: [{ '@type': 'AdministrativeArea', name: loc.countyName }, { '@type': 'AdministrativeArea', name: loc.cityName }],
@@ -516,8 +516,8 @@ function violationPage(loc, v, L) {
     ? `${vd.label} en ${loc.cityName}, FL | Palma`
     : `${vd.label} in ${loc.cityName}, FL | Palma`;
   const metaDesc = es
-    ? `¿Tienes ${vd.label.toLowerCase()} en ${loc.cityName}, ${loc.countyName}? Palma coordina la resolución con profesionales con licencia en Florida - de la primera llamada a la aprobación final. Consulta gratis: ${PHONE}.`
-    : `Dealing with ${vd.label.toLowerCase()} in ${loc.cityName}, ${loc.countyName}? Palma coordinates the fix through licensed Florida pros - first call to final sign-off. Free check: ${PHONE}.`;
+    ? `¿Tienes ${vd.label.toLowerCase()} en ${loc.cityName}, ${loc.countyName}? Palma coordina la resolución con profesionales con licencia en Florida, de la primera llamada a la aprobación final. Consulta gratis: ${PHONE}.`
+    : `Dealing with ${vd.label.toLowerCase()} in ${loc.cityName}, ${loc.countyName}? Palma coordinates the fix through licensed Florida pros, first call to final sign-off. Free check: ${PHONE}.`;
   const h1 = es
     ? `${esc(vd.label)}<br><i>en ${esc(loc.cityName)}, ${esc(loc.countyName)}.</i>`
     : `${esc(vd.label)}<br><i>in ${esc(loc.cityName)}, ${esc(loc.countyName)}.</i>`;
@@ -528,8 +528,8 @@ function violationPage(loc, v, L) {
     : `<a href="${areasPath}">Service areas</a> / <a href="${cityPath}">${esc(loc.cityName)}</a> / <span>${esc(vd.label)}</span>`;
 
   const lead = es
-    ? `Si tu propiedad en ${esc(loc.cityName)} tiene ${esc(vd.what)}, Palma Building Solutions lo resuelve: extraemos el registro de ${esc(loc.countyName)}, confirmamos el problema exacto y coordinamos ${esc(vd.fix)} - a través de una red de ingenieros y contratistas con licencia independiente en Florida.`
-    : `If your ${esc(loc.cityName)} property has ${esc(vd.what)}, Palma Building Solutions resolves it: we pull the ${esc(loc.countyName)} record, confirm exactly what you're dealing with, and coordinate ${esc(vd.fix)} - through a network of independently licensed Florida engineers and contractors.`;
+    ? `Si tu propiedad en ${esc(loc.cityName)} tiene ${esc(vd.what)}, Palma Building Solutions lo resuelve: extraemos el registro de ${esc(loc.countyName)}, confirmamos el problema exacto y coordinamos ${esc(vd.fix)}, a través de una red de ingenieros y contratistas con licencia independiente en Florida.`
+    : `If your ${esc(loc.cityName)} property has ${esc(vd.what)}, Palma Building Solutions resolves it: we pull the ${esc(loc.countyName)} record, confirm exactly what you're dealing with, and coordinate ${esc(vd.fix)}, through a network of independently licensed Florida engineers and contractors.`;
 
   const howTitle = es ? `Cómo Palma resuelve <i>${esc(vd.label.toLowerCase())}</i> en ${esc(loc.cityName)}` : `How Palma resolves <i>${esc(vd.label.toLowerCase())}</i> in ${esc(loc.cityName)}`;
   const howBody = es
@@ -546,8 +546,8 @@ function violationPage(loc, v, L) {
     {
       q: es ? `¿Cómo resuelvo ${vd.label.toLowerCase()} en ${loc.cityName}?` : `How do I resolve ${vd.label.toLowerCase()} in ${loc.cityName}?`,
       a: es
-        ? `Palma extrae el registro de ${loc.countyName}, confirma el problema exacto y coordina la solución - ${vd.fix} - con profesionales con licencia en Florida, de la primera llamada a la aprobación final. Empieza con una consulta gratuita de la propiedad.`
-        : `Palma pulls the ${loc.countyName} record, confirms the exact issue, and coordinates the fix - ${vd.fix} - through licensed Florida pros, from first call to final sign-off. Start with a free property check.`,
+        ? `Palma extrae el registro de ${loc.countyName}, confirma el problema exacto y coordina la solución, ${vd.fix}, con profesionales con licencia en Florida, de la primera llamada a la aprobación final. Empieza con una consulta gratuita de la propiedad.`
+        : `Palma pulls the ${loc.countyName} record, confirms the exact issue, and coordinates the fix, ${vd.fix}, through licensed Florida pros, from first call to final sign-off. Start with a free property check.`,
     },
     {
       q: es ? '¿Palma es un contratista o ingeniero?' : 'Is Palma a contractor or engineer?',

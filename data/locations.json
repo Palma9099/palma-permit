@@ -9,21 +9,21 @@
     "commonViolation": "unpermitted additions, alterations, and expired permits",
     "heroTitle": "Resolve Building Permits & Code Violations in Orlando",
     "metaDescription": "Stop fines and close expired permits or code violations in Orlando and Orange County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
-    "localNote": "Orange County handles unincorporated permitting through its Fast Track online system, while the City of Orlando permits on its own portal - so the first step is confirming which authority holds the record. Central Florida isn't a High-Velocity Hurricane Zone, but wind-load and energy-code compliance still drive most plan-review comments.",
+    "localNote": "Orange County handles unincorporated permitting through its Fast Track online system, while the City of Orlando permits on its own portal, so the first step is confirming which authority holds the record. Central Florida isn't a High-Velocity Hurricane Zone, but wind-load and energy-code compliance still drive most plan-review comments.",
     "nearby": [
       "Winter Park",
       "Kissimmee",
       "Apopka",
       "Winter Garden"
     ],
-    "localNoteEs": "El Condado de Orange gestiona los permisos de las áreas no incorporadas mediante su sistema en línea Fast Track, mientras que la Ciudad de Orlando emite permisos en su propio portal - así que el primer paso es confirmar qué autoridad tiene el registro. El centro de Florida no es Zona de Huracanes de Alta Velocidad, pero el cumplimiento de cargas de viento y del código de energía sigue generando la mayoría de los comentarios de revisión.",
+    "localNoteEs": "El Condado de Orange gestiona los permisos de las áreas no incorporadas mediante su sistema en línea Fast Track, mientras que la Ciudad de Orlando emite permisos en su propio portal, así que el primer paso es confirmar qué autoridad tiene el registro. El centro de Florida no es Zona de Huracanes de Alta Velocidad, pero el cumplimiento de cargas de viento y del código de energía sigue generando la mayoría de los comentarios de revisión.",
     "codeRefs": [
       {
         "label": "City of Orlando Permitting Services Division",
         "url": "https://www.orlando.gov/Building-Development/Permits-Inspections"
       },
       {
-        "label": "Orlando Code, Ch. 13 - Building Code (Municode)",
+        "label": "Orlando Code, Ch. 13: Building Code (Municode)",
         "url": "https://library.municode.com/fl/orlando/codes/code_of_ordinances?nodeId=TITIICICO_CH13BUCO"
       },
       {
@@ -60,14 +60,14 @@
     "commonViolation": "unpermitted work, open permits, and expired permits",
     "heroTitle": "Resolve Building Permits & Code Violations in Tampa",
     "metaDescription": "Close expired permits and clear code violations in Tampa and Hillsborough County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
-    "localNote": "Work inside the City of Tampa is permitted by the city, while unincorporated Hillsborough uses the county's Accela portal - the record can live in either place. Much of the Bay area sits in the wind-borne debris region and in mapped flood zones, so opening protection and flood elevation are frequent review triggers.",
+    "localNote": "Work inside the City of Tampa is permitted by the city, while unincorporated Hillsborough uses the county's Accela portal, the record can live in either place. Much of the Bay area sits in the wind-borne debris region and in mapped flood zones, so opening protection and flood elevation are frequent review triggers.",
     "nearby": [
       "Brandon",
       "Riverview",
       "Plant City",
       "Temple Terrace"
     ],
-    "localNoteEs": "El trabajo dentro de la Ciudad de Tampa lo permite la ciudad, mientras que el área no incorporada de Hillsborough usa el portal Accela del condado - el registro puede estar en cualquiera de los dos. Gran parte del área de la bahía está en la región de escombros por viento y en zonas de inundación mapeadas, por lo que la protección de aberturas y la elevación por inundación son motivos frecuentes de revisión.",
+    "localNoteEs": "El trabajo dentro de la Ciudad de Tampa lo permite la ciudad, mientras que el área no incorporada de Hillsborough usa el portal Accela del condado, el registro puede estar en cualquiera de los dos. Gran parte del área de la bahía está en la región de escombros por viento y en zonas de inundación mapeadas, por lo que la protección de aberturas y la elevación por inundación son motivos frecuentes de revisión.",
     "codeRefs": [
       {
         "label": "City of Tampa Permits (Building & Development)",
@@ -111,14 +111,14 @@
     "commonViolation": "unpermitted alterations and expired permits",
     "heroTitle": "Resolve Building Permits & Code Violations in Jacksonville",
     "metaDescription": "Close expired permits and resolve code violations in Jacksonville and Duval County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
-    "localNote": "Jacksonville and Duval County are consolidated, so nearly all permitting runs through one City of Jacksonville portal - simpler than most metros, but records still slip through when prior owners left permits open. Coastal and St. Johns River properties fall in the wind-borne debris region and mapped flood zones.",
+    "localNote": "Jacksonville and Duval County are consolidated, so nearly all permitting runs through one City of Jacksonville portal, simpler than most metros, but records still slip through when prior owners left permits open. Coastal and St. Johns River properties fall in the wind-borne debris region and mapped flood zones.",
     "nearby": [
       "Jacksonville Beach",
       "Atlantic Beach",
       "Orange Park",
       "Neptune Beach"
     ],
-    "localNoteEs": "Jacksonville y el Condado de Duval están consolidados, así que casi todos los permisos se tramitan por un solo portal de la Ciudad de Jacksonville - más simple que en otras metrópolis, pero aún se escapan registros cuando dueños anteriores dejaron permisos abiertos. Las propiedades costeras y del río St. Johns están en la región de escombros por viento y en zonas de inundación mapeadas.",
+    "localNoteEs": "Jacksonville y el Condado de Duval están consolidados, así que casi todos los permisos se tramitan por un solo portal de la Ciudad de Jacksonville, más simple que en otras metrópolis, pero aún se escapan registros cuando dueños anteriores dejaron permisos abiertos. Las propiedades costeras y del río St. Johns están en la región de escombros por viento y en zonas de inundación mapeadas.",
     "codeRefs": [
       {
         "label": "City of Jacksonville Building Inspection Division",
@@ -213,14 +213,14 @@
     "commonViolation": "unpermitted repairs, open permits, and expired permits",
     "heroTitle": "Resolve Building Permits & Code Violations in Fort Myers",
     "metaDescription": "Close expired permits and resolve code violations in Fort Myers and Lee County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
-    "localNote": "Cape Coral, Fort Myers, Bonita Springs, and Estero permit on their own portals; unincorporated Lee runs through the county. Southwest Florida is hurricane-exposed and heavily flood-zoned, and post-storm repair work makes open and expired permits especially common here - the FEMA 50% rule frequently applies.",
+    "localNote": "Cape Coral, Fort Myers, Bonita Springs, and Estero permit on their own portals; unincorporated Lee runs through the county. Southwest Florida is hurricane-exposed and heavily flood-zoned, and post-storm repair work makes open and expired permits especially common here, the FEMA 50% rule frequently applies.",
     "nearby": [
       "Cape Coral",
       "Bonita Springs",
       "Estero",
       "Lehigh Acres"
     ],
-    "localNoteEs": "Cape Coral, Fort Myers, Bonita Springs y Estero emiten permisos en sus propios portales; el área no incorporada de Lee se tramita por el condado. El suroeste de Florida está expuesto a huracanes y muy zonificado por inundación, y el trabajo de reparación tras las tormentas hace que los permisos abiertos y vencidos sean especialmente comunes aquí - la regla FEMA del 50% se aplica con frecuencia.",
+    "localNoteEs": "Cape Coral, Fort Myers, Bonita Springs y Estero emiten permisos en sus propios portales; el área no incorporada de Lee se tramita por el condado. El suroeste de Florida está expuesto a huracanes y muy zonificado por inundación, y el trabajo de reparación tras las tormentas hace que los permisos abiertos y vencidos sean especialmente comunes aquí, la regla FEMA del 50% se aplica con frecuencia.",
     "codeRefs": [
       {
         "label": "Lee County Building & Permitting Services",
@@ -250,7 +250,7 @@
       }
     ],
     "ahjInfo": [
-      "Work inside the City of Fort Myers is permitted by the city's Building, Permitting & Inspections division, while unincorporated Lee County (and neighbors like Cape Coral) run through Lee County's Department of Community Development and its Accela Citizen Access portal - so the first step is confirming which authority holds your record. Both adopt the Florida Building Code and, under Florida Statute 553.791, let a licensed private provider handle plan review and inspections in place of staff. After Hurricane Ian's 2022 permit surge, Lee County has largely cleared the backlog, with typical residential reviews now running a few weeks.",
+      "Work inside the City of Fort Myers is permitted by the city's Building, Permitting & Inspections division, while unincorporated Lee County (and neighbors like Cape Coral) run through Lee County's Department of Community Development and its Accela Citizen Access portal, so the first step is confirming which authority holds your record. Both adopt the Florida Building Code and, under Florida Statute 553.791, let a licensed private provider handle plan review and inspections in place of staff. After Hurricane Ian's 2022 permit surge, Lee County has largely cleared the backlog, with typical residential reviews now running a few weeks.",
       "Southwest Florida is hurricane-exposed and heavily flood-zoned. Much of the region sits in FEMA Special Flood Hazard Areas, some remapped after Ian, so base-flood elevation and the cumulative 50%-of-value 'substantial improvement' rule frequently reshape repairs and renovations, and the wind-borne debris region drives opening-protection and product-approval requirements. Post-storm work is exactly where open permits, expired permits, and unpermitted repairs pile up, and where Palma's coordination keeps a project moving to a clean closeout."
     ]
   },
@@ -329,7 +329,7 @@
         "url": "https://www.brevardfl.gov/PlanningAndDevelopment/BuildingPermits/BrevardCountyBuildingPermits"
       },
       {
-        "label": "Brevard County Code, Ch. 22 - Buildings & Building Regulations (Municode)",
+        "label": "Brevard County Code, Ch. 22: Buildings & Building Regulations (Municode)",
         "url": "https://library.municode.com/fl/brevard_county/codes/code_of_ordinances?nodeId=PTIICOOR_CH22BUBURE"
       },
       {
@@ -380,7 +380,7 @@
         "url": "https://www.scgov.net/government/planning-and-development-services/building"
       },
       {
-        "label": "Sarasota County Code, Ch. 22 - Buildings & Building Regulations (Municode)",
+        "label": "Sarasota County Code, Ch. 22: Buildings & Building Regulations (Municode)",
         "url": "https://library.municode.com/fl/sarasota_county/codes/code_of_ordinances?nodeId=PTIICOOR_CH22BUBURE"
       },
       {
@@ -403,7 +403,7 @@
       }
     ],
     "ahjInfo": [
-      "Work in unincorporated Sarasota County is permitted by the Sarasota County Building Division under Chapter 22 (Buildings and Building Regulations) of the county code and the Florida Building Code, while the City of Sarasota permits its own area - so the first step is confirming which authority holds your record. Under Florida Statute 553.791, a licensed private provider can handle plan review and inspections. The county has modernized permitting recently, adding live virtual inspections and expedited reviews for smaller residential work.",
+      "Work in unincorporated Sarasota County is permitted by the Sarasota County Building Division under Chapter 22 (Buildings and Building Regulations) of the county code and the Florida Building Code, while the City of Sarasota permits its own area, so the first step is confirming which authority holds your record. Under Florida Statute 553.791, a licensed private provider can handle plan review and inspections. The county has modernized permitting recently, adding live virtual inspections and expedited reviews for smaller residential work.",
       "Sarasota's Gulf coast and barrier islands like Siesta Key and Longboat Key sit in FEMA Special Flood Hazard Areas and the wind-borne debris region, so base-flood elevation, the 50%-of-value substantial-improvement rule, opening protection, and product approvals frequently shape a project. Those local rules are where expired permits, open permits, and unpermitted coastal work surface, and where Palma's coordination keeps the project moving."
     ]
   },
@@ -431,7 +431,7 @@
         "url": "https://www.mymanatee.org/departments/development-services-department"
       },
       {
-        "label": "Manatee County Code, Ch. 2-6 - Buildings & Building Regulations (Municode)",
+        "label": "Manatee County Code, Ch. 2-6: Buildings & Building Regulations (Municode)",
         "url": "https://library.municode.com/fl/manatee_county/codes/code_of_ordinances?nodeId=PTIIMACOCOOR_CH2-6BUBURE"
       },
       {
@@ -533,7 +533,7 @@
         "url": "https://www.cityofpsl.com/Government/Your-City-Government/Departments/Building"
       },
       {
-        "label": "Port St. Lucie Code, Ch. 150 - Building Regulations (Municode)",
+        "label": "Port St. Lucie Code, Ch. 150: Building Regulations (Municode)",
         "url": "https://library.municode.com/fl/port_st._lucie/codes/code_of_ordinances?nodeId=TITXVLAUS_CH150BURE"
       },
       {
@@ -556,7 +556,7 @@
       }
     ],
     "ahjInfo": [
-      "The City of Port St. Lucie runs its own high-volume Building Department - its Authority Having Jurisdiction - permitting city work under Chapter 150 (Building Regulations) of the city code and the Florida Building Code, while unincorporated St. Lucie County permits through its Planning & Development Services division. Under Florida Statute 553.791, a licensed private provider can perform plan review and inspections in place of staff. As one of Florida's fastest-growing cities (projected past 275,000 residents by 2026), Port St. Lucie processes heavy new-construction and renovation volume.",
+      "The City of Port St. Lucie runs its own high-volume Building Department, its Authority Having Jurisdiction, permitting city work under Chapter 150 (Building Regulations) of the city code and the Florida Building Code, while unincorporated St. Lucie County permits through its Planning & Development Services division. Under Florida Statute 553.791, a licensed private provider can perform plan review and inspections in place of staff. As one of Florida's fastest-growing cities (projected past 275,000 residents by 2026), Port St. Lucie processes heavy new-construction and renovation volume.",
       "This is a Treasure Coast market in the wind-borne debris region, so new construction and additions draw close wind-load and product-approval review, and coastal and canal-front parcels fall in FEMA flood zones where elevation and the 50%-of-value substantial-improvement rule apply. Fast growth plus prior-owner work is exactly where expired permits, open permits, and unpermitted alterations surface, and where Palma's coordination saves the most time."
     ]
   },
@@ -584,7 +584,7 @@
         "url": "https://www.osceola.org/Doing-Business/Building-and-Permits"
       },
       {
-        "label": "Osceola County Code, Ch. 5 - Buildings & Building Regulations (Municode)",
+        "label": "Osceola County Code, Ch. 5: Buildings & Building Regulations (Municode)",
         "url": "https://library.municode.com/fl/osceola_county/codes/code_of_ordinances?nodeId=PTIIOSCOCOOR_CH5BUBURE"
       },
       {
@@ -635,7 +635,7 @@
         "url": "https://sanfordfl.gov/government/development-services/building-division/"
       },
       {
-        "label": "Sanford Code, Ch. 18 - Buildings & Building Regulations (Municode)",
+        "label": "Sanford Code, Ch. 18: Buildings & Building Regulations (Municode)",
         "url": "https://library.municode.com/fl/sanford/codes/code_of_ordinances?nodeId=PTIICOOR_CH18BUBURE"
       },
       {
@@ -686,7 +686,7 @@
         "url": "https://www.gainesvillefl.gov/Government-Pages/Government/Departments/Sustainable-Development/Building-Division/Building-Application-Process"
       },
       {
-        "label": "Gainesville Code, Ch. 13 - Housing & Commercial Building Code (Municode)",
+        "label": "Gainesville Code, Ch. 13: Housing & Commercial Building Code (Municode)",
         "url": "https://library.municode.com/fl/gainesville/codes/code_of_ordinances?nodeId=PTIICOOR_CH13HOCOBUCO"
       },
       {
@@ -737,7 +737,7 @@
         "url": "https://www.ocalafl.gov/government/city-departments-a-h/growth-management/building"
       },
       {
-        "label": "Ocala Code, Ch. 82 - Buildings & Building Regulations (Municode)",
+        "label": "Ocala Code, Ch. 82: Buildings & Building Regulations (Municode)",
         "url": "https://library.municode.com/fl/ocala/codes/code_of_ordinances?nodeId=PTIICOOR_CH82BUBURE"
       },
       {
@@ -788,7 +788,7 @@
         "url": "https://www.tlcpermits.org/"
       },
       {
-        "label": "Leon County Code, Ch. 5 - Building Code (Municode)",
+        "label": "Leon County Code, Ch. 5: Building Code (Municode)",
         "url": "https://library.municode.com/fl/leon_county/codes/code_of_ordinances?nodeId=PTIICOOR_CH5BUCO"
       },
       {
@@ -825,21 +825,21 @@
     "commonViolation": "unpermitted work and expired permits",
     "heroTitle": "Resolve Building Permits & Code Violations in Pensacola",
     "metaDescription": "Close expired permits and resolve code violations in Pensacola and Escambia County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
-    "localNote": "Pensacola and unincorporated Escambia County permit separately. The western Panhandle carries some of Florida's highest design wind speeds and sits squarely in the wind-borne debris region, so opening protection and product approvals are central to review - and Gulf and bayfront parcels fall in coastal flood zones.",
+    "localNote": "Pensacola and unincorporated Escambia County permit separately. The western Panhandle carries some of Florida's highest design wind speeds and sits squarely in the wind-borne debris region, so opening protection and product approvals are central to review, and Gulf and bayfront parcels fall in coastal flood zones.",
     "nearby": [
       "Pensacola Beach",
       "Gulf Breeze",
       "Cantonment",
       "Pace"
     ],
-    "localNoteEs": "Pensacola y el área no incorporada del Condado de Escambia emiten permisos por separado. El oeste del Panhandle tiene algunas de las velocidades de viento de diseño más altas de Florida y está de lleno en la región de escombros por viento, por lo que la protección de aberturas y las aprobaciones de producto son centrales en la revisión - y las parcelas frente al Golfo y a la bahía están en zonas de inundación costera.",
+    "localNoteEs": "Pensacola y el área no incorporada del Condado de Escambia emiten permisos por separado. El oeste del Panhandle tiene algunas de las velocidades de viento de diseño más altas de Florida y está de lleno en la región de escombros por viento, por lo que la protección de aberturas y las aprobaciones de producto son centrales en la revisión, y las parcelas frente al Golfo y a la bahía están en zonas de inundación costera.",
     "codeRefs": [
       {
         "label": "City of Pensacola Building Inspections (DSD)",
         "url": "https://www.cityofpensacola.com/131/DSD---Building-Inspections"
       },
       {
-        "label": "Pensacola Code, Ch. 14-2 - Building Construction Standards (Municode)",
+        "label": "Pensacola Code, Ch. 14-2: Building Construction Standards (Municode)",
         "url": "https://library.municode.com/fl/pensacola/codes/code_of_ordinances?nodeId=PTIICOOR_TITXIVBUCOFICO_CH14-2BUCOST"
       },
       {
@@ -927,14 +927,14 @@
     "commonViolation": "unpermitted additions and expired permits",
     "heroTitle": "Resolve Building Permits & Code Violations in New Port Richey",
     "metaDescription": "Close expired permits and clear code violations in New Port Richey and Pasco County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
-    "localNote": "New Port Richey, Zephyrhills, and Dade City permit on their own portals while unincorporated Pasco uses the county - and Pasco is one of the Tampa Bay area's fastest-growing counties. West Pasco's coastal edge sits in the wind-borne debris region and flood zones, while inland east Pasco around Wesley Chapel is mostly standard wind-load design.",
+    "localNote": "New Port Richey, Zephyrhills, and Dade City permit on their own portals while unincorporated Pasco uses the county, and Pasco is one of the Tampa Bay area's fastest-growing counties. West Pasco's coastal edge sits in the wind-borne debris region and flood zones, while inland east Pasco around Wesley Chapel is mostly standard wind-load design.",
     "nearby": [
       "Wesley Chapel",
       "Zephyrhills",
       "Dade City",
       "Land O' Lakes"
     ],
-    "localNoteEs": "New Port Richey, Zephyrhills y Dade City emiten permisos en sus propios portales, mientras que el área no incorporada de Pasco usa el condado - y Pasco es uno de los condados de más rápido crecimiento del área de Tampa Bay. El borde costero del oeste de Pasco está en la región de escombros por viento y en zonas de inundación, mientras que el interior del este de Pasco, alrededor de Wesley Chapel, es en su mayoría diseño estándar de cargas de viento.",
+    "localNoteEs": "New Port Richey, Zephyrhills y Dade City emiten permisos en sus propios portales, mientras que el área no incorporada de Pasco usa el condado, y Pasco es uno de los condados de más rápido crecimiento del área de Tampa Bay. El borde costero del oeste de Pasco está en la región de escombros por viento y en zonas de inundación, mientras que el interior del este de Pasco, alrededor de Wesley Chapel, es en su mayoría diseño estándar de cargas de viento.",
     "codeRefs": [
       {
         "label": "Pasco County Building Construction Services",
@@ -992,7 +992,7 @@
         "url": "https://www.clermontfl.gov/508/Building-Services"
       },
       {
-        "label": "Clermont Code, Ch. 8 - Buildings & Building Regulations (Municode)",
+        "label": "Clermont Code, Ch. 8: Buildings & Building Regulations (Municode)",
         "url": "https://library.municode.com/fl/clermont/codes/code_of_ordinances?nodeId=SPAGEOR_CH8BUBURE"
       },
       {
@@ -1029,14 +1029,14 @@
     "commonViolation": "unpermitted repairs, open permits, and expired permits",
     "heroTitle": "Resolve Building Permits & Code Violations in Punta Gorda",
     "metaDescription": "Close expired permits and resolve code violations in Punta Gorda and Charlotte County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
-    "localNote": "The City of Punta Gorda and unincorporated Charlotte County (including Port Charlotte) permit separately. This Gulf-coast county took a direct hit from Hurricane Ian, so storm-repair work makes open and expired permits especially common - and with much of the county in the wind-borne debris region and mapped flood zones, the FEMA 50% substantial-improvement rule frequently applies.",
+    "localNote": "The City of Punta Gorda and unincorporated Charlotte County (including Port Charlotte) permit separately. This Gulf-coast county took a direct hit from Hurricane Ian, so storm-repair work makes open and expired permits especially common, and with much of the county in the wind-borne debris region and mapped flood zones, the FEMA 50% substantial-improvement rule frequently applies.",
     "nearby": [
       "Port Charlotte",
       "Englewood",
       "Rotonda West",
       "Charlotte Harbor"
     ],
-    "localNoteEs": "La Ciudad de Punta Gorda y el área no incorporada del Condado de Charlotte (incluida Port Charlotte) emiten permisos por separado. Este condado de la costa del Golfo recibió un impacto directo del huracán Ian, por lo que el trabajo de reparación hace que los permisos abiertos y vencidos sean especialmente comunes - y con gran parte del condado en la región de escombros por viento y en zonas de inundación mapeadas, la regla FEMA del 50% de mejora sustancial se aplica con frecuencia.",
+    "localNoteEs": "La Ciudad de Punta Gorda y el área no incorporada del Condado de Charlotte (incluida Port Charlotte) emiten permisos por separado. Este condado de la costa del Golfo recibió un impacto directo del huracán Ian, por lo que el trabajo de reparación hace que los permisos abiertos y vencidos sean especialmente comunes, y con gran parte del condado en la región de escombros por viento y en zonas de inundación mapeadas, la regla FEMA del 50% de mejora sustancial se aplica con frecuencia.",
     "codeRefs": [
       {
         "label": "City of Punta Gorda Building Department",
@@ -1067,7 +1067,7 @@
     ],
     "ahjInfo": [
       "Punta Gorda is an incorporated city, so its Authority Having Jurisdiction is the City of Punta Gorda Building Department, while unincorporated Charlotte County (including Port Charlotte) permits through Charlotte County Building Construction Services. Both adopt the Florida Building Code under Charlotte County's Code of Ordinances framework and, under Florida Statute 553.791, allow a licensed private provider to run plan review and inspections. Charlotte is one of Florida's fastest-growing counties, so permit volumes stay high from a mix of new construction and continued hurricane rebuilding.",
-      "The county took a direct hit from Hurricane Ian in 2022, so storm repairs make open and expired permits especially common, and much of the area sits in FEMA flood zones where base-flood elevation and the cumulative 50%-of-value 'substantial improvement' rule can turn a repair into a larger project. High design wind speeds keep opening protection and product approvals central to review - the exact issues behind most unpermitted work here, and where Palma coordinates the fix."
+      "The county took a direct hit from Hurricane Ian in 2022, so storm repairs make open and expired permits especially common, and much of the area sits in FEMA flood zones where base-flood elevation and the cumulative 50%-of-value 'substantial improvement' rule can turn a repair into a larger project. High design wind speeds keep opening protection and product approvals central to review, the exact issues behind most unpermitted work here, and where Palma coordinates the fix."
     ]
   },
   {
@@ -1080,21 +1080,21 @@
     "commonViolation": "unpermitted alterations and expired permits",
     "heroTitle": "Resolve Building Permits & Code Violations in Destin",
     "metaDescription": "Close expired permits and clear code violations in Destin and Okaloosa County. Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
-    "localNote": "Destin, Fort Walton Beach, Crestview, and Niceville permit on their own portals while unincorporated Okaloosa uses the county. The Emerald Coast carries some of Florida's highest design wind speeds and sits in the wind-borne debris region, so opening protection and product approvals are central to review - and beachfront and harbor parcels fall in coastal flood zones.",
+    "localNote": "Destin, Fort Walton Beach, Crestview, and Niceville permit on their own portals while unincorporated Okaloosa uses the county. The Emerald Coast carries some of Florida's highest design wind speeds and sits in the wind-borne debris region, so opening protection and product approvals are central to review, and beachfront and harbor parcels fall in coastal flood zones.",
     "nearby": [
       "Fort Walton Beach",
       "Niceville",
       "Crestview",
       "Mary Esther"
     ],
-    "localNoteEs": "Destin, Fort Walton Beach, Crestview y Niceville emiten permisos en sus propios portales, mientras que el área no incorporada de Okaloosa usa el condado. La Costa Esmeralda tiene algunas de las velocidades de viento de diseño más altas de Florida y está en la región de escombros por viento, por lo que la protección de aberturas y las aprobaciones de producto son centrales en la revisión - y las parcelas frente a la playa y al puerto están en zonas de inundación costera.",
+    "localNoteEs": "Destin, Fort Walton Beach, Crestview y Niceville emiten permisos en sus propios portales, mientras que el área no incorporada de Okaloosa usa el condado. La Costa Esmeralda tiene algunas de las velocidades de viento de diseño más altas de Florida y está en la región de escombros por viento, por lo que la protección de aberturas y las aprobaciones de producto son centrales en la revisión, y las parcelas frente a la playa y al puerto están en zonas de inundación costera.",
     "codeRefs": [
       {
         "label": "City of Destin Building & Permitting Division",
         "url": "https://www.cityofdestin.com/89/Building-and-Permitting"
       },
       {
-        "label": "Okaloosa County Code, Ch. 6 Art. VI - Building Code (Municode)",
+        "label": "Okaloosa County Code, Ch. 6 Art. VI: Building Code (Municode)",
         "url": "https://library.municode.com/fl/okaloosa_county/codes/code_of_ordinances?nodeId=COOR_CH6BUCO_ARTVIBUCO"
       },
       {
@@ -1149,7 +1149,7 @@
         "url": "https://www.claycountygov.com/government/building"
       },
       {
-        "label": "Clay County Code of Ordinances, Ch. 6 - Buildings (Municode)",
+        "label": "Clay County Code of Ordinances, Ch. 6: Buildings (Municode)",
         "url": "https://library.municode.com/fl/clay_county/codes/code_of_ordinances"
       }
     ],
@@ -1182,21 +1182,21 @@
     "commonViolation": "unpermitted work, expired permits, and unpermitted post-storm repairs",
     "heroTitle": "Resolve Building Permits & Code Violations in Key Largo",
     "metaDescription": "Close expired permits and resolve code violations in Key Largo and Monroe County (the Florida Keys). Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
-    "localNote": "Key Largo is unincorporated Upper Keys, permitted by the Monroe County Building Department. Nearly all of the Keys lies in FEMA flood zones, so Monroe's strict floodplain rules - including the cumulative 50% substantial-improvement limit and base-flood elevation - shape most projects, and the county's ROGO permit-allocation system can affect new construction. Design wind speeds here are among the highest in Florida.",
+    "localNote": "Key Largo is unincorporated Upper Keys, permitted by the Monroe County Building Department. Nearly all of the Keys lies in FEMA flood zones, so Monroe's strict floodplain rules, including the cumulative 50% substantial-improvement limit and base-flood elevation, shape most projects, and the county's ROGO permit-allocation system can affect new construction. Design wind speeds here are among the highest in Florida.",
     "nearby": [
       "Tavernier",
       "Islamorada",
       "Ocean Reef",
       "Rock Harbor"
     ],
-    "localNoteEs": "Key Largo es el Alto Cayo no incorporado, con permisos del Departamento de Construcción del Condado de Monroe. Casi todos los Cayos están en zonas de inundación de FEMA, así que las estrictas reglas de llanura de inundación de Monroe - incluido el límite acumulativo del 50% de mejora sustancial y la elevación sobre la inundación base - definen la mayoría de los proyectos, y el sistema de asignación de permisos ROGO del condado puede afectar la construcción nueva. Las velocidades de viento de diseño aquí están entre las más altas de Florida.",
+    "localNoteEs": "Key Largo es el Alto Cayo no incorporado, con permisos del Departamento de Construcción del Condado de Monroe. Casi todos los Cayos están en zonas de inundación de FEMA, así que las estrictas reglas de llanura de inundación de Monroe, incluido el límite acumulativo del 50% de mejora sustancial y la elevación sobre la inundación base, definen la mayoría de los proyectos, y el sistema de asignación de permisos ROGO del condado puede afectar la construcción nueva. Las velocidades de viento de diseño aquí están entre las más altas de Florida.",
     "codeRefs": [
       {
-        "label": "Monroe County Code, Ch. 6 - Buildings & Building Regulations (Municode)",
+        "label": "Monroe County Code, Ch. 6: Buildings & Building Regulations (Municode)",
         "url": "https://library.municode.com/fl/monroe_county/codes/code_of_ordinances?nodeId=CH6BUCO"
       },
       {
-        "label": "Monroe County Permitting - Fees, Forms & Applications",
+        "label": "Monroe County Permitting, Fees, Forms & Applications",
         "url": "https://www.monroecounty-fl.gov/160/Permitting-Fees-Forms-Applications"
       },
       {
@@ -1219,8 +1219,8 @@
       }
     ],
     "ahjInfo": [
-      "Key Largo is unincorporated Upper Keys, so its Authority Having Jurisdiction is the Monroe County Building Department. Monroe County adopts the Florida Building Code through Chapter 6 of its Code of Ordinances and layers on a Land Development Code that governs setbacks, use, and the county's Rate of Growth Ordinance (ROGO/BPAS) - the system that allocates a limited number of new residential building permits each year. Under Florida Statute 553.791 you can also use a licensed private provider to perform plan review and inspections in place of county staff, which often shortens timelines on a stalled project; Monroe publishes the required private-provider notice and inspection forms alongside its permitting fee schedule.",
-      "Because nearly all of the Keys sits in a FEMA Special Flood Hazard Area, Monroe enforces strict floodplain rules: base-flood-elevation requirements and a cumulative 50%-of-value 'substantial improvement' limit that can turn a straightforward renovation into a full-elevation project. The Keys also carry some of the highest design wind speeds in Florida, so opening protection and Florida/Miami-Dade product approvals are central to plan review. These are precisely the local rules behind most unpermitted work, expired permits, and after-the-fact permitting here - and where Palma's coordination saves owners the most time."
+      "Key Largo is unincorporated Upper Keys, so its Authority Having Jurisdiction is the Monroe County Building Department. Monroe County adopts the Florida Building Code through Chapter 6 of its Code of Ordinances and layers on a Land Development Code that governs setbacks, use, and the county's Rate of Growth Ordinance (ROGO/BPAS), the system that allocates a limited number of new residential building permits each year. Under Florida Statute 553.791 you can also use a licensed private provider to perform plan review and inspections in place of county staff, which often shortens timelines on a stalled project; Monroe publishes the required private-provider notice and inspection forms alongside its permitting fee schedule.",
+      "Because nearly all of the Keys sits in a FEMA Special Flood Hazard Area, Monroe enforces strict floodplain rules: base-flood-elevation requirements and a cumulative 50%-of-value 'substantial improvement' limit that can turn a straightforward renovation into a full-elevation project. The Keys also carry some of the highest design wind speeds in Florida, so opening protection and Florida/Miami-Dade product approvals are central to plan review. These are precisely the local rules behind most unpermitted work, expired permits, and after-the-fact permitting here, and where Palma's coordination saves owners the most time."
     ],
     "ahjInfoEs": [
       "Key Largo es Alto Cayo no incorporado, así que su Autoridad Competente (AHJ) es el Departamento de Construcción del Condado de Monroe. Monroe adopta el Código de Construcción de Florida a través del Capítulo 6 de su Código de Ordenanzas y añade un Código de Desarrollo del Suelo que rige retiros, uso y la Ordenanza de Tasa de Crecimiento (ROGO/BPAS), el sistema que asigna un número limitado de permisos residenciales nuevos cada año. Bajo el Estatuto de Florida 553.791 también puedes usar un proveedor privado con licencia para la revisión de planos y las inspecciones en lugar del personal del condado, lo que suele acortar los plazos en un proyecto estancado; Monroe publica el aviso y los formularios de proveedor privado junto con su tarifa de permisos.",
@@ -1237,21 +1237,21 @@
     "commonViolation": "unpermitted post-storm repairs, open permits, and expired permits",
     "heroTitle": "Resolve Building Permits & Code Violations in Marathon",
     "metaDescription": "Close expired permits and resolve code violations in Marathon and Monroe County (the Florida Keys). Palma connects you with licensed local engineering and contracting partners. Free estimate: 305-393-0690.",
-    "localNote": "Marathon is an incorporated Middle Keys city that permits through its own building department, separate from Monroe County. Almost the entire city is in FEMA flood zones, so base-flood elevation and the 50% substantial-improvement rule frequently govern renovations - and post-Irma repairs left many properties with open or unpermitted work. Design wind speeds are among Florida's highest.",
+    "localNote": "Marathon is an incorporated Middle Keys city that permits through its own building department, separate from Monroe County. Almost the entire city is in FEMA flood zones, so base-flood elevation and the 50% substantial-improvement rule frequently govern renovations, and post-Irma repairs left many properties with open or unpermitted work. Design wind speeds are among Florida's highest.",
     "nearby": [
       "Key Colony Beach",
       "Grassy Key",
       "Duck Key",
       "Vaca Key"
     ],
-    "localNoteEs": "Marathon es una ciudad incorporada de los Cayos Centrales que emite permisos a través de su propio departamento de construcción, separado del Condado de Monroe. Casi toda la ciudad está en zonas de inundación de FEMA, así que la elevación sobre la inundación base y la regla del 50% de mejora sustancial suelen regir las renovaciones - y las reparaciones tras el huracán Irma dejaron muchas propiedades con trabajo abierto o sin permiso. Las velocidades de viento de diseño están entre las más altas de Florida.",
+    "localNoteEs": "Marathon es una ciudad incorporada de los Cayos Centrales que emite permisos a través de su propio departamento de construcción, separado del Condado de Monroe. Casi toda la ciudad está en zonas de inundación de FEMA, así que la elevación sobre la inundación base y la regla del 50% de mejora sustancial suelen regir las renovaciones, y las reparaciones tras el huracán Irma dejaron muchas propiedades con trabajo abierto o sin permiso. Las velocidades de viento de diseño están entre las más altas de Florida.",
     "codeRefs": [
       {
-        "label": "Monroe County Code, Ch. 6 - Buildings & Building Regulations (Municode)",
+        "label": "Monroe County Code, Ch. 6: Buildings & Building Regulations (Municode)",
         "url": "https://library.municode.com/fl/monroe_county/codes/code_of_ordinances?nodeId=CH6BUCO"
       },
       {
-        "label": "Monroe County Permitting - Fees, Forms & Applications",
+        "label": "Monroe County Permitting, Fees, Forms & Applications",
         "url": "https://www.monroecounty-fl.gov/160/Permitting-Fees-Forms-Applications"
       }
     ],
@@ -1270,8 +1270,8 @@
       }
     ],
     "ahjInfo": [
-      "Marathon is an incorporated Middle Keys city, so its Authority Having Jurisdiction is the City of Marathon Building Department - not Monroe County. The city runs its own plan review, permitting, and inspections while adopting the Florida Building Code and operating within the regional Keys land-development framework, including a ROGO/BPAS allocation system for new residential permits. As in the rest of the Keys, Florida Statute 553.791 lets you use a licensed private provider for inspections in place of city staff to keep a project moving.",
-      "Almost the entire city sits in a FEMA Special Flood Hazard Area, so base-flood elevation and the cumulative 50%-of-value 'substantial improvement' rule frequently reshape renovations, and high design wind speeds make opening protection and product approvals central to review. Post-Irma repairs left many Marathon properties with open or unpermitted work - the exact situations Palma coordinates to a clean closeout."
+      "Marathon is an incorporated Middle Keys city, so its Authority Having Jurisdiction is the City of Marathon Building Department, not Monroe County. The city runs its own plan review, permitting, and inspections while adopting the Florida Building Code and operating within the regional Keys land-development framework, including a ROGO/BPAS allocation system for new residential permits. As in the rest of the Keys, Florida Statute 553.791 lets you use a licensed private provider for inspections in place of city staff to keep a project moving.",
+      "Almost the entire city sits in a FEMA Special Flood Hazard Area, so base-flood elevation and the cumulative 50%-of-value 'substantial improvement' rule frequently reshape renovations, and high design wind speeds make opening protection and product approvals central to review. Post-Irma repairs left many Marathon properties with open or unpermitted work, the exact situations Palma coordinates to a clean closeout."
     ],
     "ahjInfoEs": [
       "Marathon es una ciudad incorporada de los Cayos Centrales, así que su Autoridad Competente (AHJ) es el Departamento de Construcción de la Ciudad de Marathon, no el Condado de Monroe. La ciudad realiza su propia revisión de planos, permisos e inspecciones mientras adopta el Código de Construcción de Florida y opera dentro del marco regional de desarrollo del suelo de los Cayos, incluido un sistema de asignación ROGO/BPAS para permisos residenciales nuevos. Como en el resto de los Cayos, el Estatuto de Florida 553.791 permite usar un proveedor privado con licencia para las inspecciones en lugar del personal de la ciudad para mantener el proyecto en marcha.",
@@ -1302,7 +1302,7 @@
         "url": "https://www.monroecounty-fl.gov/149/Building-and-Permitting"
       },
       {
-        "label": "Monroe County Code, Ch. 6 - Buildings & Building Regulations (Municode)",
+        "label": "Monroe County Code, Ch. 6: Buildings & Building Regulations (Municode)",
         "url": "https://library.municode.com/fl/monroe_county/codes/code_of_ordinances?nodeId=CH6BUCO"
       },
       {
@@ -1353,11 +1353,11 @@
         "url": "https://keycolonybeach.net/building-department-and-code-enforcement/"
       },
       {
-        "label": "Key Colony Beach Code, Ch. 6 - Buildings (Municode)",
+        "label": "Key Colony Beach Code, Ch. 6: Buildings (Municode)",
         "url": "https://library.municode.com/fl/key_colony_beach/codes/code_of_ordinances?nodeId=PTIICOOR_CH6BU"
       },
       {
-        "label": "Monroe County Code, Ch. 6 - Buildings & Building Regulations (Municode)",
+        "label": "Monroe County Code, Ch. 6: Buildings & Building Regulations (Municode)",
         "url": "https://library.municode.com/fl/monroe_county/codes/code_of_ordinances?nodeId=CH6BUCO"
       }
     ],
@@ -1404,7 +1404,7 @@
         "url": "https://www.monroecounty-fl.gov/149/Building-and-Permitting"
       },
       {
-        "label": "Monroe County Code, Ch. 6 - Buildings & Building Regulations (Municode)",
+        "label": "Monroe County Code, Ch. 6: Buildings & Building Regulations (Municode)",
         "url": "https://library.municode.com/fl/monroe_county/codes/code_of_ordinances?nodeId=CH6BUCO"
       },
       {
