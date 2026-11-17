@@ -102,7 +102,23 @@ export default async function handler(req, res) {
       return res.status(502).json({ error: "upstream", message: t.slice(0, 400) });
     }
     const data = await r.json();
-    const text = (data.content && data.content[0] && data.content[0].text) || "{}";
+
+    // Read the first TEXT block, not content[0].
+    //
+    // content[0] happens to be the text block on claude-sonnet-4-6, which is
+    // why this works today. It is a trap for whoever next changes the model,
+    // including via the PP_MODEL env var, which needs no deploy: on every
+    // current model thinking is on by default and the response leads with a
+    // thinking block whose text is empty (display defaults to "omitted").
+    // Measured, not assumed: content[0].text is then "", which is falsy, so
+    // the `|| "{}"` below swallows it, JSON.parse("{}") SUCCEEDS, and the
+    // endpoint returns an empty compliance result with HTTP 200. Not an error
+    // the caller can see - a blank readiness report that reads as "nothing
+    // missing". A thrown parse error would have been the kinder failure.
+    // The block order is not part of the contract; the block TYPE is.
+    const blocks = Array.isArray(data.content) ? data.content : [];
+    const textBlock = blocks.find((b) => b && b.type === "text" && typeof b.text === "string");
+    const text = (textBlock && textBlock.text) || "{}";
     let parsed;
     try { parsed = JSON.parse(text); }
     catch { parsed = { compliance: null, verdict: "Could not parse engine response.", raw: text }; }
