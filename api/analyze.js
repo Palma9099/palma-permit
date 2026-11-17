@@ -90,8 +90,22 @@ export default async function handler(req, res) {
       method: "POST",
       headers: { "x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json" },
       body: JSON.stringify({
-        model: process.env.PP_MODEL || "claude-sonnet-4-6",
-        max_tokens: 1500,
+        model: process.env.PP_MODEL || "claude-sonnet-5-5",
+        // 1500 was safe on claude-sonnet-4-6, which did not think unless asked.
+        // On claude-sonnet-5-5 thinking is ON by default and thinking tokens
+        // count against max_tokens, so a reasoning pass over several uploaded
+        // documents could spend most of 1500 and leave the JSON truncated or
+        // absent - the same blank-report failure 943ead6 just closed, arriving
+        // by a different door. This is a ceiling, not a spend: the JSON asked
+        // for is short, so a bigger ceiling costs nothing when it is not used.
+        max_tokens: 8000,
+        // Keep the thinking brief. This is structured extraction against a
+        // document checklist, not open-ended reasoning, and low effort bounds
+        // three things at once: tokens billed at the output rate, wall time
+        // against the function's maxDuration, and the share of max_tokens
+        // thinking can take before the JSON is written. Raise it if the
+        // verdicts come back thin.
+        output_config: { effort: "low" },
         system: sys,
         messages: [{ role: "user", content: user }],
       }),
